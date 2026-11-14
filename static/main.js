@@ -626,7 +626,11 @@
     "635": () => _357,
     "636": () => _367,
     "637": () => _377,
+    "638": () => _387,
+    "639": () => _397,
     "64": () => _47,
+    "640": () => _406,
+    "641": () => _416,
     "65": () => _57,
     "66": () => _67,
     "67": () => _77,
@@ -4494,7 +4498,31 @@
     link: "",
     name: "Dead God",
     inGameDescription: "",
-    unlockDescription: "Unlock all the other achievements and collect every item in the game"
+    unlockDescription: "Unlock all the other achievements (including the 4 Repentance+ achievements) and collect every item in the game"
+  };
+  var _387 = {
+    link: "",
+    name: "Play Online",
+    inGameDescription: "Played Online",
+    unlockDescription: "Play an Online game"
+  };
+  var _397 = {
+    link: "",
+    name: "Win Online",
+    inGameDescription: "Won Online",
+    unlockDescription: "Win an Online run"
+  };
+  var _406 = {
+    link: "",
+    name: "Win Online Daily",
+    inGameDescription: "Won Online Daily",
+    unlockDescription: "Win an Online Daily run"
+  };
+  var _416 = {
+    link: "",
+    name: "Item Descriptions",
+    inGameDescription: "Read Up!",
+    unlockDescription: "Defeat Mom"
   };
   var achievements_default = {
     NEW,
@@ -5134,7 +5162,11 @@
     "634": _347,
     "635": _357,
     "636": _367,
-    "637": _377
+    "637": _377,
+    "638": _387,
+    "639": _397,
+    "640": _406,
+    "641": _416
   };
 
   // src/data/easterEggs.json
@@ -5145,7 +5177,7 @@
     "11": () => _110,
     "12": () => _220,
     "13": () => _321,
-    "14": () => _418,
+    "14": () => _419,
     "15": () => _519,
     "16": () => _611,
     "17": () => _720,
@@ -5173,14 +5205,14 @@
     "41": () => _129,
     "42": () => _221,
     "43": () => _328,
-    "44": () => _420,
+    "44": () => _421,
     "46": () => _620,
     "47": () => _717,
     "48": () => _817,
     "5": () => _107,
     "52": () => _219,
     "53": () => _319,
-    "54": () => _419,
+    "54": () => _420,
     "55": () => _516,
     "56": () => _616,
     "57": () => _711,
@@ -5191,7 +5223,7 @@
     "61": () => _117,
     "62": () => _218,
     "63": () => _318,
-    "64": () => _416,
+    "64": () => _417,
     "65": () => _517,
     "66": () => _617,
     "67": () => _716,
@@ -5201,7 +5233,7 @@
     "71": () => _111,
     "72": () => _211,
     "73": () => _317,
-    "74": () => _417,
+    "74": () => _418,
     "75": () => _518,
     "76": () => _619,
     "77": () => _721,
@@ -5300,7 +5332,7 @@
     inGameDescription: "Illuminate darkness",
     effectsDescription: "Provides immunity to Curse of Darkness."
   };
-  var _416 = {
+  var _417 = {
     seed: "THREAD",
     inGameDescription: "Escape the labyrinth",
     effectsDescription: "Provides immunity to Curse of the Labyrinth."
@@ -5360,7 +5392,7 @@
     inGameDescription: "Ice physics",
     effectsDescription: "Makes the ground slippery."
   };
-  var _417 = {
+  var _418 = {
     seed: "BRAVERY",
     inGameDescription: "Bravery",
     effectsDescription: "Isaac automatically fires tears in the same direction that he moves. Removes the ability to fire tears manually."
@@ -5400,7 +5432,7 @@
     inGameDescription: "Camouflage EVERYTHING!",
     effectsDescription: "Isaac, enemies, pickups, and items all blend into the ground."
   };
-  var _418 = {
+  var _419 = {
     seed: "1MN0B0DY",
     inGameDescription: "Invisible player",
     effectsDescription: "Isaac becomes completely invisible."
@@ -5420,7 +5452,7 @@
     inGameDescription: "Grayscale",
     effectsDescription: "Isaac turns gray."
   };
-  var _419 = {
+  var _420 = {
     seed: "H0H0H0H0",
     inGameDescription: "Christmas",
     effectsDescription: "Isaac wears a Christmas hat."
@@ -5535,7 +5567,7 @@
     inGameDescription: "Uptempo",
     effectsDescription: "Music is sped up."
   };
-  var _420 = {
+  var _421 = {
     seed: "PREST0",
     inGameDescription: "Uptempo++",
     effectsDescription: "Music is significantly sped up."
@@ -5569,7 +5601,7 @@
     "61": _117,
     "62": _218,
     "63": _318,
-    "64": _416,
+    "64": _417,
     "65": _517,
     "66": _617,
     "67": _716,
@@ -5581,7 +5613,7 @@
     "27": _718,
     "28": _818,
     "52": _219,
-    "74": _417,
+    "74": _418,
     "75": _518,
     "12": _220,
     "76": _619,
@@ -5589,11 +5621,11 @@
     "4": _101,
     "5": _107,
     "6": _108,
-    "14": _418,
+    "14": _419,
     "15": _519,
     "46": _620,
     "53": _319,
-    "54": _419,
+    "54": _420,
     "35": _520,
     "36": _621,
     "37": _719,
@@ -5616,7 +5648,7 @@
     "41": _129,
     "42": _221,
     "43": _328,
-    "44": _420,
+    "44": _421,
     "77": _721,
     "78": _821
   };
@@ -18105,10 +18137,10 @@
     "135": () => _358,
     "136": () => _368,
     "137": () => _378,
-    "138": () => _387,
-    "139": () => _397,
-    "14": () => _421,
-    "140": () => _406,
+    "138": () => _388,
+    "139": () => _398,
+    "14": () => _427,
+    "140": () => _407,
     "141": () => _4110,
     "142": () => _4210,
     "143": () => _4310,
@@ -18403,10 +18435,10 @@
     "234": () => _3410,
     "236": () => _369,
     "237": () => _379,
-    "238": () => _388,
-    "239": () => _398,
-    "24": () => _427,
-    "240": () => _407,
+    "238": () => _389,
+    "239": () => _399,
+    "24": () => _428,
+    "240": () => _408,
     "241": () => _4111,
     "242": () => _4211,
     "243": () => _4311,
@@ -18705,10 +18737,10 @@
     "335": () => _359,
     "336": () => _3610,
     "337": () => _3710,
-    "338": () => _389,
-    "339": () => _399,
-    "34": () => _428,
-    "340": () => _408,
+    "338": () => _3810,
+    "339": () => _3910,
+    "34": () => _429,
+    "340": () => _409,
     "341": () => _4112,
     "342": () => _4212,
     "343": () => _4312,
@@ -18815,10 +18847,10 @@
     "435": () => _3510,
     "436": () => _3611,
     "437": () => _3711,
-    "438": () => _3810,
-    "439": () => _3910,
-    "44": () => _429,
-    "440": () => _409,
+    "438": () => _3811,
+    "439": () => _3911,
+    "44": () => _430,
+    "440": () => _4010,
     "441": () => _4113,
     "442": () => _4213,
     "443": () => _4313,
@@ -18926,10 +18958,10 @@
     "535": () => _3511,
     "536": () => _3612,
     "537": () => _3712,
-    "538": () => _3811,
-    "539": () => _3911,
-    "54": () => _430,
-    "540": () => _4010,
+    "538": () => _3812,
+    "539": () => _3912,
+    "54": () => _431,
+    "540": () => _4011,
     "541": () => _4114,
     "542": () => _4214,
     "543": () => _4314,
@@ -19031,10 +19063,10 @@
     "635": () => _3512,
     "636": () => _3613,
     "637": () => _3713,
-    "638": () => _3812,
-    "639": () => _3912,
-    "64": () => _431,
-    "640": () => _4011,
+    "638": () => _3813,
+    "639": () => _3913,
+    "64": () => _437,
+    "640": () => _4012,
     "641": () => _4115,
     "642": () => _4215,
     "643": () => _4315,
@@ -19133,7 +19165,7 @@
     "730": () => _3012,
     "731": () => _3116,
     "732": () => _3216,
-    "74": () => _437,
+    "74": () => _438,
     "75": () => _537,
     "76": () => _638,
     "77": () => _738,
@@ -19144,7 +19176,7 @@
     "81": () => _170,
     "82": () => _241,
     "83": () => _341,
-    "84": () => _438,
+    "84": () => _439,
     "85": () => _538,
     "86": () => _639,
     "87": () => _739,
@@ -19155,7 +19187,7 @@
     "91": () => _171,
     "92": () => _248,
     "93": () => _348,
-    "94": () => _439,
+    "94": () => _440,
     "95": () => _539,
     "96": () => _640,
     "97": () => _740,
@@ -19278,7 +19310,7 @@
     text: "Poison touch, enemies take 12 dmg on contact",
     introduced_in: "Rebirth"
   };
-  var _421 = {
+  var _427 = {
     name: "Roid Rage",
     height: "0.5",
     range: "1.5",
@@ -19350,7 +19382,7 @@
     text: "",
     introduced_in: "Rebirth"
   };
-  var _427 = {
+  var _428 = {
     name: "Dessert",
     health: "1",
     shown: true,
@@ -19431,7 +19463,7 @@
     space: true,
     introduced_in: "Rebirth"
   };
-  var _428 = {
+  var _429 = {
     name: "The Book of Belial",
     shown: true,
     bookworm: true,
@@ -19500,7 +19532,7 @@
     space: true,
     introduced_in: "Rebirth"
   };
-  var _429 = {
+  var _430 = {
     name: "Teleport!",
     shown: true,
     text: "Can influence teleport direction based on player's direction",
@@ -19570,7 +19602,7 @@
     text: "Attracts pickups, open chests at close range",
     introduced_in: "Rebirth"
   };
-  var _430 = {
+  var _431 = {
     name: "Treasure Map",
     shown: true,
     text: "Reveals the floor layout",
@@ -19624,7 +19656,7 @@
     text: "Can double charge active items",
     introduced_in: "Rebirth"
   };
-  var _431 = {
+  var _437 = {
     name: "Steam Sale",
     shown: true,
     text: "Reduce shop items price where price = 1/(2^number of Steam sales)",
@@ -19698,7 +19730,7 @@
     text: "Orbital (7 dmg / tick)",
     introduced_in: "Rebirth"
   };
-  var _437 = {
+  var _438 = {
     name: "A Quarter",
     shown: true,
     text: "+25 cents",
@@ -19772,7 +19804,7 @@
     space: true,
     introduced_in: "Rebirth"
   };
-  var _438 = {
+  var _439 = {
     name: "We Need To Go Deeper!",
     shown: true,
     text: "Spawns a trapdoor (10% chance for crawlspace)",
@@ -19843,7 +19875,7 @@
     space: true,
     introduced_in: "Rebirth"
   };
-  var _439 = {
+  var _440 = {
     name: "Sack of Pennies",
     shown: true,
     text: "Spawns a coin every 2 rooms cleared",
@@ -20160,7 +20192,7 @@
     space: true,
     introduced_in: "Rebirth"
   };
-  var _387 = {
+  var _388 = {
     name: "Stigmata",
     dmg: "0.3",
     health: "1",
@@ -20168,14 +20200,14 @@
     text: "",
     introduced_in: "Rebirth"
   };
-  var _397 = {
+  var _398 = {
     name: "Mom's Purse",
     shown: true,
     yesmother: true,
     text: "Spawns a trinket",
     introduced_in: "Rebirth"
   };
-  var _406 = {
+  var _407 = {
     name: "Bob's Curse",
     shown: true,
     bob: true,
@@ -20865,19 +20897,19 @@
     text: "Scythe tears (piercing)",
     introduced_in: "Rebirth"
   };
-  var _388 = {
+  var _389 = {
     name: "Key Piece #1",
     shown: true,
     text: "Both key pieces together unlock the door to Mega Satan",
     introduced_in: "Rebirth"
   };
-  var _398 = {
+  var _399 = {
     name: "Key Piece #2",
     shown: true,
     text: "Both key pieces together unlock the door to Mega Satan",
     introduced_in: "Rebirth"
   };
-  var _407 = {
+  var _408 = {
     name: "Experimental Treatment",
     shown: true,
     spun: true,
@@ -21551,14 +21583,14 @@
     text: "Chance to slow down or speed up enemies",
     introduced_in: "Rebirth"
   };
-  var _389 = {
+  var _3810 = {
     name: "Boomerang",
     shown: true,
     text: "2x dmg and is piercing, can petrify enemies, can grab pickups",
     space: true,
     introduced_in: "Rebirth"
   };
-  var _399 = {
+  var _3910 = {
     name: "Safety Pin",
     height: "0.5",
     range: "1.5",
@@ -21568,7 +21600,7 @@
     text: "Evil up",
     introduced_in: "Rebirth"
   };
-  var _408 = {
+  var _409 = {
     name: "Caffeine Pill",
     shown: true,
     speed: "0.3",
@@ -22230,7 +22262,7 @@
     shown: true,
     introduced_in: "Afterbirth"
   };
-  var _3810 = {
+  var _3811 = {
     name: "Binky",
     soul_hearts: "1",
     tears: "0.77",
@@ -22238,7 +22270,7 @@
     shown: true,
     introduced_in: "Afterbirth"
   };
-  var _3910 = {
+  var _3911 = {
     name: "Mom's Box",
     text: "Spawns a random trinket, doubles trinket effects while held",
     shown: true,
@@ -22247,7 +22279,7 @@
     luck: "1",
     introduced_in: "Afterbirth"
   };
-  var _409 = {
+  var _4010 = {
     name: "Kidney Stone",
     text: "Grants extra charge attack every 25 seconds",
     shown: true,
@@ -22894,19 +22926,19 @@
     shown: true,
     introduced_in: "Booster Pack #5"
   };
-  var _3811 = {
+  var _3812 = {
     name: "Marbles",
     text: "Chance to smelt a trinket on hit, spawns 3 random trinkets on pickup",
     shown: true,
     introduced_in: "Booster Pack #5"
   };
-  var _3911 = {
+  var _3912 = {
     name: "Mystery Egg",
     text: "Familiar, spawns a charmed enemy on hit",
     shown: true,
     introduced_in: "Booster Pack #5"
   };
-  var _4010 = {
+  var _4011 = {
     name: "Flat Stone",
     text: "Bouncing tears (tears bounce on the ground, 0.25x splash dmg)",
     shown: true,
@@ -23535,21 +23567,21 @@
     shown: true,
     introduced_in: "Antibirth"
   };
-  var _3812 = {
+  var _3813 = {
     name: "Eraser",
     text: "Throw on an enemy to permanently remove that enemy from the current run, recharge every floor",
     shown: true,
     space: true,
     introduced_in: "Antibirth"
   };
-  var _3912 = {
+  var _3913 = {
     name: "Yuck Heart",
     text: "+1 rotten heart on use",
     shown: true,
     space: true,
     introduced_in: "Antibirth"
   };
-  var _4011 = {
+  var _4012 = {
     name: "Urn of Souls",
     text: "A flamethrower weapon that collects one soul per enemy killed",
     shown: true,
@@ -26454,7 +26486,7 @@
     "11": _158,
     "12": _228,
     "13": _329,
-    "14": _421,
+    "14": _427,
     "15": _521,
     "16": _627,
     "17": _727,
@@ -26464,7 +26496,7 @@
     "21": _159,
     "22": _229,
     "23": _330,
-    "24": _427,
+    "24": _428,
     "25": _527,
     "26": _628,
     "27": _728,
@@ -26474,7 +26506,7 @@
     "31": _160,
     "32": _230,
     "33": _331,
-    "34": _428,
+    "34": _429,
     "35": _528,
     "36": _629,
     "37": _729,
@@ -26483,7 +26515,7 @@
     "40": _029,
     "41": _161,
     "42": _231,
-    "44": _429,
+    "44": _430,
     "45": _529,
     "46": _630,
     "47": _730,
@@ -26493,7 +26525,7 @@
     "51": _168,
     "52": _238,
     "53": _338,
-    "54": _430,
+    "54": _431,
     "55": _530,
     "56": _631,
     "57": _731,
@@ -26501,7 +26533,7 @@
     "60": _031,
     "62": _239,
     "63": _339,
-    "64": _431,
+    "64": _437,
     "65": _531,
     "66": _637,
     "67": _737,
@@ -26511,7 +26543,7 @@
     "71": _169,
     "72": _240,
     "73": _340,
-    "74": _437,
+    "74": _438,
     "75": _537,
     "76": _638,
     "77": _738,
@@ -26521,7 +26553,7 @@
     "81": _170,
     "82": _241,
     "83": _341,
-    "84": _438,
+    "84": _439,
     "85": _538,
     "86": _639,
     "87": _739,
@@ -26531,7 +26563,7 @@
     "91": _171,
     "92": _248,
     "93": _348,
-    "94": _439,
+    "94": _440,
     "95": _539,
     "96": _640,
     "97": _740,
@@ -26575,9 +26607,9 @@
     "135": _358,
     "136": _368,
     "137": _378,
-    "138": _387,
-    "139": _397,
-    "140": _406,
+    "138": _388,
+    "139": _398,
+    "140": _407,
     "141": _4110,
     "142": _4210,
     "143": _4310,
@@ -26674,9 +26706,9 @@
     "234": _3410,
     "236": _369,
     "237": _379,
-    "238": _388,
-    "239": _398,
-    "240": _407,
+    "238": _389,
+    "239": _399,
+    "240": _408,
     "241": _4111,
     "242": _4211,
     "243": _4311,
@@ -26774,9 +26806,9 @@
     "335": _359,
     "336": _3610,
     "337": _3710,
-    "338": _389,
-    "339": _399,
-    "340": _408,
+    "338": _3810,
+    "339": _3910,
+    "340": _409,
     "341": _4112,
     "342": _4212,
     "343": _4312,
@@ -26874,9 +26906,9 @@
     "435": _3510,
     "436": _3611,
     "437": _3711,
-    "438": _3810,
-    "439": _3910,
-    "440": _409,
+    "438": _3811,
+    "439": _3911,
+    "440": _4010,
     "441": _4113,
     "442": _4213,
     "443": _4313,
@@ -26974,9 +27006,9 @@
     "535": _3511,
     "536": _3612,
     "537": _3712,
-    "538": _3811,
-    "539": _3911,
-    "540": _4010,
+    "538": _3812,
+    "539": _3912,
+    "540": _4011,
     "541": _4114,
     "542": _4214,
     "543": _4314,
@@ -27070,9 +27102,9 @@
     "635": _3512,
     "636": _3613,
     "637": _3713,
-    "638": _3812,
-    "639": _3912,
-    "640": _4011,
+    "638": _3813,
+    "639": _3913,
+    "640": _4012,
     "641": _4115,
     "642": _4215,
     "643": _4315,

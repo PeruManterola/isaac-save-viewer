@@ -3825,6 +3825,30 @@
     "link": "",
     "name": "Dead God",
     "inGameDescription": "",
-    "unlockDescription": "Unlock all the other achievements and collect every item in the game"
+    "unlockDescription": "Unlock all the other achievements (including the 4 Repentance+ achievements) and collect every item in the game"
+  },
+  "638": {
+    "link": "",
+    "name": "Play Online",
+    "inGameDescription": "Played Online",
+    "unlockDescription": "Play an Online game"
+  },
+  "639": {
+    "link": "",
+    "name": "Win Online",
+    "inGameDescription": "Won Online",
+    "unlockDescription": "Win an Online run"
+  },
+  "640": {
+    "link": "",
+    "name": "Win Online Daily",
+    "inGameDescription": "Won Online Daily",
+    "unlockDescription": "Win an Online Daily run"
+  },
+  "641": {
+    "link": "",
+    "name": "Item Descriptions",
+    "inGameDescription": "Read Up!",
+    "unlockDescription": "Defeat Mom"
   }
 }
