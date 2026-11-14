@@ -13,9 +13,24 @@ its JS is throwaway - reuse the CSS and the markup structure, not the script.
 - Fonts: "Rubik" for headings/numbers, self-hosted from `@fontsource/rubik` (copied to `dist/lib`
   by `scripts/build.ts`, like Source Sans Pro was); system sans for body. No outside requests at
   runtime, ever (no CDN, no Google Fonts).
-- Themes: light is the default; the dark token set applies automatically under
-  `@media (prefers-color-scheme: dark)`. No manual theme switch.
-- No search field (out of scope). No new features beyond the mockup.
+- Themes: light and dark, with a manual switch in the header (present on the landing and the loaded
+  state). Three-state preference `"system" | "light" | "dark"`, default `"system"` (follows
+  `prefers-color-scheme`), remembered in localStorage as `isv:theme` through
+  `src/state/preferences.ts`. Implementation: `data-theme="light|dark"` on `<html>` when forced;
+  tokens are defined so that `:root` is light, `[data-theme="dark"]` is dark, and
+  `@media (prefers-color-scheme: dark)` applies dark to `:root:not([data-theme])`. Apply the saved
+  theme before first paint (tiny inline-free approach: a small separate blocking script file in
+  `<head>`, since the app sets no inline scripts) to avoid a flash. The switch is a labelled,
+  keyboard-operable control (icon + accessible name, >= 44px).
+- Search (Phase 2A): each of the Achievements and Items sections has a search field in its toolbar
+  (not in the mockup - design it to match the pill controls: search icon, visible label or
+  `aria-label`, clear button, >= 44px). It filters as you type (debounced ~150ms), is
+  case- and diacritic-insensitive, combines with the All/Locked/Unlocked filter, and matches
+  achievement name, unlock requirement, in-game description and id / item name, pool names and id.
+  Counts on category cards stay the real totals; while a query is active each card also shows its
+  number of matches, cards with no match are hidden, and a clear "No matches for ..." empty state
+  with a reset button is shown when nothing matches. The query is NOT persisted. The matching logic
+  is a pure function in `src/state/` with vitest tests. No other features beyond the mockup.
 - Mockup-only things that must NOT be ported: screen caption labels, "demo" captions, filler/repeat
   tiles, "+N more" caps (the real app renders every entry), the dark sample strip.
 - Preferences keep the existing `isv:` localStorage scheme in `src/state/preferences.ts`. The
