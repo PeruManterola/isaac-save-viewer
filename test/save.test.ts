@@ -2,7 +2,13 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 import { describe, expect, test } from "vitest";
 import { ChunkType } from "../src/enums/ChunkType.js";
-import { createSaveModel, getProgress } from "../src/save/model.js";
+import { CATEGORIES } from "../src/save/categories.js";
+import { isHardMarkDone } from "../src/save/marks.js";
+import {
+  createSaveModel,
+  getMarksProgress,
+  getProgress,
+} from "../src/save/model.js";
 import { parseSaveFile, SaveFileError } from "../src/save/parse.js";
 
 const FIXTURES_DIR = path.join(import.meta.dirname, "fixtures");
@@ -38,6 +44,9 @@ const FIXTURES = [
 const NUM_ACHIEVEMENTS = 641;
 const NUM_ITEMS = 720;
 const NUM_CHALLENGES = 45;
+const NUM_CHARACTERS = 34;
+const NUM_MARKS = 12;
+const NUM_HARD_MARKS = NUM_CHARACTERS * NUM_MARKS;
 
 const HEADER_LENGTH = 16;
 const REPENTANCE_PLUS_ACHIEVEMENTS_CHUNK_LENGTH = 642;
@@ -121,6 +130,31 @@ describe("fixtures", () => {
         }
       });
 
+      test("Hard completion marks", () => {
+        // The user confirmed in-game that every save has every post-it complete.
+        expect(getMarksProgress(saveModel.marks)).toStrictEqual({
+          unlocked: NUM_HARD_MARKS,
+          total: NUM_HARD_MARKS,
+        });
+        expect(saveModel.marks.marks).toHaveLength(NUM_MARKS);
+        expect(saveModel.marks.characters).toHaveLength(NUM_CHARACTERS);
+      });
+
+      test("every achievement has a category", () => {
+        const categoryIDs: readonly string[] = CATEGORIES.map(
+          (category) => category.id,
+        );
+        for (const achievement of saveModel.achievements) {
+          expect(categoryIDs).toContain(achievement.category);
+        }
+        for (const category of CATEGORIES) {
+          const numInCategory = saveModel.achievements.filter(
+            (achievement) => achievement.category === category.id,
+          ).length;
+          expect(numInCategory).toBeGreaterThan(0);
+        }
+      });
+
       test("challenges", () => {
         expect(saveModel.challenges).toStrictEqual({
           unlocked: fixture.challenges,
@@ -129,6 +163,19 @@ describe("fixtures", () => {
       });
     });
   }
+});
+
+describe("isHardMarkDone", () => {
+  test.each([
+    [0, false],
+    [1, false], // Normal only.
+    [2, true],
+    [3, true],
+    [15, true], // Offline Hard, plus Repentance+ online marks.
+    [13, false], // Online marks, but offline Normal only.
+  ])("%i is %s", (value, done) => {
+    expect(isHardMarkDone(value)).toBe(done);
+  });
 });
 
 describe("header errors", () => {

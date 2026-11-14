@@ -40,3 +40,210 @@ a:hover {
   /* Error messages use "\n" for line breaks. */
   white-space: pre-line;
 }
+
+/* ---------------------------------------------------------------------------------------------- */
+/* Summary header */
+
+.isv-summary-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1.5rem 3rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.isv-summary-secondary {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.isv-summary-item .heading {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* Collapsible sections and groups */
+
+.isv-section {
+  margin-bottom: 2.5rem;
+}
+
+.isv-group {
+  margin: 0 0 1.5rem 0.25rem;
+}
+
+.isv-summary {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.isv-summary::-webkit-details-marker {
+  display: none;
+}
+
+.isv-summary::before {
+  content: "▸";
+  display: inline-block;
+  width: 1em;
+  transition: transform 0.15s;
+}
+
+details[open] > .isv-summary::before {
+  transform: rotate(90deg);
+}
+
+.isv-summary .title {
+  margin-bottom: 0;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* Toolbar */
+
+.isv-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.isv-toolbar > .buttons {
+  margin-bottom: 0;
+}
+
+.isv-empty {
+  color: var(--bulma-text-weak);
+  font-style: italic;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* List and grid views */
+
+.isv-list td {
+  vertical-align: middle;
+}
+
+.isv-list img {
+  display: block;
+}
+
+.isv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
+  gap: 0.75rem;
+}
+
+.isv-tile {
+  position: relative;
+  padding: 0.5rem 0.25rem;
+  border-radius: var(--bulma-radius);
+  text-align: center;
+  cursor: help;
+}
+
+.isv-tile:hover,
+.isv-tile:focus-visible,
+.isv-tile.is-active {
+  background-color: var(--bulma-scheme-main-bis);
+}
+
+.isv-tile-icon {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.isv-tile-name {
+  font-size: 0.8rem;
+  line-height: 1.2;
+  margin-top: 0.25rem;
+  overflow-wrap: anywhere;
+}
+
+/* Locked tiles and marks that are not done are greyed out. (The description of a tile is not.) */
+.isv-tile.isv-locked .isv-tile-icon,
+.isv-tile.isv-locked .isv-tile-name,
+.isv-mark-cell.isv-locked img {
+  filter: grayscale(1);
+  opacity: 0.35;
+}
+
+.isv-tooltip {
+  display: none;
+  position: absolute;
+  top: calc(100% - 0.25rem);
+  left: 50%;
+  transform: translateX(calc(-50% + var(--isv-tooltip-shift, 0px)));
+  z-index: 20;
+  width: 18rem;
+  max-width: calc(100vw - 1rem);
+  padding: 0.75rem;
+  border-radius: var(--bulma-radius);
+  background-color: var(--bulma-scheme-main);
+  box-shadow: var(--bulma-shadow);
+  border: 1px solid var(--bulma-border);
+  font-size: 0.85rem;
+  text-align: left;
+  cursor: auto;
+}
+
+.isv-tooltip p + p {
+  margin-top: 0.4rem;
+}
+
+.isv-tile:hover .isv-tooltip,
+.isv-tile:focus-within .isv-tooltip,
+.isv-tile.is-active .isv-tooltip {
+  display: block;
+}
+
+.isv-tooltip-title {
+  font-weight: 600;
+}
+
+.isv-quote {
+  font-style: italic;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* Completion marks */
+
+.isv-pixelated {
+  image-rendering: pixelated;
+}
+
+.isv-marks th,
+.isv-marks td {
+  vertical-align: middle;
+}
+
+.isv-marks .isv-mark-cell {
+  text-align: center;
+}
+
+.isv-marks img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.isv-character {
+  white-space: nowrap;
+}
+
+.isv-character img {
+  margin-right: 0.5rem;
+}
+
+.isv-first-tainted > * {
+  border-top: 2px solid var(--bulma-border);
+}

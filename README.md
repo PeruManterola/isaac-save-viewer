@@ -4,6 +4,14 @@ This is the source code for the Isaac Save Viewer, a tool to view save completio
 
 This is a personal fork of [Zamiell/isaac-save-viewer](https://github.com/Zamiell/isaac-save-viewer). It is self-hosted as a static website (see [Deploy](#deploy)). The save file is read entirely in the browser and never leaves it.
 
+After you load a save file, it shows:
+
+- your achievements (out of 641), in six groups: character unlocks, character marks, tainted, challenges, daily & online, and misc;
+- the items you have touched (out of 720);
+- a grid of the Hard completion marks of all 34 characters.
+
+The achievements and items can be shown as a list or as a grid, and filtered to all, locked, or unlocked. These choices, and which sections are collapsed, are remembered in the browser.
+
 - The save file format was reversed by [Blade](https://github.com/bladecoding) using [Kaitai Struct](https://kaitai.io/).
 - It is written using [TypeScript](https://www.typescriptlang.org/).
 - It uses [esbuild](https://esbuild.github.io/) for bundling.

@@ -27,6 +27,7 @@
     // resolution of a bundler. The target matches the one in "scripts/build.ts".
     "module": "preserve",
     "target": "ES2021",
+    "lib": ["DOM", "DOM.Iterable", "ES2021"],
 
     // This project imports JSON files.
     "resolveJsonModule": true,

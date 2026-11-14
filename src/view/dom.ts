@@ -34,18 +34,31 @@ export function h<K extends keyof HTMLElementTagNameMap>(
   return element;
 }
 
+/** Creates an image that is only loaded when it is about to be shown. */
+export function lazyImage(
+  src: string,
+  alt: string,
+  size: number,
+  className?: string,
+): HTMLImageElement {
+  const attributes: Record<string, string> = {
+    src,
+    alt,
+    width: size.toString(),
+    height: size.toString(),
+    loading: "lazy",
+  };
+  if (className !== undefined) {
+    attributes["class"] = className;
+  }
+
+  return h("img", attributes);
+}
+
 export function hide(element: HTMLElement): void {
   element.style.display = DISPLAY_HIDDEN;
 }
 
 export function show(element: HTMLElement): void {
   element.style.display = DISPLAY_VISIBLE;
-}
-
-export function toggle(element: HTMLElement): void {
-  if (element.style.display === DISPLAY_HIDDEN) {
-    show(element);
-  } else {
-    hide(element);
-  }
 }

@@ -11,7 +11,12 @@ import type {
   AchievementsChunk,
   ChallengeCountersChunk,
   CollectiblesChunk,
+  CountersChunk,
 } from "../kaitai/IsaacSaveFile.cjs";
+import type { Category } from "./categories.js";
+import { isCategory } from "./categories.js";
+import type { MarksModel } from "./marks.js";
+import { getMarks } from "./marks.js";
 import { getChunkBody } from "./parse.js";
 
 /** Valid collectible IDs are between these values (inclusive). Other keys are not collectibles. */
@@ -26,6 +31,7 @@ interface AchievementJSON {
   name: string;
   inGameDescription: string;
   unlockDescription: string;
+  category: string;
 }
 
 interface ItemJSON {
@@ -39,6 +45,7 @@ export interface AchievementEntry {
   readonly link: string;
   readonly inGameDescription: string;
   readonly unlockDescription: string;
+  readonly category: Category;
   /** The path of the icon relative to the site root, or undefined if there is no icon. */
   readonly icon: string | undefined;
   readonly unlocked: boolean;
@@ -66,6 +73,8 @@ export interface SaveModel {
   /** Sorted by ID. */
   readonly items: readonly ItemEntry[];
   readonly challenges: Progress;
+  /** The Hard completion marks of every character. */
+  readonly marks: MarksModel;
 }
 
 export function createSaveModel(isaacSaveFile: IsaacSaveFile): SaveModel {
@@ -73,6 +82,7 @@ export function createSaveModel(isaacSaveFile: IsaacSaveFile): SaveModel {
     achievements: getAchievements(isaacSaveFile),
     items: getItems(isaacSaveFile),
     challenges: getChallenges(isaacSaveFile),
+    marks: getMarksFromSave(isaacSaveFile),
   };
 }
 
@@ -83,6 +93,12 @@ export function getProgress(
     unlocked: entries.filter((entry) => entry.unlocked).length,
     total: entries.length,
   };
+}
+
+export function getMarksProgress(marksModel: MarksModel): Progress {
+  return getProgress(
+    marksModel.characters.flatMap((character) => character.marks),
+  );
 }
 
 function getAchievements(
@@ -107,8 +123,13 @@ function getAchievements(
   return achievements.slice(1).map((value, index) => {
     const id = index + 1;
     const achievementJSON = allAchievementsJSON[id.toString()];
-    const { name, link, inGameDescription, unlockDescription } =
+    const { name, link, inGameDescription, unlockDescription, category } =
       achievementJSON ?? unknownAchievement;
+    if (!isCategory(category)) {
+      throw new Error(
+        `Achievement ${id} has an unknown category in "achievements.json": ${category}`,
+      );
+    }
 
     return {
       id,
@@ -116,6 +137,7 @@ function getAchievements(
       link,
       inGameDescription,
       unlockDescription,
+      category,
       icon:
         achievementJSON === undefined
           ? undefined
@@ -205,4 +227,13 @@ function getChallenges(isaacSaveFile: IsaacSaveFile): Progress {
   return getProgress(
     completedById.slice(1).map((value) => ({ unlocked: value !== 0 })),
   );
+}
+
+function getMarksFromSave(isaacSaveFile: IsaacSaveFile): MarksModel {
+  const { counters } = getChunkBody(
+    isaacSaveFile,
+    ChunkType.COUNTERS,
+  ) as CountersChunk;
+
+  return getMarks(counters);
 }
