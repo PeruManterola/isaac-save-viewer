@@ -1,0 +1,746 @@
+{
+  "marks": [
+    {
+      "id": "momsHeart",
+      "name": "Mom's Heart",
+      "icon": "img/marks/momsHeart.png"
+    },
+    {
+      "id": "isaac",
+      "name": "Isaac",
+      "icon": "img/marks/isaac.png"
+    },
+    {
+      "id": "satan",
+      "name": "Satan",
+      "icon": "img/marks/satan.png"
+    },
+    {
+      "id": "blueBaby",
+      "name": "???",
+      "icon": "img/marks/blueBaby.png"
+    },
+    {
+      "id": "lamb",
+      "name": "The Lamb",
+      "icon": "img/marks/lamb.png"
+    },
+    {
+      "id": "bossRush",
+      "name": "Boss Rush",
+      "icon": "img/marks/bossRush.png"
+    },
+    {
+      "id": "hush",
+      "name": "Hush",
+      "icon": "img/marks/hush.png"
+    },
+    {
+      "id": "megaSatan",
+      "name": "Mega Satan",
+      "icon": "img/marks/megaSatan.png"
+    },
+    {
+      "id": "delirium",
+      "name": "Delirium",
+      "icon": "img/marks/delirium.png"
+    },
+    {
+      "id": "mother",
+      "name": "Mother",
+      "icon": "img/marks/mother.png"
+    },
+    {
+      "id": "beast",
+      "name": "The Beast",
+      "icon": "img/marks/beast.png"
+    },
+    {
+      "id": "ultraGreedier",
+      "name": "Ultra Greedier",
+      "icon": "img/marks/ultraGreedier.png"
+    }
+  ],
+  "characters": [
+    {
+      "id": "isaac",
+      "name": "Isaac",
+      "tainted": false,
+      "icon": "img/characters/isaac.png",
+      "counters": {
+        "momsHeart": 27,
+        "isaac": 41,
+        "satan": 55,
+        "blueBaby": 83,
+        "lamb": 97,
+        "bossRush": 69,
+        "hush": 144,
+        "megaSatan": 116,
+        "delirium": 173,
+        "mother": 423,
+        "beast": 457,
+        "ultraGreedier": 130
+      }
+    },
+    {
+      "id": "magdalene",
+      "name": "Magdalene",
+      "tainted": false,
+      "icon": "img/characters/magdalene.png",
+      "counters": {
+        "momsHeart": 28,
+        "isaac": 42,
+        "satan": 56,
+        "blueBaby": 84,
+        "lamb": 98,
+        "bossRush": 70,
+        "hush": 145,
+        "megaSatan": 117,
+        "delirium": 174,
+        "mother": 424,
+        "beast": 458,
+        "ultraGreedier": 131
+      }
+    },
+    {
+      "id": "cain",
+      "name": "Cain",
+      "tainted": false,
+      "icon": "img/characters/cain.png",
+      "counters": {
+        "momsHeart": 29,
+        "isaac": 43,
+        "satan": 57,
+        "blueBaby": 85,
+        "lamb": 99,
+        "bossRush": 71,
+        "hush": 146,
+        "megaSatan": 118,
+        "delirium": 175,
+        "mother": 425,
+        "beast": 459,
+        "ultraGreedier": 132
+      }
+    },
+    {
+      "id": "judas",
+      "name": "Judas",
+      "tainted": false,
+      "icon": "img/characters/judas.png",
+      "counters": {
+        "momsHeart": 30,
+        "isaac": 44,
+        "satan": 58,
+        "blueBaby": 86,
+        "lamb": 100,
+        "bossRush": 72,
+        "hush": 147,
+        "megaSatan": 119,
+        "delirium": 176,
+        "mother": 426,
+        "beast": 460,
+        "ultraGreedier": 133
+      }
+    },
+    {
+      "id": "blueBaby",
+      "name": "???",
+      "tainted": false,
+      "icon": "img/characters/blueBaby.png",
+      "counters": {
+        "momsHeart": 31,
+        "isaac": 45,
+        "satan": 59,
+        "blueBaby": 87,
+        "lamb": 101,
+        "bossRush": 73,
+        "hush": 148,
+        "megaSatan": 120,
+        "delirium": 177,
+        "mother": 427,
+        "beast": 461,
+        "ultraGreedier": 134
+      }
+    },
+    {
+      "id": "eve",
+      "name": "Eve",
+      "tainted": false,
+      "icon": "img/characters/eve.png",
+      "counters": {
+        "momsHeart": 32,
+        "isaac": 46,
+        "satan": 60,
+        "blueBaby": 88,
+        "lamb": 102,
+        "bossRush": 74,
+        "hush": 149,
+        "megaSatan": 121,
+        "delirium": 178,
+        "mother": 428,
+        "beast": 462,
+        "ultraGreedier": 135
+      }
+    },
+    {
+      "id": "samson",
+      "name": "Samson",
+      "tainted": false,
+      "icon": "img/characters/samson.png",
+      "counters": {
+        "momsHeart": 33,
+        "isaac": 47,
+        "satan": 61,
+        "blueBaby": 89,
+        "lamb": 103,
+        "bossRush": 75,
+        "hush": 150,
+        "megaSatan": 122,
+        "delirium": 179,
+        "mother": 429,
+        "beast": 463,
+        "ultraGreedier": 136
+      }
+    },
+    {
+      "id": "azazel",
+      "name": "Azazel",
+      "tainted": false,
+      "icon": "img/characters/azazel.png",
+      "counters": {
+        "momsHeart": 34,
+        "isaac": 48,
+        "satan": 62,
+        "blueBaby": 90,
+        "lamb": 104,
+        "bossRush": 76,
+        "hush": 151,
+        "megaSatan": 123,
+        "delirium": 180,
+        "mother": 430,
+        "beast": 464,
+        "ultraGreedier": 137
+      }
+    },
+    {
+      "id": "lazarus",
+      "name": "Lazarus",
+      "tainted": false,
+      "icon": "img/characters/lazarus.png",
+      "counters": {
+        "momsHeart": 35,
+        "isaac": 49,
+        "satan": 63,
+        "blueBaby": 91,
+        "lamb": 105,
+        "bossRush": 77,
+        "hush": 152,
+        "megaSatan": 124,
+        "delirium": 181,
+        "mother": 431,
+        "beast": 465,
+        "ultraGreedier": 138
+      }
+    },
+    {
+      "id": "eden",
+      "name": "Eden",
+      "tainted": false,
+      "icon": "img/characters/eden.png",
+      "counters": {
+        "momsHeart": 36,
+        "isaac": 50,
+        "satan": 64,
+        "blueBaby": 92,
+        "lamb": 106,
+        "bossRush": 78,
+        "hush": 153,
+        "megaSatan": 125,
+        "delirium": 182,
+        "mother": 432,
+        "beast": 466,
+        "ultraGreedier": 139
+      }
+    },
+    {
+      "id": "theLost",
+      "name": "The Lost",
+      "tainted": false,
+      "icon": "img/characters/theLost.png",
+      "counters": {
+        "momsHeart": 37,
+        "isaac": 51,
+        "satan": 65,
+        "blueBaby": 93,
+        "lamb": 107,
+        "bossRush": 79,
+        "hush": 154,
+        "megaSatan": 126,
+        "delirium": 183,
+        "mother": 433,
+        "beast": 467,
+        "ultraGreedier": 140
+      }
+    },
+    {
+      "id": "lilith",
+      "name": "Lilith",
+      "tainted": false,
+      "icon": "img/characters/lilith.png",
+      "counters": {
+        "momsHeart": 38,
+        "isaac": 52,
+        "satan": 66,
+        "blueBaby": 94,
+        "lamb": 108,
+        "bossRush": 80,
+        "hush": 155,
+        "megaSatan": 127,
+        "delirium": 184,
+        "mother": 434,
+        "beast": 468,
+        "ultraGreedier": 141
+      }
+    },
+    {
+      "id": "keeper",
+      "name": "Keeper",
+      "tainted": false,
+      "icon": "img/characters/keeper.png",
+      "counters": {
+        "momsHeart": 39,
+        "isaac": 53,
+        "satan": 67,
+        "blueBaby": 95,
+        "lamb": 109,
+        "bossRush": 81,
+        "hush": 156,
+        "megaSatan": 128,
+        "delirium": 185,
+        "mother": 435,
+        "beast": 469,
+        "ultraGreedier": 142
+      }
+    },
+    {
+      "id": "apollyon",
+      "name": "Apollyon",
+      "tainted": false,
+      "icon": "img/characters/apollyon.png",
+      "counters": {
+        "momsHeart": 40,
+        "isaac": 54,
+        "satan": 68,
+        "blueBaby": 96,
+        "lamb": 110,
+        "bossRush": 82,
+        "hush": 157,
+        "megaSatan": 129,
+        "delirium": 186,
+        "mother": 436,
+        "beast": 470,
+        "ultraGreedier": 143
+      }
+    },
+    {
+      "id": "theForgotten",
+      "name": "The Forgotten",
+      "tainted": false,
+      "icon": "img/characters/theForgotten.png",
+      "counters": {
+        "momsHeart": 203,
+        "isaac": 204,
+        "satan": 205,
+        "blueBaby": 207,
+        "lamb": 208,
+        "bossRush": 206,
+        "hush": 211,
+        "megaSatan": 209,
+        "delirium": 213,
+        "mother": 437,
+        "beast": 471,
+        "ultraGreedier": 210
+      }
+    },
+    {
+      "id": "bethany",
+      "name": "Bethany",
+      "tainted": false,
+      "icon": "img/characters/bethany.png",
+      "counters": {
+        "momsHeart": 214,
+        "isaac": 233,
+        "satan": 252,
+        "blueBaby": 290,
+        "lamb": 309,
+        "bossRush": 271,
+        "hush": 366,
+        "megaSatan": 328,
+        "delirium": 404,
+        "mother": 438,
+        "beast": 472,
+        "ultraGreedier": 347
+      }
+    },
+    {
+      "id": "jacobAndEsau",
+      "name": "Jacob & Esau",
+      "tainted": false,
+      "icon": "img/characters/jacobAndEsau.png",
+      "counters": {
+        "momsHeart": 215,
+        "isaac": 234,
+        "satan": 253,
+        "blueBaby": 291,
+        "lamb": 310,
+        "bossRush": 272,
+        "hush": 367,
+        "megaSatan": 329,
+        "delirium": 405,
+        "mother": 439,
+        "beast": 473,
+        "ultraGreedier": 348
+      }
+    },
+    {
+      "id": "taintedIsaac",
+      "name": "Tainted Isaac",
+      "tainted": true,
+      "icon": "img/characters/taintedIsaac.png",
+      "counters": {
+        "momsHeart": 216,
+        "isaac": 235,
+        "satan": 254,
+        "blueBaby": 292,
+        "lamb": 311,
+        "bossRush": 273,
+        "hush": 368,
+        "megaSatan": 330,
+        "delirium": 406,
+        "mother": 440,
+        "beast": 474,
+        "ultraGreedier": 349
+      }
+    },
+    {
+      "id": "taintedMagdalene",
+      "name": "Tainted Magdalene",
+      "tainted": true,
+      "icon": "img/characters/taintedMagdalene.png",
+      "counters": {
+        "momsHeart": 217,
+        "isaac": 236,
+        "satan": 255,
+        "blueBaby": 293,
+        "lamb": 312,
+        "bossRush": 274,
+        "hush": 369,
+        "megaSatan": 331,
+        "delirium": 407,
+        "mother": 441,
+        "beast": 475,
+        "ultraGreedier": 350
+      }
+    },
+    {
+      "id": "taintedCain",
+      "name": "Tainted Cain",
+      "tainted": true,
+      "icon": "img/characters/taintedCain.png",
+      "counters": {
+        "momsHeart": 218,
+        "isaac": 237,
+        "satan": 256,
+        "blueBaby": 294,
+        "lamb": 313,
+        "bossRush": 275,
+        "hush": 370,
+        "megaSatan": 332,
+        "delirium": 408,
+        "mother": 442,
+        "beast": 476,
+        "ultraGreedier": 351
+      }
+    },
+    {
+      "id": "taintedJudas",
+      "name": "Tainted Judas",
+      "tainted": true,
+      "icon": "img/characters/taintedJudas.png",
+      "counters": {
+        "momsHeart": 219,
+        "isaac": 238,
+        "satan": 257,
+        "blueBaby": 295,
+        "lamb": 314,
+        "bossRush": 276,
+        "hush": 371,
+        "megaSatan": 333,
+        "delirium": 409,
+        "mother": 443,
+        "beast": 477,
+        "ultraGreedier": 352
+      }
+    },
+    {
+      "id": "taintedBlueBaby",
+      "name": "Tainted ???",
+      "tainted": true,
+      "icon": "img/characters/taintedBlueBaby.png",
+      "counters": {
+        "momsHeart": 220,
+        "isaac": 239,
+        "satan": 258,
+        "blueBaby": 296,
+        "lamb": 315,
+        "bossRush": 277,
+        "hush": 372,
+        "megaSatan": 334,
+        "delirium": 410,
+        "mother": 444,
+        "beast": 478,
+        "ultraGreedier": 353
+      }
+    },
+    {
+      "id": "taintedEve",
+      "name": "Tainted Eve",
+      "tainted": true,
+      "icon": "img/characters/taintedEve.png",
+      "counters": {
+        "momsHeart": 221,
+        "isaac": 240,
+        "satan": 259,
+        "blueBaby": 297,
+        "lamb": 316,
+        "bossRush": 278,
+        "hush": 373,
+        "megaSatan": 335,
+        "delirium": 411,
+        "mother": 445,
+        "beast": 479,
+        "ultraGreedier": 354
+      }
+    },
+    {
+      "id": "taintedSamson",
+      "name": "Tainted Samson",
+      "tainted": true,
+      "icon": "img/characters/taintedSamson.png",
+      "counters": {
+        "momsHeart": 222,
+        "isaac": 241,
+        "satan": 260,
+        "blueBaby": 298,
+        "lamb": 317,
+        "bossRush": 279,
+        "hush": 374,
+        "megaSatan": 336,
+        "delirium": 412,
+        "mother": 446,
+        "beast": 480,
+        "ultraGreedier": 355
+      }
+    },
+    {
+      "id": "taintedAzazel",
+      "name": "Tainted Azazel",
+      "tainted": true,
+      "icon": "img/characters/taintedAzazel.png",
+      "counters": {
+        "momsHeart": 223,
+        "isaac": 242,
+        "satan": 261,
+        "blueBaby": 299,
+        "lamb": 318,
+        "bossRush": 280,
+        "hush": 375,
+        "megaSatan": 337,
+        "delirium": 413,
+        "mother": 447,
+        "beast": 481,
+        "ultraGreedier": 356
+      }
+    },
+    {
+      "id": "taintedLazarus",
+      "name": "Tainted Lazarus",
+      "tainted": true,
+      "icon": "img/characters/taintedLazarus.png",
+      "counters": {
+        "momsHeart": 224,
+        "isaac": 243,
+        "satan": 262,
+        "blueBaby": 300,
+        "lamb": 319,
+        "bossRush": 281,
+        "hush": 376,
+        "megaSatan": 338,
+        "delirium": 414,
+        "mother": 448,
+        "beast": 482,
+        "ultraGreedier": 357
+      }
+    },
+    {
+      "id": "taintedEden",
+      "name": "Tainted Eden",
+      "tainted": true,
+      "icon": "img/characters/taintedEden.png",
+      "counters": {
+        "momsHeart": 225,
+        "isaac": 244,
+        "satan": 263,
+        "blueBaby": 301,
+        "lamb": 320,
+        "bossRush": 282,
+        "hush": 377,
+        "megaSatan": 339,
+        "delirium": 415,
+        "mother": 449,
+        "beast": 483,
+        "ultraGreedier": 358
+      }
+    },
+    {
+      "id": "taintedTheLost",
+      "name": "Tainted Lost",
+      "tainted": true,
+      "icon": "img/characters/taintedTheLost.png",
+      "counters": {
+        "momsHeart": 226,
+        "isaac": 245,
+        "satan": 264,
+        "blueBaby": 302,
+        "lamb": 321,
+        "bossRush": 283,
+        "hush": 378,
+        "megaSatan": 340,
+        "delirium": 416,
+        "mother": 450,
+        "beast": 484,
+        "ultraGreedier": 359
+      }
+    },
+    {
+      "id": "taintedLilith",
+      "name": "Tainted Lilith",
+      "tainted": true,
+      "icon": "img/characters/taintedLilith.png",
+      "counters": {
+        "momsHeart": 227,
+        "isaac": 246,
+        "satan": 265,
+        "blueBaby": 303,
+        "lamb": 322,
+        "bossRush": 284,
+        "hush": 379,
+        "megaSatan": 341,
+        "delirium": 417,
+        "mother": 451,
+        "beast": 485,
+        "ultraGreedier": 360
+      }
+    },
+    {
+      "id": "taintedKeeper",
+      "name": "Tainted Keeper",
+      "tainted": true,
+      "icon": "img/characters/taintedKeeper.png",
+      "counters": {
+        "momsHeart": 228,
+        "isaac": 247,
+        "satan": 266,
+        "blueBaby": 304,
+        "lamb": 323,
+        "bossRush": 285,
+        "hush": 380,
+        "megaSatan": 342,
+        "delirium": 418,
+        "mother": 452,
+        "beast": 486,
+        "ultraGreedier": 361
+      }
+    },
+    {
+      "id": "taintedApollyon",
+      "name": "Tainted Apollyon",
+      "tainted": true,
+      "icon": "img/characters/taintedApollyon.png",
+      "counters": {
+        "momsHeart": 229,
+        "isaac": 248,
+        "satan": 267,
+        "blueBaby": 305,
+        "lamb": 324,
+        "bossRush": 286,
+        "hush": 381,
+        "megaSatan": 343,
+        "delirium": 419,
+        "mother": 453,
+        "beast": 487,
+        "ultraGreedier": 362
+      }
+    },
+    {
+      "id": "taintedTheForgotten",
+      "name": "Tainted Forgotten",
+      "tainted": true,
+      "icon": "img/characters/taintedTheForgotten.png",
+      "counters": {
+        "momsHeart": 230,
+        "isaac": 249,
+        "satan": 268,
+        "blueBaby": 306,
+        "lamb": 325,
+        "bossRush": 287,
+        "hush": 382,
+        "megaSatan": 344,
+        "delirium": 420,
+        "mother": 454,
+        "beast": 488,
+        "ultraGreedier": 363
+      }
+    },
+    {
+      "id": "taintedBethany",
+      "name": "Tainted Bethany",
+      "tainted": true,
+      "icon": "img/characters/taintedBethany.png",
+      "counters": {
+        "momsHeart": 231,
+        "isaac": 250,
+        "satan": 269,
+        "blueBaby": 307,
+        "lamb": 326,
+        "bossRush": 288,
+        "hush": 383,
+        "megaSatan": 345,
+        "delirium": 421,
+        "mother": 455,
+        "beast": 489,
+        "ultraGreedier": 364
+      }
+    },
+    {
+      "id": "taintedJacobAndEsau",
+      "name": "Tainted Jacob",
+      "tainted": true,
+      "icon": "img/characters/taintedJacobAndEsau.png",
+      "counters": {
+        "momsHeart": 232,
+        "isaac": 251,
+        "satan": 270,
+        "blueBaby": 308,
+        "lamb": 327,
+        "bossRush": 289,
+        "hush": 384,
+        "megaSatan": 346,
+        "delirium": 422,
+        "mother": 456,
+        "beast": 490,
+        "ultraGreedier": 365
+      }
+    }
+  ]
+}
