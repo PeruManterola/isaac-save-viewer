@@ -75,6 +75,10 @@ const ICONS = {
     ),
   ],
   moon: [path("M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z")],
+  search: [
+    ["circle", { cx: "11", cy: "11", r: "6.5" }],
+    path("M16 16l4.5 4.5"),
+  ],
 } as const satisfies Record<string, readonly Shape[]>;
 
 export type IconName = keyof typeof ICONS;

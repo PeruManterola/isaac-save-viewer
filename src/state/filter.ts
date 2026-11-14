@@ -6,7 +6,8 @@ export type ViewMode = (typeof VIEW_MODES)[number];
 export const FILTERS = ["all", "locked", "unlocked"] as const;
 export type Filter = (typeof FILTERS)[number];
 
-export const DEFAULT_VIEW_MODE: ViewMode = "list";
+/** The wall is the main presentation, so it is the default. */
+export const DEFAULT_VIEW_MODE: ViewMode = "grid";
 export const DEFAULT_FILTER: Filter = "locked";
 
 export function isViewMode(value: unknown): value is ViewMode {
@@ -17,21 +18,27 @@ export function isFilter(value: unknown): value is Filter {
   return FILTERS.includes(value as Filter);
 }
 
+export function matchesFilter(unlocked: boolean, filter: Filter): boolean {
+  switch (filter) {
+    case "all": {
+      return true;
+    }
+
+    case "locked": {
+      return !unlocked;
+    }
+
+    case "unlocked": {
+      return unlocked;
+    }
+  }
+}
+
 export function filterEntries<T extends { readonly unlocked: boolean }>(
   entries: readonly T[],
   filter: Filter,
 ): readonly T[] {
-  switch (filter) {
-    case "all": {
-      return entries;
-    }
-
-    case "locked": {
-      return entries.filter((entry) => !entry.unlocked);
-    }
-
-    case "unlocked": {
-      return entries.filter((entry) => entry.unlocked);
-    }
-  }
+  return filter === "all"
+    ? entries
+    : entries.filter((entry) => matchesFilter(entry.unlocked, filter));
 }
