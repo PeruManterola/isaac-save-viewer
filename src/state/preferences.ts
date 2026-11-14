@@ -8,6 +8,8 @@ import {
   isFilter,
   isViewMode,
 } from "./filter.js";
+import type { MarksShow } from "./marksView.js";
+import { DEFAULT_MARKS_SHOW, isMarksShow } from "./marksView.js";
 import type { Theme } from "./theme.js";
 import { DEFAULT_THEME, isTheme } from "./theme.js";
 
@@ -60,6 +62,16 @@ export class Preferences {
 
   setFilter(section: string, filter: Filter): void {
     this.set(`${section}:filter`, filter);
+  }
+
+  /** Which characters the completion marks section shows. */
+  getMarksShow(): MarksShow {
+    const value = this.get("marks:show");
+    return isMarksShow(value) ? value : DEFAULT_MARKS_SHOW;
+  }
+
+  setMarksShow(show: MarksShow): void {
+    this.set("marks:show", show);
   }
 
   /** @param id The ID of a section or group. Everything is expanded by default. */
