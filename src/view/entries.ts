@@ -1,149 +1,168 @@
-// Renders a list of achievements or items as a table (list view) or as tiles (grid view).
+// What the achievements and items sections share: one entry model, the builders for a wall tile and
+// a list row, and the click handling that opens the detail popover. Every node is built once and
+// then shown or hidden, so changing the filter or the search never rebuilds anything.
 
-import type { Filter, ViewMode } from "../state/filter.js";
-import { filterEntries } from "../state/filter.js";
 import { h, lazyImage } from "./dom.js";
+import type { DetailContent } from "./popover.js";
+import { closeDetail, isDetailOpenFor, openDetail } from "./popover.js";
 import { badge } from "./ui.js";
 
-const ICON_SIZE = 64;
+const TILE_ICON_SIZE = 64;
+const ROW_ICON_SIZE = 32;
 
-interface Column<T> {
-  readonly header: string;
-  readonly cell: (entry: T) => Node | string;
-  readonly className?: string;
-}
-
-/** Describes how to show one kind of entry. */
-export interface EntryRenderer<T> {
-  readonly columns: ReadonlyArray<Column<T>>;
-  /** The description of a tile in grid view, shown on hover, focus, or tap. */
-  readonly tooltip: (entry: T) => readonly Node[];
-  readonly name: (entry: T) => string;
-  readonly icon: (entry: T) => string | undefined;
-  /** For example, "Unlocked" or "Touched". */
-  readonly unlockedText: string;
-  /** For example, "Locked" or "Not touched". */
-  readonly lockedText: string;
-  /** The plural noun, for example "achievements". */
-  readonly noun: string;
-}
-
-interface Entry {
+/** Something that is shown as a tile or a row: an achievement or an item. */
+export interface DisplayEntry {
   readonly id: number;
+  readonly name: string;
   readonly unlocked: boolean;
+  /** The path of the icon, if there is one. */
+  readonly icon: string | undefined;
+  /** What the status is called, in lower case, for the accessible name. E.g. "not touched". */
+  readonly stateWord: string;
+  /** What the status badge says. E.g. "Not touched". */
+  readonly statusText: string;
+  /** The second line of a list row: the unlock requirement or the pools. */
+  readonly secondary: string;
+  /** Built with `buildSearchText`. */
+  readonly searchText: string;
+  readonly detail: () => DetailContent;
+  /** Whether the entry passes the filter and the search. Set by the section. */
+  matches: boolean;
+  /** Every node that was built for the entry (a tile and/or a row). */
+  readonly nodes: HTMLElement[];
 }
 
-export function renderEntries<T extends Entry>(
-  entries: readonly T[],
-  renderer: EntryRenderer<T>,
-  viewMode: ViewMode,
-  filter: Filter,
-): HTMLElement {
-  const filteredEntries = filterEntries(entries, filter);
-  if (filteredEntries.length === 0) {
-    return h("p", { class: "isv-empty" }, [getEmptyText(renderer, filter)]);
-  }
+const entryByNode = new WeakMap<Element, DisplayEntry>();
 
-  return viewMode === "list"
-    ? renderList(filteredEntries, renderer)
-    : renderGrid(filteredEntries, renderer);
+function register(entry: DisplayEntry, node: HTMLElement) {
+  entry.nodes.push(node);
+  entryByNode.set(node, entry);
 }
 
-function statusTag(
-  unlocked: boolean,
-  renderer: Pick<EntryRenderer<never>, "unlockedText" | "lockedText">,
-): HTMLElement {
-  return unlocked
-    ? badge("ok", renderer.unlockedText, "check")
-    : badge("locked", renderer.lockedText, "lock");
-}
-
-function getEmptyText<T>(renderer: EntryRenderer<T>, filter: Filter): string {
-  switch (filter) {
-    case "all": {
-      return `There are no ${renderer.noun}.`;
-    }
-
-    case "locked": {
-      return `There are no ${renderer.lockedText.toLowerCase()} ${renderer.noun}.`;
-    }
-
-    case "unlocked": {
-      return `There are no ${renderer.unlockedText.toLowerCase()} ${renderer.noun} yet.`;
+/** Shows the nodes of the entries that match, and hides the others. */
+export function syncVisibility(entries: readonly DisplayEntry[]): void {
+  for (const entry of entries) {
+    for (const node of entry.nodes) {
+      if (node.hidden === entry.matches) {
+        node.hidden = !entry.matches;
+      }
     }
   }
 }
 
-function renderList<T extends Entry>(
-  entries: readonly T[],
-  renderer: EntryRenderer<T>,
-): HTMLElement {
-  const headers = [
-    "ID",
-    "Status",
-    ...renderer.columns.map((column) => column.header),
-  ];
-  const head = h("thead", {}, [
-    h(
-      "tr",
-      {},
-      headers.map((header) => h("th", {}, [header])),
-    ),
-  ]);
-  const rows = entries.map((entry) =>
-    h("tr", { class: entry.unlocked ? "" : "isv-locked" }, [
-      h("td", {}, [entry.id.toString()]),
-      h("td", {}, [statusTag(entry.unlocked, renderer)]),
-      ...renderer.columns.map((column) =>
-        h(
-          "td",
-          column.className === undefined ? {} : { class: column.className },
-          [column.cell(entry)],
-        ),
-      ),
-    ]),
+function entryImage(
+  entry: DisplayEntry,
+  size: number,
+): HTMLImageElement | HTMLSpanElement {
+  return entry.icon === undefined
+    ? h("span", { class: "px-missing", "aria-hidden": "true" }, ["?"])
+    : lazyImage(entry.icon, "", size, "px");
+}
+
+const POPUP_ATTRIBUTES = {
+  type: "button",
+  "aria-haspopup": "dialog",
+  "aria-expanded": "false",
+} as const;
+
+/** A square tile with only an icon. It is a button that opens the details. */
+function createTile(entry: DisplayEntry): HTMLButtonElement {
+  const children: Node[] = [entryImage(entry, TILE_ICON_SIZE)];
+  const tile = h(
+    "button",
+    {
+      ...POPUP_ATTRIBUTES,
+      class: entry.unlocked ? "tile" : "tile is-locked",
+      "aria-label": `${entry.name}, ${entry.stateWord}`,
+    },
+    children,
   );
+  register(entry, tile);
 
-  return h("div", { class: "isv-table-wrap" }, [
-    h("table", { class: "isv-list" }, [head, h("tbody", {}, rows)]),
-  ]);
+  return tile;
 }
 
-function renderGrid<T extends Entry>(
-  entries: readonly T[],
-  renderer: EntryRenderer<T>,
+/** The wall: dense tiles, one per entry. */
+export function createWall(
+  entries: readonly DisplayEntry[],
+  label: string,
 ): HTMLElement {
-  const tiles = entries.map((entry) => {
-    const name = renderer.name(entry);
-    const icon = renderer.icon(entry);
-    const tooltipID = `isv-tooltip-${renderer.noun}-${entry.id}`;
+  return h(
+    "div",
+    { class: "wall", role: "group", "aria-label": label },
+    entries.map((entry) => createTile(entry)),
+  );
+}
 
-    const tooltip = h(
-      "div",
-      { class: "isv-tooltip", role: "tooltip", id: tooltipID },
-      [
-        h("p", { class: "isv-tooltip-title" }, [`${entry.id}. ${name}`]),
-        h("p", {}, [statusTag(entry.unlocked, renderer)]),
-        ...renderer.tooltip(entry),
-      ],
-    );
+function createRow(entry: DisplayEntry): HTMLLIElement {
+  const button = h("button", { ...POPUP_ATTRIBUTES, class: "row-btn" }, [
+    h("span", { class: entry.unlocked ? "ric" : "ric is-locked" }, [
+      entryImage(entry, ROW_ICON_SIZE),
+    ]),
+    h("span", { class: "row-text" }, [
+      h("span", { class: "nm" }, [entry.name]),
+      h("span", { class: "id" }, [`#${entry.id}`]),
+      h("span", { class: "req" }, [entry.secondary]),
+    ]),
+    entry.unlocked
+      ? badge("ok", entry.statusText, "check")
+      : badge("locked", entry.statusText, "lock"),
+  ]);
+  const row = h("li", { class: "row-li" }, [button]);
+  // The button is what the user selects, and the row is what is hidden.
+  entryByNode.set(button, entry);
+  register(entry, row);
 
-    return h(
-      "div",
-      {
-        class: entry.unlocked ? "isv-tile" : "isv-tile isv-locked",
-        tabindex: "0",
-        "aria-describedby": tooltipID,
-      },
-      [
-        h("div", { class: "isv-tile-icon" }, [
-          icon === undefined ? "" : lazyImage(icon, "", ICON_SIZE),
-        ]),
-        h("div", { class: "isv-tile-name" }, [name]),
-        tooltip,
-      ],
-    );
+  return row;
+}
+
+/** The list: compact rows. */
+export function createRows(
+  entries: readonly DisplayEntry[],
+  label: string,
+): HTMLElement {
+  return h(
+    "ul",
+    { class: "rows", "aria-label": label },
+    entries.map((entry) => createRow(entry)),
+  );
+}
+
+/**
+ * A card with the name visible, for an item that is still to touch. It is not a button, because
+ * everything that the popover would say is already on the card.
+ */
+export function createWantCard(entry: DisplayEntry): HTMLLIElement {
+  const card = h("li", { class: "want" }, [
+    h("span", { class: "tile" }, [entryImage(entry, TILE_ICON_SIZE)]),
+    h("div", { class: "want-text" }, [
+      h("p", { class: "want-name" }, [entry.name]),
+      h("p", { class: "id" }, [`#${entry.id}`]),
+      h("p", { class: "pool" }, [entry.secondary]),
+    ]),
+  ]);
+  register(entry, card);
+
+  return card;
+}
+
+/** Opens the detail popover when a tile or row inside the root is selected. */
+export function enableDetails(root: HTMLElement): void {
+  root.addEventListener("click", (event) => {
+    const button = (event.target as Element).closest("button[aria-haspopup]");
+    const entry = button === null ? undefined : entryByNode.get(button);
+    if (
+      button === null
+      || entry === undefined
+      || !(button instanceof HTMLElement)
+    ) {
+      return;
+    }
+
+    if (isDetailOpenFor(button)) {
+      closeDetail(true);
+    } else {
+      openDetail(button, entry.detail());
+    }
   });
-
-  return h("div", { class: "isv-grid" }, tiles);
 }

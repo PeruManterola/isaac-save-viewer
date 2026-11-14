@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { filterEntries } from "../src/state/filter.js";
+import { filterEntries, matchesFilter } from "../src/state/filter.js";
 import type { KeyValueStorage } from "../src/state/preferences.js";
 import { KEY_PREFIX, Preferences } from "../src/state/preferences.js";
 
@@ -50,10 +50,21 @@ describe("filterEntries", () => {
   });
 });
 
+describe("matchesFilter", () => {
+  test("all, locked, and unlocked", () => {
+    expect(matchesFilter(true, "all")).toBe(true);
+    expect(matchesFilter(false, "all")).toBe(true);
+    expect(matchesFilter(true, "locked")).toBe(false);
+    expect(matchesFilter(false, "locked")).toBe(true);
+    expect(matchesFilter(true, "unlocked")).toBe(true);
+    expect(matchesFilter(false, "unlocked")).toBe(false);
+  });
+});
+
 describe("Preferences", () => {
-  test("defaults to the list view, the locked filter, and expanded", () => {
+  test("defaults to the wall, the locked filter, and expanded", () => {
     const preferences = new Preferences(memoryStorage());
-    expect(preferences.getViewMode("achievements")).toBe("list");
+    expect(preferences.getViewMode("achievements")).toBe("grid");
     expect(preferences.getFilter("achievements")).toBe("locked");
     expect(preferences.isCollapsed("achievements")).toBe(false);
   });
@@ -61,13 +72,13 @@ describe("Preferences", () => {
   test("remembers each section separately", () => {
     const storage = memoryStorage();
     const preferences = new Preferences(storage);
-    preferences.setViewMode("achievements", "grid");
+    preferences.setViewMode("achievements", "list");
     preferences.setFilter("items", "all");
 
     const reloaded = new Preferences(storage);
-    expect(reloaded.getViewMode("achievements")).toBe("grid");
+    expect(reloaded.getViewMode("achievements")).toBe("list");
     expect(reloaded.getFilter("achievements")).toBe("locked");
-    expect(reloaded.getViewMode("items")).toBe("list");
+    expect(reloaded.getViewMode("items")).toBe("grid");
     expect(reloaded.getFilter("items")).toBe("all");
   });
 
@@ -83,6 +94,29 @@ describe("Preferences", () => {
 
     preferences.setCollapsed("marks", false);
     expect(new Preferences(storage).isCollapsed("marks")).toBe(false);
+  });
+
+  test("tells apart a choice from no choice for a collapsed group", () => {
+    const storage = memoryStorage();
+    const preferences = new Preferences(storage);
+    expect(preferences.getCollapsed("achievements:misc")).toBeUndefined();
+
+    preferences.setCollapsed("achievements:misc", false);
+    expect(new Preferences(storage).getCollapsed("achievements:misc")).toBe(
+      false,
+    );
+    preferences.setCollapsed("achievements:misc", true);
+    expect(new Preferences(storage).getCollapsed("achievements:misc")).toBe(
+      true,
+    );
+  });
+
+  test("a stored collapsed value from before keeps working", () => {
+    const storage = memoryStorage();
+    storage.setItem("isv:collapsed:achievements:tainted", "1");
+    const preferences = new Preferences(storage);
+    expect(preferences.getCollapsed("achievements:tainted")).toBe(true);
+    expect(preferences.isCollapsed("achievements:tainted")).toBe(true);
   });
 
   test("every key starts with the prefix", () => {
@@ -105,7 +139,7 @@ describe("Preferences", () => {
     storage.setItem("isv:items:view", "table");
     storage.setItem("isv:items:filter", "LOCKED");
     const preferences = new Preferences(storage);
-    expect(preferences.getViewMode("items")).toBe("list");
+    expect(preferences.getViewMode("items")).toBe("grid");
     expect(preferences.getFilter("items")).toBe("locked");
   });
 
@@ -143,9 +177,10 @@ describe("Preferences", () => {
         preferences.setTheme("dark");
       }).not.toThrow();
       expect(preferences.getTheme()).toBe("system");
-      expect(preferences.getViewMode("items")).toBe("list");
+      expect(preferences.getViewMode("items")).toBe("grid");
       expect(preferences.getFilter("items")).toBe("locked");
       expect(preferences.isCollapsed("items")).toBe(false);
+      expect(preferences.getCollapsed("items")).toBeUndefined();
     }
   });
 });

@@ -15,6 +15,7 @@ import { DEFAULT_THEME, isTheme } from "./theme.js";
 export const KEY_PREFIX = "isv:";
 
 const COLLAPSED_VALUE = "1";
+const EXPANDED_VALUE = "0";
 
 /** The subset of the `Storage` interface (e.g. `localStorage`) that we use. */
 export interface KeyValueStorage {
@@ -64,15 +65,24 @@ export class Preferences {
 
   /** @param id The ID of a section or group. Everything is expanded by default. */
   isCollapsed(id: string): boolean {
-    return this.get(`collapsed:${id}`) === COLLAPSED_VALUE;
+    return this.getCollapsed(id) ?? false;
+  }
+
+  /**
+   * Whether the user collapsed (true) or expanded (false) the section or group, or undefined if
+   * they never chose. The caller picks the default then, e.g. complete groups start collapsed.
+   */
+  getCollapsed(id: string): boolean | undefined {
+    const value = this.get(`collapsed:${id}`);
+    if (value === undefined) {
+      return undefined;
+    }
+
+    return value === COLLAPSED_VALUE;
   }
 
   setCollapsed(id: string, collapsed: boolean): void {
-    if (collapsed) {
-      this.set(`collapsed:${id}`, COLLAPSED_VALUE);
-    } else {
-      this.remove(`collapsed:${id}`);
-    }
+    this.set(`collapsed:${id}`, collapsed ? COLLAPSED_VALUE : EXPANDED_VALUE);
   }
 
   private get(key: string): string | undefined {
@@ -88,14 +98,6 @@ export class Preferences {
       this.storage?.setItem(KEY_PREFIX + key, value);
     } catch {
       // Storage is full or disabled, so the preference is not remembered.
-    }
-  }
-
-  private remove(key: string): void {
-    try {
-      this.storage?.removeItem(KEY_PREFIX + key);
-    } catch {
-      // Storage is disabled, so there is nothing to remove.
     }
   }
 }

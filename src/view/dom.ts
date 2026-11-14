@@ -44,6 +44,7 @@ export function lazyImage(
     width: size.toString(),
     height: size.toString(),
     loading: "lazy",
+    decoding: "async",
   };
   if (className !== undefined) {
     attributes["class"] = className;

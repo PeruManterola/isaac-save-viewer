@@ -9,7 +9,6 @@ import { renderItemsSection } from "./items.js";
 import { renderMarksSection } from "./marks.js";
 import { SECTION_IDS } from "./sections.js";
 import { renderStatCards } from "./statCards.js";
-import { initTooltips } from "./tooltip.js";
 
 export const RESULTS_ID = "results";
 
@@ -35,7 +34,6 @@ export function renderSaveModel(
       ),
     ]),
   );
-  initTooltips(container);
   container.hidden = false;
 }
 
