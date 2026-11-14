@@ -23,6 +23,11 @@
 
   // https://www.typescriptlang.org/docs/handbook/compiler-options.html
   "compilerOptions": {
+    // The code is bundled by esbuild (and run by Vitest in the tests), so we use the module
+    // resolution of a bundler. The target matches the one in "scripts/build.ts".
+    "module": "preserve",
+    "target": "ES2021",
+
     // This project imports JSON files.
     "resolveJsonModule": true,
 
@@ -30,6 +35,9 @@
     // statements in the ".d.ts" files resolve properly.
     "skipLibCheck": false,
   },
+
+  // Also type-check the tests.
+  "include": ["./src/**/*.ts", "./test/**/*.ts"],
 
   // @template-customization-end
 }

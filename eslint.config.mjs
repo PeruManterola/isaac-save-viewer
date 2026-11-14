@@ -25,5 +25,13 @@ export default defineConfig(
   {
     ignores: ["src/kaitai/IsaacSaveFile.cjs"],
   },
+
+  // The tests are in a separate directory, so they need to import the code under test from "src".
+  {
+    files: ["test/**"],
+    rules: {
+      "@typescript-eslint/no-restricted-imports": "off",
+    },
+  },
   // @template-customization-end
 );

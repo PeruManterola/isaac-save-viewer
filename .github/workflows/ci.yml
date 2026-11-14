@@ -17,9 +17,21 @@ jobs:
       - uses: ./.github/workflows/setup
       - run: npm run lint
 
+  # @template-customization-start
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/workflows/setup
+      - run: npm test
+
+  # @template-customization-end
+
   discord:
     name: Discord Failure Notification
-    needs: [build, lint]
+    # @template-ignore-next-line
+    needs: [build, lint, test]
     if: failure()
     runs-on: ubuntu-latest
     steps:

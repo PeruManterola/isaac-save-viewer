@@ -1,9 +1,10 @@
+// Parsing of the raw save file. This module does not touch the page.
+
 import { ReadonlySet } from "complete-common";
 import KaitaiStream from "kaitai-struct/KaitaiStream";
-import { ChunkType } from "./enums/ChunkType.js";
-import { fillPage } from "./fillPage.js";
-import IsaacSaveFile from "./kaitai/IsaacSaveFile.cjs";
-import { selectSaveFileError } from "./selectSaveFileSubroutines.js";
+import { ChunkType } from "../enums/ChunkType.js";
+import type { Chunk, Chunks } from "../kaitai/IsaacSaveFile.cjs";
+import IsaacSaveFile from "../kaitai/IsaacSaveFile.cjs";
 
 const HEADER_LENGTH = 16;
 
@@ -30,28 +31,22 @@ const AFTERBIRTH_PLUS_AND_REPENTANCE_PERSISTENT_HEADER = "ISAACNGSAVE09R";
 // 0th achievement.
 const NUM_AFTERBIRTH_PLUS_ACHIEVEMENTS = 404;
 
-export function readFile(file: File): void {
-  const fileReader = new FileReader();
-  fileReader.addEventListener("load", inputReaderLoad);
-  // eslint-disable-next-line unicorn/prefer-blob-reading-methods
-  fileReader.readAsArrayBuffer(file);
-}
+const SUPPORTED_GAME = "The Binding of Isaac: Repentance+";
 
-function inputReaderLoad(this: FileReader) {
-  try {
-    const isaacSaveFile = parseSaveFile(this);
-    fillPage(isaacSaveFile);
-  } catch (error) {
-    selectSaveFileError(error);
+/** An error caused by the user selecting the wrong kind of file. */
+export class SaveFileError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = "SaveFileError";
   }
 }
 
-function parseSaveFile(fileReader: FileReader): IsaacSaveFile {
-  const arrayBuffer = fileReader.result;
-  if (arrayBuffer === null || typeof arrayBuffer === "string") {
-    throw new Error("The file array buffer was an unknown type.");
-  }
-
+/**
+ * Parses a "persistentgamedata" save file.
+ *
+ * @throws SaveFileError If the file is not a Repentance+ persistent save file.
+ */
+export function parseSaveFile(arrayBuffer: ArrayBuffer): IsaacSaveFile {
   verifyHeader(arrayBuffer);
 
   // The format of the save file was reversed by Blade using: https://ide.kaitai.io/
@@ -64,6 +59,23 @@ function parseSaveFile(fileReader: FileReader): IsaacSaveFile {
   return isaacSaveFile;
 }
 
+/** Returns the body of a chunk. The caller casts it to the type that matches the chunk type. */
+export function getChunkBody(
+  isaacSaveFile: IsaacSaveFile,
+  chunkType: ChunkType,
+): Chunks {
+  return getChunk(isaacSaveFile, chunkType).body;
+}
+
+function getChunk(isaacSaveFile: IsaacSaveFile, chunkType: ChunkType): Chunk {
+  const chunk = isaacSaveFile.chunks[chunkType - 1];
+  if (chunk === undefined) {
+    throw new Error(`Failed to get the ${ChunkType[chunkType]} chunk.`);
+  }
+
+  return chunk;
+}
+
 function verifyHeader(arrayBuffer: ArrayBuffer) {
   // Before we invoke the real parser, we manually extract the header (for the purposes of showing a
   // better error message).
@@ -71,27 +83,22 @@ function verifyHeader(arrayBuffer: ArrayBuffer) {
   const header = arrayBufferToString(headerBytes);
 
   if (RUN_HEADERS.has(header)) {
-    throw new Error(
-      'That is a file that stores the temporary game state for a specific run.<br />You need to instead select the "persistent" file that contains the data for the entire save file.',
+    throw new SaveFileError(
+      'That is a file that stores the temporary game state for a specific run.\nYou need to instead select the "persistent" file that contains the data for the entire save file.',
     );
   }
 
-  let headerGameType: string | undefined;
   if (header === REBIRTH_PERSISTENT_HEADER) {
-    headerGameType = "Rebirth";
-  } else if (header === AFTERBIRTH_PERSISTENT_HEADER) {
-    headerGameType = "Afterbirth";
+    throw wrongGameTypeError("Rebirth");
   }
 
-  if (headerGameType !== undefined) {
-    errorWrongGameType(headerGameType);
+  if (header === AFTERBIRTH_PERSISTENT_HEADER) {
+    throw wrongGameTypeError("Afterbirth");
   }
 
   if (header !== AFTERBIRTH_PLUS_AND_REPENTANCE_PERSISTENT_HEADER) {
-    console.error("Unknown header:");
-    console.error(header);
-    throw new Error(
-      "That is not a valid save file for <i>The Binding of Isaac: Repentance+</i>.",
+    throw new SaveFileError(
+      `That is not a valid save file for ${SUPPORTED_GAME}.`,
     );
   }
 }
@@ -109,18 +116,14 @@ function removeNullCharacters(string: string): string {
 function verifyNotAfterbirthPlus(isaacSaveFile: IsaacSaveFile) {
   // Since Afterbirth+ has the same save file header as Repentance, we must use some other save file
   // property to tell the difference.
-  const chunk = isaacSaveFile.chunks[ChunkType.ACHIEVEMENTS - 1];
-  if (chunk === undefined) {
-    throw new Error("Failed to get the achievements chunk.");
-  }
-
+  const chunk = getChunk(isaacSaveFile, ChunkType.ACHIEVEMENTS);
   if (chunk.len === NUM_AFTERBIRTH_PLUS_ACHIEVEMENTS) {
-    errorWrongGameType("Afterbirth+");
+    throw wrongGameTypeError("Afterbirth+");
   }
 }
 
-function errorWrongGameType(gameType: string) {
-  throw new Error(
-    `That is a save file for <i>The Binding of Isaac: ${gameType}</i>.<br />This site only supports save files for <i>The Binding of Isaac: Repentance+</i>.`,
+function wrongGameTypeError(gameType: string): SaveFileError {
+  return new SaveFileError(
+    `That is a save file for The Binding of Isaac: ${gameType}.\nThis site only supports save files for ${SUPPORTED_GAME}.`,
   );
 }

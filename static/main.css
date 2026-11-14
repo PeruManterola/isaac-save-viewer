@@ -35,3 +35,8 @@ a:hover {
 #save-file-stats {
   display: none;
 }
+
+#choose-save-file-error-text {
+  /* Error messages use "\n" for line breaks. */
+  white-space: pre-line;
+}

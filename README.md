@@ -20,11 +20,13 @@ npm ci          # Install the dependencies.
 npm run dev     # Build, watch for changes, and serve the site at http://localhost:8000/
 npm run build   # Build the static site into the "dist" directory.
 npm run lint    # Type-check, lint, format-check, and spell-check the project.
+npm test        # Run the tests (with Vitest).
 ```
 
-- `src/` contains the TypeScript source code. `src/kaitai/` contains the save file parser, which is generated from `IsaacSaveFile.ksy` by the Kaitai Struct compiler.
+- `src/` contains the TypeScript source code. `src/save/` parses a save file into a model without touching the page, and `src/view/` renders that model. `src/kaitai/` contains the save file parser, which is generated from `IsaacSaveFile.ksy` by the Kaitai Struct compiler.
 - `static/` contains the HTML, CSS, and images. The build copies it into `dist/`, along with the bundled `main.js`, Bulma, and the font.
 - `dist/` is a complete static website that makes no requests to other servers.
+- `test/` contains the tests. `test/fixtures/` contains real Repentance+ save files that they read.
 
 ## Deploy
 
