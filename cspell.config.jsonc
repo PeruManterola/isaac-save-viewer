@@ -27,6 +27,8 @@
     "itempools.json",
     "itempools.xml",
     "skills-lock.json",
+    "mockups/**", // Reference material for the UI overhaul.
+    ".agents/**", // Agent skills.
     // @template-customization-end
   ],
   "words": [
