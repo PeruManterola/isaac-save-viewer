@@ -2,11 +2,19 @@ import type { Filter, ViewMode } from "../state/filter.js";
 import { FILTERS, VIEW_MODES } from "../state/filter.js";
 import type { Preferences } from "../state/preferences.js";
 import { h } from "./dom.js";
+import type { IconName } from "./icons.js";
+import { segmented } from "./ui.js";
 
+/** The "grid" view mode is called the "wall" in the interface. */
 const VIEW_MODE_LABELS = {
   list: "List",
-  grid: "Grid",
+  grid: "Wall",
 } as const satisfies Record<ViewMode, string>;
+
+const VIEW_MODE_ICONS = {
+  list: "list",
+  grid: "grid",
+} as const satisfies Record<ViewMode, IconName>;
 
 const FILTER_LABELS = {
   all: "All",
@@ -40,31 +48,33 @@ export function withToolbar(
   };
   const body = h("div", { class: "isv-section-body" });
 
-  const viewModeGroup = buttonGroup(
-    `${label} view`,
-    VIEW_MODES,
-    VIEW_MODE_LABELS,
-    state.viewMode,
-    (viewMode) => {
+  const viewModeGroup = segmented({
+    label: `${label} view`,
+    kind: "pressed",
+    options: VIEW_MODES.map((value) => ({
+      value,
+      label: VIEW_MODE_LABELS[value],
+      icon: VIEW_MODE_ICONS[value],
+    })),
+    value: state.viewMode,
+    onChange: (viewMode) => {
       preferences.setViewMode(section, viewMode);
       update({ ...state, viewMode });
     },
-  );
-  const filterGroup = buttonGroup(
-    `${label} filter`,
-    FILTERS,
-    FILTER_LABELS,
-    state.filter,
-    (filter) => {
+  });
+  const filterGroup = segmented({
+    label: `${label} filter`,
+    kind: "pressed",
+    options: FILTERS.map((value) => ({ value, label: FILTER_LABELS[value] })),
+    value: state.filter,
+    onChange: (filter) => {
       preferences.setFilter(section, filter);
       update({ ...state, filter });
     },
-  );
+  });
 
   function update(newState: ToolbarState) {
     state = newState;
-    viewModeGroup.select(state.viewMode);
-    filterGroup.select(state.filter);
     body.replaceChildren(...renderBody(state));
   }
 
@@ -76,42 +86,4 @@ export function withToolbar(
   ]);
 
   return [toolbar, body];
-}
-
-function buttonGroup<T extends string>(
-  ariaLabel: string,
-  values: readonly T[],
-  labels: Readonly<Record<T, string>>,
-  initialValue: T,
-  onSelect: (value: T) => void,
-) {
-  const buttons = values.map((value) => {
-    const button = h("button", { type: "button", class: "button is-small" }, [
-      labels[value],
-    ]);
-    button.addEventListener("click", () => {
-      onSelect(value);
-    });
-
-    return { value, button };
-  });
-
-  function select(selectedValue: T) {
-    for (const { value, button } of buttons) {
-      const selected = value === selectedValue;
-      button.classList.toggle("is-link", selected);
-      button.classList.toggle("is-selected", selected);
-      button.setAttribute("aria-pressed", selected.toString());
-    }
-  }
-
-  select(initialValue);
-
-  const element = h(
-    "div",
-    { class: "buttons has-addons", role: "group", "aria-label": ariaLabel },
-    buttons.map(({ button }) => button),
-  );
-
-  return { element, select };
 }

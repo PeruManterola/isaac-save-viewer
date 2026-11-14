@@ -1,0 +1,334 @@
+/* Reset, typography, links, focus rings, and the shared primitives (Phase 1): card, button,
+   badge, progress bar, segmented pill control, visually-hidden. Section-specific styles do NOT
+   belong here: they go in shell.css, entries.css, or marks.css. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 var(--fs-m) / 1.5 var(--font-body);
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+dl,
+dd,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+.num {
+  font-family: var(--font-head);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+button,
+input,
+a {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+[hidden] {
+  display: none !important;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+code {
+  font: 0.8125rem / 1.55 var(--font-mono);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Pixel art: integer scales only. */
+.px {
+  image-rendering: pixelated;
+  display: block;
+}
+
+.i {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Visually hidden, but still read by screen readers. */
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.muted {
+  color: var(--ink-2);
+}
+
+.small {
+  font-size: var(--fs-s);
+}
+
+.stack {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--s4);
+}
+
+/* ===== card ===== */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  box-shadow: var(--shadow);
+  padding: var(--s4);
+}
+
+/* ===== button ===== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s2);
+  min-height: 44px;
+  padding: 0 var(--s4);
+  border-radius: var(--r-pill);
+  border: 1.5px solid transparent;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background var(--t),
+    border-color var(--t),
+    transform var(--t),
+    box-shadow var(--t);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--on-accent);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.18);
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+  color: var(--on-accent);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.btn-ghost {
+  background: var(--surface);
+  border-color: var(--line-strong);
+  color: var(--ink);
+}
+
+.btn-ghost:hover {
+  border-color: var(--ink);
+  background: var(--surface-2);
+  color: var(--ink);
+}
+
+.btn-lg {
+  min-height: 52px;
+  padding: 0 var(--s5);
+  font-size: var(--fs-l);
+}
+
+/* A round, icon-only button (e.g. "close"). */
+.btn-icon {
+  width: 44px;
+  padding: 0;
+}
+
+/* ===== segmented pill control ===== */
+
+.seg {
+  display: inline-flex;
+  padding: 3px;
+  gap: 2px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+}
+
+.seg button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 var(--s4);
+  border: 0;
+  background: transparent;
+  border-radius: var(--r-pill);
+  font-weight: 600;
+  color: var(--ink-2);
+  transition:
+    background var(--t),
+    color var(--t);
+}
+
+.seg button:hover {
+  color: var(--ink);
+  background: var(--line);
+}
+
+.seg button[aria-pressed="true"],
+.seg button[aria-selected="true"],
+.seg button[aria-checked="true"] {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.seg .n {
+  font-weight: 500;
+  font-size: var(--fs-s);
+  padding: 1px 7px;
+  border-radius: var(--r-pill);
+  background: var(--count-bg);
+}
+
+.seg button[aria-pressed="true"] .n,
+.seg button[aria-selected="true"] .n,
+.seg button[aria-checked="true"] .n {
+  background: var(--count-bg-on);
+}
+
+/* An icon-only segmented control has square buttons. */
+.seg-icons button {
+  padding: 0;
+  width: 44px;
+}
+
+/* ===== badge: state is always an icon plus text ===== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 10px 2px 8px;
+  border-radius: var(--r-pill);
+  font: 600 var(--fs-s) / 1.5 var(--font-body);
+  white-space: nowrap;
+}
+
+.badge .i {
+  width: 15px;
+  height: 15px;
+  stroke-width: 2.5;
+}
+
+.badge.ok {
+  background: var(--ok-soft);
+  color: var(--ok);
+}
+
+.badge.locked {
+  background: var(--locked-bg);
+  color: var(--locked-ink);
+}
+
+.badge.need {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* ===== progress bar ===== */
+
+.bar {
+  height: 8px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  overflow: hidden;
+}
+
+.bar i {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  border-radius: var(--r-pill);
+  transition: width 400ms ease;
+}
+
+.bar.thin {
+  height: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}

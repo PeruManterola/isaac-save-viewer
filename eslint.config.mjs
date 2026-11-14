@@ -23,7 +23,14 @@ export default defineConfig(
   // @template-customization-start
   // Don't bother linting generated code.
   {
-    ignores: ["src/kaitai/IsaacSaveFile.cjs"],
+    ignores: [
+      "src/kaitai/IsaacSaveFile.cjs",
+      // Reference material and agent skills are not part of the app.
+      "mockups/**",
+      ".agents/**",
+      // A plain browser script that is not part of the TypeScript project.
+      "static/theme-init.js",
+    ],
   },
 
   // The tests are in a separate directory, so they need to import the code under test from "src".

@@ -1,0 +1,208 @@
+/* INTERIM styles for the achievements and items sections (toolbar, collapsible sections and
+   groups, list table, grid tiles, tile description). Phase 2A rewrites this file together with
+   src/view/{achievements,items,entries,toolbar,collapsible,tooltip}.ts. */
+
+/* ===== collapsible sections and groups ===== */
+
+.isv-section {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  box-shadow: var(--shadow);
+  padding: var(--s4);
+}
+
+.isv-section > .isv-summary h2 {
+  font-size: var(--fs-xl);
+  line-height: 1.2;
+}
+
+.isv-summary {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  min-height: 44px;
+  list-style: none;
+  border-radius: 8px;
+}
+
+.isv-summary::-webkit-details-marker {
+  display: none;
+}
+
+.isv-summary::before {
+  content: "";
+  flex: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 0 var(--s1);
+  border-right: 2px solid currentcolor;
+  border-bottom: 2px solid currentcolor;
+  transform: rotate(-45deg);
+  transition: transform var(--t);
+}
+
+details[open] > .isv-summary::before {
+  transform: rotate(45deg);
+}
+
+.isv-summary > :is(h2, h3) {
+  min-width: 0;
+}
+
+.isv-group {
+  margin-top: var(--s3);
+  padding-top: var(--s2);
+  border-top: 1px solid var(--line);
+}
+
+.isv-group > .isv-summary h3 {
+  font-size: var(--fs-l);
+  line-height: 1.3;
+}
+
+.isv-group > :not(summary) {
+  margin-top: var(--s2);
+}
+
+/* ===== toolbar ===== */
+
+.isv-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s2) var(--s4);
+  margin: var(--s2) 0 var(--s3);
+}
+
+.isv-empty {
+  color: var(--ink-2);
+  font-style: italic;
+}
+
+/* ===== list view ===== */
+
+.isv-table-wrap {
+  overflow-x: auto;
+}
+
+.isv-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.isv-list th {
+  text-align: left;
+  font-size: var(--fs-s);
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+
+.isv-list th,
+.isv-list td {
+  padding: var(--s2) var(--s3) var(--s2) 0;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--line);
+}
+
+.isv-list img {
+  display: block;
+  image-rendering: pixelated;
+}
+
+/* ===== grid view ===== */
+
+.isv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
+  gap: var(--s2);
+}
+
+.isv-tile {
+  position: relative;
+  padding: var(--s2) var(--s1);
+  border-radius: 10px;
+  border: 1.5px solid var(--line);
+  background: var(--surface-2);
+  text-align: center;
+  cursor: help;
+}
+
+.isv-tile:hover,
+.isv-tile:focus-visible,
+.isv-tile.is-active {
+  border-color: var(--ink);
+}
+
+.isv-tile-icon {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.isv-tile-icon img {
+  image-rendering: pixelated;
+}
+
+.isv-tile-name {
+  font-size: var(--fs-s);
+  line-height: 1.2;
+  margin-top: var(--s1);
+  overflow-wrap: anywhere;
+}
+
+/* Locked tiles have a dashed outline and a dimmed icon. The text is not dimmed. */
+.isv-tile.isv-locked {
+  border-style: dashed;
+  border-color: var(--line-strong);
+  background:
+    repeating-linear-gradient(135deg, transparent 0 5px, var(--hatch) 5px 7px),
+    var(--locked-bg);
+}
+
+.isv-tile.isv-locked .isv-tile-icon {
+  filter: grayscale(1);
+  opacity: 0.55;
+}
+
+/* ===== tile description ===== */
+
+.isv-tooltip {
+  display: none;
+  position: absolute;
+  top: calc(100% - 0.25rem);
+  left: 50%;
+  transform: translateX(calc(-50% + var(--isv-tooltip-shift, 0px)));
+  z-index: 20;
+  width: 18rem;
+  max-width: calc(100vw - 1rem);
+  padding: var(--s3);
+  border-radius: var(--r);
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow-pop);
+  border: 1.5px solid var(--ink);
+  font-size: var(--fs-s);
+  text-align: left;
+  cursor: auto;
+}
+
+.isv-tooltip p + p {
+  margin-top: var(--s2);
+}
+
+.isv-tile:hover .isv-tooltip,
+.isv-tile:focus-within .isv-tooltip,
+.isv-tile.is-active .isv-tooltip {
+  display: block;
+}
+
+.isv-tooltip-title {
+  font-weight: 600;
+}
+
+.isv-quote {
+  font-style: italic;
+}

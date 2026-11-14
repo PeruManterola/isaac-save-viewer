@@ -3,6 +3,7 @@
 import type { Filter, ViewMode } from "../state/filter.js";
 import { filterEntries } from "../state/filter.js";
 import { h, lazyImage } from "./dom.js";
+import { badge } from "./ui.js";
 
 const ICON_SIZE = 64;
 
@@ -53,8 +54,8 @@ function statusTag(
   renderer: Pick<EntryRenderer<never>, "unlockedText" | "lockedText">,
 ): HTMLElement {
   return unlocked
-    ? h("span", { class: "tag is-success is-light" }, [renderer.unlockedText])
-    : h("span", { class: "tag is-light" }, [renderer.lockedText]);
+    ? badge("ok", renderer.unlockedText, "check")
+    : badge("locked", renderer.lockedText, "lock");
 }
 
 function getEmptyText<T>(renderer: EntryRenderer<T>, filter: Filter): string {
@@ -103,11 +104,8 @@ function renderList<T extends Entry>(
     ]),
   );
 
-  return h("div", { class: "table-container" }, [
-    h("table", { class: "table is-fullwidth isv-list" }, [
-      head,
-      h("tbody", {}, rows),
-    ]),
+  return h("div", { class: "isv-table-wrap" }, [
+    h("table", { class: "isv-list" }, [head, h("tbody", {}, rows)]),
   ]);
 }
 

@@ -15,7 +15,7 @@ The achievements and items can be shown as a list or as a grid, and filtered to 
 - The save file format was reversed by [Blade](https://github.com/bladecoding) using [Kaitai Struct](https://kaitai.io/).
 - It is written using [TypeScript](https://www.typescriptlang.org/).
 - It uses [esbuild](https://esbuild.github.io/) for bundling.
-- It uses [Bulma](https://bulma.io/) for CSS and the [Source Sans Pro](https://fontsource.org/fonts/source-sans-pro) font, both self-hosted.
+- Its CSS is hand-written (design tokens in `static/css/`), with a light and dark theme that follows the system or can be switched by hand. It uses the [Rubik](https://fontsource.org/fonts/rubik) font for headings, self-hosted.
 - The achievement images are taken from the [Isaac wiki](https://bindingofisaacrebirth.wiki.gg/wiki/Binding_of_Isaac:_Rebirth_Wiki).
 - The "items.json" file and collectible images are taken from the [Rebirth Item Tracker](https://github.com/Rchardon/RebirthItemTracker).
 
@@ -42,7 +42,7 @@ npm run data:validate      # Check the data files, and count Hard marks in save 
 `data:validate` takes save files or folders as arguments. With no arguments, it reads the gitignored `saves/` folder.
 
 - `src/` contains the TypeScript source code. `src/save/` parses a save file into a model without touching the page, and `src/view/` renders that model. `src/kaitai/` contains the save file parser, which is generated from `IsaacSaveFile.ksy` by the Kaitai Struct compiler.
-- `static/` contains the HTML, CSS, and images. The build copies it into `dist/`, along with the bundled `main.js`, Bulma, and the font.
+- `static/` contains the HTML, CSS, and images. The build copies it into `dist/`, along with the bundled `main.js` and the font.
 - `dist/` is a complete static website that makes no requests to other servers.
 - `test/` contains the tests. `test/fixtures/` contains real Repentance+ save files that they read.
 

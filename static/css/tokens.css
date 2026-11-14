@@ -1,0 +1,125 @@
+/* Design tokens (Phase 1). Light is the base set. The dark set applies when the user forces it
+   (`data-theme="dark"` on <html>, set by the theme switch) or, when nothing is forced, when the
+   system prefers dark. The dark values are therefore listed twice. Keep both copies identical. */
+
+:root {
+  color-scheme: light;
+
+  /* colour (light). Every text/background pair is >= 4.5:1. */
+  --bg: #f5efe3; /* warm paper */
+  --surface: #fffcf6; /* cards */
+  --surface-2: #f1eadc; /* sunken: tiles, tracks */
+  --line: #e2d8c6; /* decorative hairlines */
+  --line-strong: #85786b; /* component outlines (>= 3:1) */
+  --ink: #2b211b;
+  --ink-2: #594c42; /* secondary text */
+  --accent: #a1122a; /* deep crimson: primary actions + progress */
+  --accent-hover: #820e22;
+  --on-accent: #ffffff;
+  --accent-soft: #f8e1e0;
+  --ok: #1b6a38;
+  --ok-soft: #dff0e3;
+  --locked-ink: #5c5046; /* text on locked / neutral chips */
+  --locked-bg: #e9e2d4;
+  --hatch: rgba(90, 70, 50, 0.16);
+  --badge-bg: #2b211b; /* lock badge */
+  --badge-fg: #ffffff;
+  --focus: #2447c4;
+  --count-bg: rgba(0, 0, 0, 0.08); /* count pill inside a segmented button */
+  --count-bg-on: rgba(
+    255,
+    255,
+    255,
+    0.22
+  ); /* ... when that button is selected */
+  --scrim: rgba(43, 33, 27, 0.55); /* behind the "release to load" card */
+  --shadow: 0 1px 2px rgba(70, 45, 20, 0.08), 0 6px 18px rgba(70, 45, 20, 0.06);
+  --shadow-pop:
+    0 2px 4px rgba(70, 45, 20, 0.12), 0 14px 32px rgba(70, 45, 20, 0.18);
+
+  /* type */
+  --font-head: "Rubik", ui-rounded, "Segoe UI", system-ui, sans-serif;
+  --font-body:
+    system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif;
+  --font-mono:
+    ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono",
+    monospace;
+  --fs-s: 0.8125rem; /* 13 */
+  --fs-m: 0.9375rem; /* 15 */
+  --fs-l: 1.0625rem; /* 17 */
+  --fs-xl: 1.375rem; /* 22 */
+  --fs-num: 2rem; /* 32 */
+
+  /* space + shape + motion */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --r: 12px;
+  --r-pill: 999px;
+  --t: 160ms ease;
+  --page-max: 72rem;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #1b1613;
+  --surface: #262019;
+  --surface-2: #1d1814;
+  --line: #3a3128;
+  --line-strong: #94867a;
+  --ink: #f4ece1;
+  --ink-2: #c8bbac;
+  --accent: #ff8f98;
+  --accent-hover: #ffb0b6;
+  --on-accent: #2a0810;
+  --accent-soft: #43202a;
+  --ok: #86d9a0;
+  --ok-soft: #1c3324;
+  --locked-ink: #c2b5a6;
+  --locked-bg: #302920;
+  --hatch: rgba(255, 240, 220, 0.14);
+  --badge-bg: #f4ece1;
+  --badge-fg: #1b1613;
+  --focus: #9db8ff;
+  --count-bg: rgba(255, 255, 255, 0.1);
+  --count-bg-on: rgba(0, 0, 0, 0.18);
+  --scrim: rgba(0, 0, 0, 0.65);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 18px rgba(0, 0, 0, 0.3);
+  --shadow-pop: 0 2px 4px rgba(0, 0, 0, 0.5), 0 14px 32px rgba(0, 0, 0, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+
+    --bg: #1b1613;
+    --surface: #262019;
+    --surface-2: #1d1814;
+    --line: #3a3128;
+    --line-strong: #94867a;
+    --ink: #f4ece1;
+    --ink-2: #c8bbac;
+    --accent: #ff8f98;
+    --accent-hover: #ffb0b6;
+    --on-accent: #2a0810;
+    --accent-soft: #43202a;
+    --ok: #86d9a0;
+    --ok-soft: #1c3324;
+    --locked-ink: #c2b5a6;
+    --locked-bg: #302920;
+    --hatch: rgba(255, 240, 220, 0.14);
+    --badge-bg: #f4ece1;
+    --badge-fg: #1b1613;
+    --focus: #9db8ff;
+    --count-bg: rgba(255, 255, 255, 0.1);
+    --count-bg-on: rgba(0, 0, 0, 0.18);
+    --scrim: rgba(0, 0, 0, 0.65);
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 18px rgba(0, 0, 0, 0.3);
+    --shadow-pop: 0 2px 4px rgba(0, 0, 0, 0.5), 0 14px 32px rgba(0, 0, 0, 0.5);
+  }
+}

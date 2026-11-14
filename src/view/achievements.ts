@@ -53,13 +53,13 @@ export function renderAchievementsSection(
   achievements: readonly AchievementEntry[],
   preferences: Preferences,
 ): HTMLElement {
-  const heading = h("h2", { class: "title is-4" }, [
+  const heading = h("h2", {}, [
     `Achievements (${progressText(getProgress(achievements))})`,
   ]);
   const body = withToolbar(preferences, SECTION_ID, "Achievements", (state) =>
     CATEGORIES.map(({ id, name }) => {
       const groupAchievements = getAchievementsInCategory(achievements, id);
-      const groupHeading = h("h3", { class: "title is-5" }, [
+      const groupHeading = h("h3", {}, [
         `${name} (${progressText(getProgress(groupAchievements))})`,
       ]);
 

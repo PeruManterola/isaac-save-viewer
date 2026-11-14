@@ -34,7 +34,7 @@ export function renderItemsSection(
   items: readonly ItemEntry[],
   preferences: Preferences,
 ): HTMLElement {
-  const heading = h("h2", { class: "title is-4" }, [
+  const heading = h("h2", {}, [
     `Items Touched (${progressText(getProgress(items))})`,
   ]);
   const body = withToolbar(preferences, SECTION_ID, "Items", (state) => [

@@ -1,0 +1,66 @@
+/* INTERIM styles for the completion marks table. Phase 2B rewrites this file together with
+   src/view/marks.ts. */
+
+.isv-marks-section h2 {
+  font-size: var(--fs-xl);
+  line-height: 1.2;
+  margin-bottom: var(--s3);
+}
+
+/* The table is wider than a phone, so it scrolls sideways inside the card, not the page. */
+.isv-marks-wrap {
+  overflow-x: auto;
+}
+
+.isv-marks {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.isv-marks th,
+.isv-marks td {
+  padding: var(--s1) var(--s2);
+  vertical-align: middle;
+  border-bottom: 1px solid var(--line);
+}
+
+.isv-marks thead th {
+  font-size: var(--fs-s);
+  color: var(--ink-2);
+}
+
+.isv-marks th[scope="row"] {
+  text-align: left;
+}
+
+.isv-mark-cell,
+.isv-mark-total {
+  text-align: center;
+}
+
+.isv-mark-total {
+  white-space: nowrap;
+}
+
+.isv-marks img {
+  display: inline-block;
+  vertical-align: middle;
+  image-rendering: pixelated;
+}
+
+.isv-marks .isv-locked img {
+  filter: grayscale(1);
+  opacity: 0.35;
+}
+
+.isv-character {
+  white-space: nowrap;
+}
+
+.isv-character img {
+  margin-right: var(--s2);
+}
+
+.isv-first-tainted > * {
+  border-top: 2px solid var(--line-strong);
+}

@@ -11,8 +11,12 @@ import path from "node:path";
 const DEV_PORT = 8000;
 const STATIC_COPY_DEBOUNCE_MS = 200;
 
-/** The Source Sans Pro weights that are self-hosted. (Bulma uses 400, 600, and 700.) */
-const FONT_WEIGHTS = [400, 600, 700] as const;
+/**
+ * The Rubik weights and subsets that are self-hosted. Rubik is only used for headings and numbers
+ * (weight 600, in "static/css/base.css"). Add a weight here if the CSS starts to use it.
+ */
+const FONT_WEIGHTS = [600] as const;
+const FONT_SUBSETS = ["latin"] as const;
 
 const dev = process.argv.includes("--dev");
 
@@ -53,6 +57,8 @@ function getBuildOptions(packageRoot: string): esbuild.BuildOptions {
 }
 
 async function build(packageRoot: string) {
+  // Do not keep files from earlier builds (for example, libraries that are no longer used).
+  await fs.rm(getPaths(packageRoot).distDir, { recursive: true, force: true });
   await copyAssets(packageRoot);
   await esbuild.build(getBuildOptions(packageRoot));
 }
@@ -82,7 +88,6 @@ async function startDevServer(packageRoot: string) {
 
 async function copyAssets(packageRoot: string) {
   await copyStatic(packageRoot);
-  await copyBulma(packageRoot);
   await copyFont(packageRoot);
 }
 
@@ -91,41 +96,31 @@ async function copyStatic(packageRoot: string) {
   await fs.cp(staticDir, distDir, { recursive: true });
 }
 
-async function copyBulma(packageRoot: string) {
-  const { nodeModulesDir, libDir } = getPaths(packageRoot);
-  const bulmaDir = path.join(libDir, "bulma");
-  await fs.mkdir(bulmaDir, { recursive: true });
-  await fs.copyFile(
-    path.join(nodeModulesDir, "bulma", "css", "bulma.min.css"),
-    path.join(bulmaDir, "bulma.min.css"),
-  );
-  await fs.copyFile(
-    path.join(nodeModulesDir, "bulma", "LICENSE"),
-    path.join(bulmaDir, "LICENSE"),
-  );
-}
-
 async function copyFont(packageRoot: string) {
   const { nodeModulesDir, libDir } = getPaths(packageRoot);
-  const fontSourceDir = path.join(
-    nodeModulesDir,
-    "@fontsource",
-    "source-sans-pro",
-  );
-  const fontDir = path.join(libDir, "source-sans-pro");
+  const fontSourceDir = path.join(nodeModulesDir, "@fontsource", "rubik");
+  const fontDir = path.join(libDir, "rubik");
   const fontFilesDir = path.join(fontDir, "files");
   await fs.mkdir(fontFilesDir, { recursive: true });
 
-  // Combine the per-weight stylesheets into a single file, then copy only the font files that it
-  // references.
+  // Combine the per-weight stylesheets into a single file. Only the WOFF2 files are kept (every
+  // browser that can run this page supports them), and only the files that the CSS references are
+  // copied.
   const stylesheets = await Promise.all(
-    FONT_WEIGHTS.map(
-      async (weight) =>
-        await fs.readFile(path.join(fontSourceDir, `${weight}.css`), "utf8"),
+    FONT_SUBSETS.flatMap((subset) =>
+      FONT_WEIGHTS.map(
+        async (weight) =>
+          await fs.readFile(
+            path.join(fontSourceDir, `${subset}-${weight}.css`),
+            "utf8",
+          ),
+      ),
     ),
   );
-  const css = stylesheets.join("\n");
-  await fs.writeFile(path.join(fontDir, "source-sans-pro.css"), css);
+  const css = stylesheets
+    .join("\n")
+    .replaceAll(/, url\([^)]+\.woff\) format\('woff'\)/g, "");
+  await fs.writeFile(path.join(fontDir, "rubik.css"), css);
 
   const fontFileNames = new Set(
     [...css.matchAll(/url\(\.\/files\/(?<fileName>[^)]+)\)/g)].map(

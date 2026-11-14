@@ -1,117 +1,57 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
     <title>Isaac Save Viewer</title>
     <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
 
-    <!-- Self-hosted Bulma and Source Sans Pro (copied into "dist/lib" by the build). -->
-    <link rel="stylesheet" href="lib/bulma/bulma.min.css" />
-    <link rel="stylesheet" href="lib/source-sans-pro/source-sans-pro.css" />
+    <!-- Applies the saved light/dark theme before the first paint, so it must block. -->
+    <script src="theme-init.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="main.css" />
-    <script src="main.js"></script>
+    <!-- The Rubik font is self-hosted (copied into "dist/lib" by the build). -->
+    <link rel="stylesheet" href="lib/rubik/rubik.css" />
+
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/shell.css" />
+    <link rel="stylesheet" href="css/entries.css" />
+    <link rel="stylesheet" href="css/marks.css" />
+    <script defer src="main.js"></script>
   </head>
 
   <body>
-    <div id="drop-overlay" aria-hidden="true">
-      <p class="title is-3">Drop your save file to load it</p>
-    </div>
-    <section class="section">
-      <div class="container">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-half">
-            <h1 class="title">Isaac Save Viewer</h1>
-            <p class="subtitle">
-              A tool to track completion status for<br />
-              <i
-                ><a href="https://store.steampowered.com/app/3353470/"
-                  >The Binding of Isaac: Repentance+</a
-                ></i
-              >
-            </p>
-          </div>
-        </div>
+    <div class="page">
+      <!-- Built by "src/view/shell.ts". -->
+      <div id="app"></div>
+      <noscript>
+        <p class="lede">
+          Isaac Save Viewer needs JavaScript to read your save file in the
+          browser.
+        </p>
+      </noscript>
 
-        <hr />
-
-        <div
-          id="choose-save-file-column"
-          class="columns is-centered has-text-centered"
-        >
-          <div class="column">
-            <input id="choose-save-file" type="file" accept=".dat" />
-            <label
-              for="choose-save-file"
-              id="choose-save-file-label"
-              class="button is-warning"
+      <footer class="site-foot">
+        <p>
+          Written by <a href="https://www.twitch.tv/zamiell">Zamiel</a>. Save
+          file format reversed by the talented
+          <a href="https://github.com/bladecoding">Blade</a>.
+        </p>
+        <ul class="site-links">
+          <li>
+            <a href="https://github.com/Zamiell/isaac-save-viewer/"
+              >Source code</a
             >
-              Select save file
-            </label>
-            <p>…or drop it anywhere on this page.</p>
-            <div class="half-spacing"></div>
-            <p>Hint: The default location on Windows (Steam) is:</p>
-            <p>
-              <code
-                >C:\Program Files (x86)\Steam\userdata\[Your Steam
-                ID]\250900\remote\rep+persistentgamedata1.dat</code
-              >
-            </p>
-            <div class="half-spacing"></div>
-            <p>On Linux (Steam with Proton), it is:</p>
-            <p>
-              <code
-                >~/.local/share/Steam/userdata/[Your Steam
-                ID]/250900/remote/rep+persistentgamedata1.dat</code
-              >
-            </p>
-            <div class="half-spacing"></div>
-            <p class>
-              For more information, see my
-              <a href="https://pastebin.com/kJFkFKz1">explanation on Pastebin</a
-              >.
-            </p>
-            <div id="choose-save-file-error">
-              <article
-                id="choose-save-file-error-article"
-                class="message is-danger"
-              >
-                <div
-                  id="choose-save-file-error-text"
-                  class="message-body"
-                ></div>
-              </article>
-            </div>
-          </div>
-        </div>
-
-        <!-- Filled in by "src/view/page.ts" after a save file is loaded. -->
-        <div id="save-file-stats"></div>
-
-        <hr />
-
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-half is-size-7">
-            <p>Written by <a href="https://www.twitch.tv/zamiell">Zamiel</a></p>
-            <p>
-              Save file format reversed by the talented
-              <a href="https://github.com/bladecoding">Blade</a>
-            </p>
-            <p>
-              <a href="https://github.com/Zamiell/isaac-save-viewer/"
-                >Source code</a
-              >
-            </p>
-            <p><a href="https://isaacscript.github.io/">IsaacScript</a></p>
-            <p>
-              <a href="https://www.speedrun.com/repentance/resources"
-                >Download a full save file</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+          </li>
+          <li><a href="https://isaacscript.github.io/">IsaacScript</a></li>
+          <li>
+            <a href="https://www.speedrun.com/repentance/resources"
+              >Download a full save file</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>
