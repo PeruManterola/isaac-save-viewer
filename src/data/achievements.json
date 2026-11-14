@@ -1,3854 +1,4496 @@
 {
-  "NEW": {
-    "link": "Unknown",
-    "name": "Unknown Achievement",
-    "inGameDescription": "undefined",
-    "unlockDescription": "Tracker doesn't know this achievement yet"
-  },
   "1": {
     "link": "Magdalene",
     "name": "Magdalene",
     "inGameDescription": "Unlocked a new character.",
-    "unlockDescription": "Have 7 or more Red Heart Containers at one time"
+    "unlockDescription": "Have 7 or more Red Heart Containers at one time",
+    "category": "characterUnlock"
   },
   "2": {
     "link": "Cain",
     "name": "Cain",
     "inGameDescription": "Unlocked a new character.",
-    "unlockDescription": "Hold 55 Coins at one time"
+    "unlockDescription": "Hold 55 Coins at one time",
+    "category": "characterUnlock"
   },
   "3": {
     "link": "Judas",
     "name": "Judas",
     "inGameDescription": "Unlocked a new character.",
-    "unlockDescription": "Defeat Satan"
+    "unlockDescription": "Defeat Satan",
+    "category": "characterUnlock"
   },
   "4": {
     "link": "Womb",
     "name": "The Womb",
     "inGameDescription": "Chapter 4 - The Womb unlocked.",
-    "unlockDescription": "Defeat Mom"
+    "unlockDescription": "Defeat Mom",
+    "category": "misc"
   },
   "5": {
     "link": "The_Harbingers",
     "name": "The Harbingers",
     "inGameDescription": "The horsemen are loose.",
-    "unlockDescription": "Defeat Mom"
+    "unlockDescription": "Defeat Mom",
+    "category": "misc"
   },
   "6": {
     "link": "Cube_of_Meat",
     "name": "A Cube of Meat",
-    "inGameDescription": "Unlocked a new item. (Also unlocks the Ball of Bandages)",
-    "unlockDescription": "Defeat Mom"
+    "inGameDescription": "Unlocked a new item.",
+    "unlockDescription": "Defeat Mom",
+    "category": "misc"
   },
   "7": {
     "link": "Book_of_Revelations",
     "name": "The Book of Revelations",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat a Harbinger"
+    "unlockDescription": "Defeat a Harbinger",
+    "category": "misc"
   },
   "8": {
     "link": "Transcendence",
     "name": "A Noose",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Mom's Heart 3 times"
+    "unlockDescription": "Defeat Mom's Heart 3 times",
+    "category": "misc"
   },
   "9": {
     "link": "The_Nail",
     "name": "The Nail",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete the Boss Rush as Azazel"
+    "unlockDescription": "Complete the Boss Rush as Azazel",
+    "category": "characterMark"
   },
   "10": {
     "link": "A_Quarter",
     "name": "A Quarter",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Mom's Heart 8 times"
+    "unlockDescription": "Defeat Mom's Heart 8 times",
+    "category": "misc"
   },
   "11": {
     "link": "Dr._Fetus",
     "name": "A Fetus in a Jar",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Mom's Heart 9 times"
+    "unlockDescription": "Defeat Mom's Heart 9 times",
+    "category": "misc"
   },
   "12": {
     "link": "The_Small_Rock",
     "name": "A Small Rock",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Destroy 100 Tinted Rocks"
+    "unlockDescription": "Destroy 100 Tinted Rocks",
+    "category": "misc"
   },
   "13": {
     "link": "Monstro%27s_Tooth",
     "name": "Monstro's Tooth",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Beat Chapter 1"
+    "unlockDescription": "Beat Chapter 1",
+    "category": "misc"
   },
   "14": {
     "link": "Little_Chubby",
     "name": "Lil' Chubby",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Beat Chapter 2"
+    "unlockDescription": "Beat Chapter 2",
+    "category": "misc"
   },
   "15": {
     "link": "Loki%27s_Horns",
     "name": "Loki's Horns",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Lokii"
+    "unlockDescription": "Defeat Lokii",
+    "category": "misc"
   },
   "16": {
     "link": "Steven",
     "name": "Something From The Future",
     "inGameDescription": "New boss in the basement!",
-    "unlockDescription": "Beat Basement 40 times"
+    "unlockDescription": "Beat Basement 40 times",
+    "category": "misc"
   },
   "17": {
     "link": "C.H.A.D.",
     "name": "Something Cute",
     "inGameDescription": "New boss in the caves!",
-    "unlockDescription": "Beat Chapter 2 30 times"
+    "unlockDescription": "Beat Chapter 2 30 times",
+    "category": "misc"
   },
   "18": {
     "link": "Gish",
     "name": "Something Sticky",
     "inGameDescription": "New boss in the depths!",
-    "unlockDescription": "Beat Chapter 3 20 times"
+    "unlockDescription": "Beat Chapter 3 20 times",
+    "category": "misc"
   },
   "19": {
     "link": "Super_Bandage",
     "name": "A Bandage",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Make a Super Bandage Girl by picking up 4 copies of Ball of Bandages in one run; see Unlocking Super Meat Boy &amp; Super Bandage Girl"
+    "unlockDescription": "Make a Super Bandage Girl by picking up 4 copies of Ball of Bandages in one run (See Unlocking Super Meat Boy & Super Bandage Girl)",
+    "category": "misc"
   },
   "20": {
     "link": "The_Relic",
     "name": "A Cross",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Isaac as Magdalene"
+    "unlockDescription": "Defeat Isaac as Magdalene",
+    "category": "characterMark"
   },
   "21": {
     "link": "Sack_of_Pennies",
     "name": "A Bag of Pennies",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Isaac as Cain"
+    "unlockDescription": "Defeat Isaac as Cain",
+    "category": "characterMark"
   },
   "22": {
     "link": "The_Book_of_Sin",
     "name": "The Book of Sin",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat all 7 Deadly Sins"
+    "unlockDescription": "Defeat all 7 Deadly Sins",
+    "category": "misc"
   },
   "23": {
     "link": "Little_Gish",
     "name": "Little Gish",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Gish"
+    "unlockDescription": "Defeat Gish",
+    "category": "misc"
   },
   "24": {
     "link": "Little_Steven",
     "name": "Little Steven",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Steven"
+    "unlockDescription": "Defeat Steven",
+    "category": "misc"
   },
   "25": {
     "link": "Little_C.H.A.D.",
     "name": "Little C.H.A.D.",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat C.H.A.D."
+    "unlockDescription": "Defeat C.H.A.D.",
+    "category": "misc"
   },
   "26": {
     "link": "The_Gamekid",
     "name": "A Gamekid",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Visit 10 Arcades"
+    "unlockDescription": "Visit 10 Arcades",
+    "category": "misc"
   },
   "27": {
     "link": "The_Halo",
     "name": "A Halo",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Mom, Mom's Heart, or It Lives! using The Bible"
+    "unlockDescription": "Defeat Mom, Mom's Heart, or It Lives! using The Bible or XV - The Devil?",
+    "category": "misc"
   },
   "28": {
     "link": "Mr._Mega",
     "name": "Mr. Mega",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Destroy 10 Tinted Rocks"
+    "unlockDescription": "Destroy 10 Tinted Rocks",
+    "category": "misc"
   },
   "29": {
     "link": "The_D6",
     "name": "The D6",
     "inGameDescription": "Isaac now holds the D6!",
-    "unlockDescription": "Defeat Isaac as ???"
+    "unlockDescription": "Defeat Isaac as ???",
+    "category": "characterMark"
   },
   "30": {
     "link": "Scissors",
     "name": "The Scissors",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Die 100 times"
+    "unlockDescription": "Die 100 times",
+    "category": "misc"
   },
   "31": {
     "link": "The_Parasite",
     "name": "The Parasite",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Pick up any 2 of the following items in a single run: Bob's Rotten Head, Dead Cat, Cricket's Head, and Tammy's Head (any 2 items that have the \"dead\" item tag)"
+    "unlockDescription": "Pick up 2 dead-related items in a single run (Dead-related items have the 'dead' item tag)",
+    "category": "misc"
   },
   "32": {
     "link": "%3F%3F%3F_(Character)",
     "name": "???",
     "inGameDescription": "Unlocked a new character.",
-    "unlockDescription": "Defeat Mom's Heart 10 times"
+    "unlockDescription": "Defeat Mom's Heart 10 times",
+    "category": "characterUnlock"
   },
   "33": {
-    "link": "",
+    "link": "Everything_is_terrible",
     "name": "Everything Is Terrible!!!",
     "inGameDescription": "The game just got harder!",
-    "unlockDescription": "Defeat Mom's Heart 5 times"
+    "unlockDescription": "Defeat Mom's Heart 5 times",
+    "category": "misc"
   },
   "34": {
-    "link": "It_Lives",
+    "link": "It_Lives!",
     "name": "It Lives!",
     "inGameDescription": "Your future's past waits.",
-    "unlockDescription": "Defeat Mom's Heart 11 times"
+    "unlockDescription": "Defeat Mom's Heart 11 times",
+    "category": "misc"
   },
   "35": {
     "link": "Mom%27s_Contacts",
     "name": "Mom's Contact",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Obtain three Yes Mother? items in one run"
+    "unlockDescription": "Obtain three Yes Mother? items in one run",
+    "category": "misc"
   },
   "36": {
     "link": "The_Necronomicon",
     "name": "The Necronomicon",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Use XIII - Death 4 times"
+    "unlockDescription": "Use XIII - Death 4 times",
+    "category": "misc"
   },
   "37": {
     "link": "",
     "name": "Basement Boy",
     "inGameDescription": "Beat basement without taking damage.",
-    "unlockDescription": "Beat Chapter 1 without taking damage"
+    "unlockDescription": "Beat Chapter 1 without taking damage",
+    "category": "misc"
   },
   "38": {
     "link": "",
     "name": "Spelunker Boy",
     "inGameDescription": "Beat caves without taking damage.",
-    "unlockDescription": "Beat Chapter 2 without taking damage"
+    "unlockDescription": "Beat Chapter 2 without taking damage",
+    "category": "misc"
   },
   "39": {
     "link": "",
     "name": "Dark Boy",
     "inGameDescription": "Beat depths without taking damage.",
-    "unlockDescription": "Beat Chapter 3 without taking damage"
+    "unlockDescription": "Beat Chapter 3 without taking damage",
+    "category": "misc"
   },
   "40": {
     "link": "",
     "name": "Mama's Boy",
     "inGameDescription": "Beat womb without taking damage.",
-    "unlockDescription": "Beat Chapter 4 without taking damage"
+    "unlockDescription": "Beat Chapter 4 without taking damage",
+    "category": "misc"
   },
   "41": {
     "link": "",
     "name": "Golden God!",
     "inGameDescription": "You are the best!!",
-    "unlockDescription": "Defeat ??? and The Lamb"
+    "unlockDescription": "Defeat ??? and The Lamb",
+    "category": "misc"
   },
   "42": {
     "link": "Eve",
     "name": "Eve",
     "inGameDescription": "Unlocked a new character.",
-    "unlockDescription": "Don't pick up any Hearts for 2 floors in a row"
+    "unlockDescription": "Don't pick up any hearts for 2 floors in a row",
+    "category": "characterUnlock"
   },
   "43": {
     "link": "Mom%27s_Knife",
     "name": "Mom's Knife",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Satan as Isaac"
+    "unlockDescription": "Defeat Satan as Isaac",
+    "category": "characterMark"
   },
   "44": {
     "link": "Razor_Blade",
     "name": "The Razor",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Satan as Eve"
+    "unlockDescription": "Defeat Satan as Eve",
+    "category": "characterMark"
   },
   "45": {
     "link": "Guardian_Angel",
     "name": "Guardian Angel",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Satan as Magdalene"
+    "unlockDescription": "Defeat Satan as Magdalene",
+    "category": "characterMark"
   },
   "46": {
     "link": "Bomb_Bag",
     "name": "A Bag of Bombs",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Satan as Cain"
+    "unlockDescription": "Defeat Satan as Cain",
+    "category": "characterMark"
   },
   "47": {
     "link": "Demon_Baby",
     "name": "Demon Baby",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat The Lamb as Azazel"
+    "unlockDescription": "Defeat The Lamb as Azazel",
+    "category": "characterMark"
   },
   "48": {
     "link": "Forget_Me_Now",
     "name": "Forget Me Now",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Satan as ???"
+    "unlockDescription": "Defeat Satan as ???",
+    "category": "characterMark"
   },
   "49": {
     "link": "D20",
     "name": "The D20",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat ??? as Isaac"
+    "unlockDescription": "Defeat ??? as Isaac",
+    "category": "characterMark"
   },
   "50": {
     "link": "Celtic_Cross",
     "name": "Celtic Cross",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat ??? as Magdalene"
+    "unlockDescription": "Defeat ??? as Magdalene",
+    "category": "characterMark"
   },
   "51": {
     "link": "Abel",
     "name": "Abel",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat The Lamb as Cain"
+    "unlockDescription": "Defeat The Lamb as Cain",
+    "category": "characterMark"
   },
   "52": {
     "link": "Curved_Horn",
     "name": "Curved Horn",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat The Lamb as Judas"
+    "unlockDescription": "Defeat The Lamb as Judas",
+    "category": "characterMark"
   },
   "53": {
     "link": "Sacrificial_Dagger",
     "name": "Sacrificial Dagger",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat ??? as Eve"
+    "unlockDescription": "Defeat ??? as Eve",
+    "category": "characterMark"
   },
   "54": {
     "link": "Bloody_Lust",
     "name": "Bloody Lust",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Isaac as Samson"
+    "unlockDescription": "Defeat Isaac as Samson",
+    "category": "characterMark"
   },
   "55": {
     "link": "Bloody_Penny",
     "name": "Blood Penny",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat ??? as Samson"
+    "unlockDescription": "Defeat ??? as Samson",
+    "category": "characterMark"
   },
   "56": {
     "link": "Blood_Rights",
     "name": "Blood Rights",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Satan as Samson"
+    "unlockDescription": "Defeat Satan as Samson",
+    "category": "characterMark"
   },
   "57": {
     "link": "The_Polaroid",
     "name": "The Polaroid",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Isaac 5 times"
+    "unlockDescription": "Defeat Isaac 5 times",
+    "category": "misc"
   },
   "58": {
     "link": "Dad%27s_Key",
     "name": "Dad's Key",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Pick up both Key Pieces from the Angels in one run"
+    "unlockDescription": "Pick up both Key Pieces from the Angels in one run",
+    "category": "misc"
   },
   "59": {
     "link": "The_Candle",
     "name": "Blue Candle",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Donate 900 coins to the Donation Machine"
+    "unlockDescription": "Donate 900 coins to the Donation Machine",
+    "category": "misc"
   },
   "60": {
     "link": "Burnt_Penny",
     "name": "Burnt Penny",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete Beans! (challenge #13)"
+    "unlockDescription": "Complete Beans! (challenge #13)",
+    "category": "challenge"
   },
   "61": {
     "link": "Lucky_Toe",
     "name": "Lucky Toe",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Blow up 20 Shopkeepers"
+    "unlockDescription": "Blow up 20 Shopkeepers",
+    "category": "misc"
   },
   "62": {
     "link": "Epic_Fetus",
     "name": "Epic Fetus",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete The Family Man (challenge #19)"
+    "unlockDescription": "Complete The Family Man (challenge #19)",
+    "category": "challenge"
   },
   "63": {
     "link": "SMB_Super_Fan",
     "name": "SMB Super Fan",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete It's in the Cards (challenge #14)"
+    "unlockDescription": "Complete It's in the Cards (challenge #14)",
+    "category": "challenge"
   },
   "64": {
     "link": "Counterfeit_Penny",
     "name": "Counterfeit Coin",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Play either Shell Game or Hell Game 100 times"
+    "unlockDescription": "Play either Shell Game or Hell Game 100 times",
+    "category": "misc"
   },
   "65": {
-    "link": "Guppy%27s_Hair_Ball",
+    "link": "Guppy%27s_Hairball",
     "name": "Guppy's Hairball",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Become Guppy"
+    "unlockDescription": "Become Guppy",
+    "category": "misc"
   },
   "66": {
     "link": "Conquest",
     "name": "A Forgotten Horseman",
     "inGameDescription": "Unlocked a new boss!",
-    "unlockDescription": "Take 10 Angel Room items"
+    "unlockDescription": "Take 10 Angel Room items",
+    "category": "misc"
   },
   "67": {
     "link": "Samson",
     "name": "Samson",
     "inGameDescription": "Unlocked a new character.",
-    "unlockDescription": "Complete 2 floors in a row without taking damage"
+    "unlockDescription": "Complete 2 floors in a row without taking damage",
+    "category": "characterUnlock"
   },
   "68": {
     "link": "Triachnid",
     "name": "Something Icky",
     "inGameDescription": "New boss in the womb!",
-    "unlockDescription": "Defeat Isaac 10 times"
+    "unlockDescription": "Defeat Isaac 10 times",
+    "category": "misc"
   },
   "69": {
     "link": "",
-    "name": "Platinum God!",
+    "name": "!Platinum God!",
     "inGameDescription": "OMG!",
-    "unlockDescription": "Collect all non-DLC items in the game, and unlock all of the secrets and endings (minus The Lost and his 6 unlockable items)"
+    "unlockDescription": "Collect all non-DLC items, and unlock all non-DLC secrets and endings (minus The Lost and his 6 unlockable items)",
+    "category": "misc"
   },
   "70": {
     "link": "Isaac%27s_Head",
     "name": "Isaac's Head",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete the Boss Rush as Isaac"
+    "unlockDescription": "Complete the Boss Rush as Isaac",
+    "category": "characterMark"
   },
   "71": {
     "link": "Maggy%27s_Faith",
     "name": "Maggy's Faith",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat The Lamb as Magdalene"
+    "unlockDescription": "Defeat The Lamb as Magdalene",
+    "category": "characterMark"
   },
   "72": {
     "link": "Judas%27_Tongue",
     "name": "Judas' Tongue",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Satan as Judas"
+    "unlockDescription": "Defeat Satan as Judas",
+    "category": "characterMark"
   },
   "73": {
     "link": "%3F%3F%3F%27s_Soul",
     "name": "???'s Soul",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat The Lamb as ???"
+    "unlockDescription": "Defeat The Lamb as ???",
+    "category": "characterMark"
   },
   "74": {
     "link": "Samson%27s_Lock",
     "name": "Samson's Lock",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat The Lamb as Samson"
+    "unlockDescription": "Defeat The Lamb as Samson",
+    "category": "characterMark"
   },
   "75": {
     "link": "Cain%27s_Eye",
     "name": "Cain's Eye",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat ??? as Cain"
+    "unlockDescription": "Defeat ??? as Cain",
+    "category": "characterMark"
   },
   "76": {
     "link": "Eve%27s_Bird_Foot",
     "name": "Eve's Bird Foot",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Isaac as Eve"
+    "unlockDescription": "Defeat Isaac as Eve",
+    "category": "characterMark"
   },
   "77": {
     "link": "The_Left_Hand",
     "name": "The Left Hand",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Pride as any character, or ??? as Judas"
+    "unlockDescription": "Defeat Ultra Pride as any character, or ??? as Judas",
+    "category": "characterMark"
   },
   "78": {
     "link": "The_Negative",
     "name": "The Negative",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Satan 5 times"
+    "unlockDescription": "Defeat Satan 5 times",
+    "category": "misc"
   },
   "79": {
     "link": "Azazel",
     "name": "Azazel",
     "inGameDescription": "Unlocked a new character.",
-    "unlockDescription": "Make 3 Deals with the Devil in one run"
+    "unlockDescription": "Make 3 Deals with the Devil in one run",
+    "category": "characterUnlock"
   },
   "80": {
     "link": "Lazarus",
     "name": "Lazarus",
     "inGameDescription": "Unlocked a new character.",
-    "unlockDescription": "Have 4 or more Soul Hearts at one time"
+    "unlockDescription": "Have 4 or more Soul Hearts at one time",
+    "category": "characterUnlock"
   },
   "81": {
     "link": "Eden",
     "name": "Eden",
     "inGameDescription": "Unlocked a new character.",
-    "unlockDescription": "Complete Chapter 4"
+    "unlockDescription": "Complete Chapter 4",
+    "category": "characterUnlock"
   },
   "82": {
     "link": "The_Lost",
     "name": "The Lost",
     "inGameDescription": "Unlocked a new character.",
-    "unlockDescription": "It's complicated Die in a Sacrifice Room while holding Missing Poster"
+    "unlockDescription": "Die in a Sacrifice Room while holding Missing Poster",
+    "category": "characterUnlock"
   },
   "83": {
     "link": "",
     "name": "Dead Boy",
     "inGameDescription": "Beat Chest or Dark Room without taking damage.",
-    "unlockDescription": "Complete Chapter 6 without taking damage"
+    "unlockDescription": "Complete Chapter 6 without taking damage",
+    "category": "misc"
   },
   "84": {
     "link": "",
     "name": "The Real Platinum God",
     "inGameDescription": "111% now stop playing!",
-    "unlockDescription": "Collect every non-DLC item, and unlock every secret and ending."
+    "unlockDescription": "Collect all non-DLC items, and unlock all non-DLC secrets and endings",
+    "category": "misc"
   },
   "85": {
     "link": "Lucky_Rock",
     "name": "Lucky Rock",
     "inGameDescription": "Destroy 100 rocks.",
-    "unlockDescription": "Destroy 100 rocks"
+    "unlockDescription": "Destroy 100 rocks",
+    "category": "misc"
   },
   "86": {
     "link": "The_Cellar",
     "name": "The Cellar",
     "inGameDescription": "Alt stage to the basement.",
-    "unlockDescription": "Beat all Basement bosses ( except Baby Plum) (not restricted to beating bosses in The Basement)"
+    "unlockDescription": "Beat all Basement bosses (Except Baby Plum; Not restricted to beating bosses in The Basement)",
+    "category": "misc"
   },
   "87": {
     "link": "The_Catacombs",
     "name": "The Catacombs",
     "inGameDescription": "Alt stage to the caves.",
-    "unlockDescription": "Beat all Caves bosses ( except Bumbino) (not restricted to beating bosses in The Caves)"
+    "unlockDescription": "Beat all Caves bosses (Except Bumbino; Not restricted to beating bosses in The Caves)",
+    "category": "misc"
   },
   "88": {
     "link": "Necropolis",
     "name": "The Necropolis",
     "inGameDescription": "Alt stage to the depths.",
-    "unlockDescription": "Beat all Depths bosses ( except Reap Creep) (not restricted to beating bosses in The Depths)"
+    "unlockDescription": "Beat all Depths bosses (Except Reap Creep; Not restricted to beating bosses in The Depths)",
+    "category": "misc"
   },
   "89": {
     "link": "Runes",
     "name": "Rune of Hagalaz",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete Pitch Black (challenge #1)"
+    "unlockDescription": "Complete Pitch Black (challenge #1)",
+    "category": "challenge"
   },
   "90": {
     "link": "Runes",
     "name": "Rune of Jera",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete High Brow (challenge #2)"
+    "unlockDescription": "Complete High Brow (challenge #2)",
+    "category": "challenge"
   },
   "91": {
     "link": "Runes",
     "name": "Rune of Ehwaz",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete Head Trauma (challenge #3)"
+    "unlockDescription": "Complete Head Trauma (challenge #3)",
+    "category": "challenge"
   },
   "92": {
     "link": "Runes",
     "name": "Rune of Dagaz",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete Darkness Falls (challenge #4)"
+    "unlockDescription": "Complete Darkness Falls (challenge #4)",
+    "category": "challenge"
   },
   "93": {
     "link": "Runes",
     "name": "Rune of Ansuz",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete The Tank (challenge #5)"
+    "unlockDescription": "Complete The Tank (challenge #5)",
+    "category": "challenge"
   },
   "94": {
     "link": "Runes",
     "name": "Rune of Perthro",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete Solar System (challenge #6)"
+    "unlockDescription": "Complete Solar System (challenge #6)",
+    "category": "challenge"
   },
   "95": {
     "link": "Runes",
     "name": "Rune of Berkano",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete Purist (challenge #20)"
+    "unlockDescription": "Complete Purist (challenge #20)",
+    "category": "challenge"
   },
   "96": {
     "link": "Runes",
     "name": "Rune of Algiz",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete Cat Got Your Tongue (challenge #8)"
+    "unlockDescription": "Complete Cat Got Your Tongue (challenge #8)",
+    "category": "challenge"
   },
   "97": {
     "link": "Chaos_Card",
     "name": "Chaos Card",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete Demo Man (challenge #9)"
+    "unlockDescription": "Complete Demo Man (challenge #9)",
+    "category": "challenge"
   },
   "98": {
     "link": "Credit_Card",
     "name": "Credit Card",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete Cursed! (challenge #10)"
+    "unlockDescription": "Complete Cursed! (challenge #10)",
+    "category": "challenge"
   },
   "99": {
     "link": "Rules_Card",
     "name": "Rules Card",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete Glass Cannon (challenge #11)"
+    "unlockDescription": "Complete Glass Cannon (challenge #11)",
+    "category": "challenge"
   },
   "100": {
     "link": "A_Card_Against_Humanity",
     "name": "Card Against Humanity",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete When Life Gives You Lemons (challenge #12)"
+    "unlockDescription": "Complete When Life Gives You Lemons (challenge #12)",
+    "category": "challenge"
   },
   "101": {
     "link": "Swallowed_Penny",
     "name": "Swallowed Penny",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete Slow Roll (challenge #15)"
+    "unlockDescription": "Complete Slow Roll (challenge #15)",
+    "category": "challenge"
   },
   "102": {
     "link": "Robo-Baby_2.0",
     "name": "Robo-Baby 2.0",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete Computer Savvy (challenge #16)"
+    "unlockDescription": "Complete Computer Savvy (challenge #16)",
+    "category": "challenge"
   },
   "103": {
     "link": "Death%27s_Touch",
     "name": "Death's Touch",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete Waka Waka (challenge #17)"
+    "unlockDescription": "Complete Waka Waka (challenge #17)",
+    "category": "challenge"
   },
   "104": {
     "link": "Tech.5",
-    "name": "Technology .5",
+    "name": "Technology.5",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete The Host (challenge #18)"
+    "unlockDescription": "Complete The Host (challenge #18)",
+    "category": "challenge"
   },
   "105": {
     "link": "Missing_No.",
     "name": "Missing No.",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete the Boss Rush as Lazarus"
+    "unlockDescription": "Complete the Boss Rush as Lazarus",
+    "category": "characterMark"
   },
   "106": {
     "link": "Isaac%27s_Tears",
     "name": "Isaac's Tears",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Isaac as Isaac"
+    "unlockDescription": "Defeat Isaac as Isaac",
+    "category": "characterMark"
   },
   "107": {
     "link": "Guillotine",
     "name": "Guillotine",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Isaac as Judas"
+    "unlockDescription": "Defeat Isaac as Judas",
+    "category": "characterMark"
   },
   "108": {
     "link": "Judas%27_Shadow",
     "name": "Judas' Shadow",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete the Boss Rush as Judas"
+    "unlockDescription": "Complete the Boss Rush as Judas",
+    "category": "characterMark"
   },
   "109": {
     "link": "Maggy%27s_Bow",
     "name": "Maggy's Bow",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete the Boss Rush as Magdalene"
+    "unlockDescription": "Complete the Boss Rush as Magdalene",
+    "category": "characterMark"
   },
   "110": {
     "link": "Cain%27s_Other_Eye",
     "name": "Cain's Other Eye",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete the Boss Rush as Cain"
+    "unlockDescription": "Complete the Boss Rush as Cain",
+    "category": "characterMark"
   },
   "111": {
     "link": "Black_Lipstick",
     "name": "Black Lipstick",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat The Lamb as Eve"
+    "unlockDescription": "Defeat The Lamb as Eve",
+    "category": "characterMark"
   },
   "112": {
     "link": "Eve%27s_Mascara",
     "name": "Eve's Mascara",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete the Boss Rush as Eve"
+    "unlockDescription": "Complete the Boss Rush as Eve",
+    "category": "characterMark"
   },
   "113": {
     "link": "Fate",
     "name": "Fate",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat ??? as ???"
+    "unlockDescription": "Defeat ??? as ???",
+    "category": "characterMark"
   },
   "114": {
     "link": "%3F%3F%3F%27s_Only_Friend",
     "name": "???'s Only Friend",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete the Boss Rush as ???"
+    "unlockDescription": "Complete the Boss Rush as ???",
+    "category": "characterMark"
   },
   "115": {
     "link": "Samson%27s_Chains",
     "name": "Samson's Chains",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete the Boss Rush as Samson"
+    "unlockDescription": "Complete the Boss Rush as Samson",
+    "category": "characterMark"
   },
   "116": {
     "link": "Lazarus%27_Rags",
     "name": "Lazarus' Rags",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Isaac as Lazarus"
+    "unlockDescription": "Defeat Isaac as Lazarus",
+    "category": "characterMark"
   },
   "117": {
     "link": "Broken_Ankh",
     "name": "Broken Ankh",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Satan as Lazarus"
+    "unlockDescription": "Defeat Satan as Lazarus",
+    "category": "characterMark"
   },
   "118": {
     "link": "Store_Credit",
     "name": "Store Credit",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat ??? as Lazarus"
+    "unlockDescription": "Defeat ??? as Lazarus",
+    "category": "characterMark"
   },
   "119": {
     "link": "Pandora%27s_Box",
     "name": "Pandora's Box",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat The Lamb as Lazarus"
+    "unlockDescription": "Defeat The Lamb as Lazarus",
+    "category": "characterMark"
   },
   "120": {
     "link": "Suicide_King",
     "name": "Suicide King",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete Suicide King (challenge #7)"
+    "unlockDescription": "Complete Suicide King (challenge #7)",
+    "category": "challenge"
   },
   "121": {
     "link": "Blank_Card",
     "name": "Blank Card",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Isaac as Eden"
+    "unlockDescription": "Defeat Isaac as Eden",
+    "category": "characterMark"
   },
   "122": {
     "link": "Book_of_Secrets",
     "name": "Book of Secrets",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Satan as Eden"
+    "unlockDescription": "Defeat Satan as Eden",
+    "category": "characterMark"
   },
   "123": {
     "link": "Mysterious_Paper",
     "name": "Mysterious Paper",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Beat ??? as Eden"
+    "unlockDescription": "Defeat ??? as Eden",
+    "category": "characterMark"
   },
   "124": {
     "link": "Mystery_Sack",
     "name": "Mystery Sack",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat The Lamb as Eden"
+    "unlockDescription": "Defeat The Lamb as Eden",
+    "category": "characterMark"
   },
   "125": {
     "link": "Undefined",
     "name": "Undefined",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete the Boss Rush as Eden"
+    "unlockDescription": "Complete the Boss Rush as Eden",
+    "category": "characterMark"
   },
   "126": {
     "link": "Satanic_Bible",
     "name": "Satanic Bible",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Isaac as Azazel"
+    "unlockDescription": "Defeat Isaac as Azazel",
+    "category": "characterMark"
   },
   "127": {
     "link": "Daemon%27s_Tail",
     "name": "Daemon's Tail",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Satan as Azazel"
+    "unlockDescription": "Defeat Satan as Azazel",
+    "category": "characterMark"
   },
   "128": {
     "link": "Abaddon",
     "name": "Abaddon",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat ??? as Azazel"
+    "unlockDescription": "Defeat ??? as Azazel",
+    "category": "characterMark"
   },
   "129": {
     "link": "Isaac%27s_Heart",
     "name": "Isaac's Heart",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Isaac as The Lost"
+    "unlockDescription": "Defeat Isaac as The Lost",
+    "category": "characterMark"
   },
   "130": {
     "link": "The_Mind",
     "name": "The Mind",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Satan as The Lost"
+    "unlockDescription": "Defeat Satan as The Lost",
+    "category": "characterMark"
   },
   "131": {
     "link": "The_Body",
     "name": "The Body",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat ??? as The Lost"
+    "unlockDescription": "Defeat ??? as The Lost",
+    "category": "characterMark"
   },
   "132": {
     "link": "The_Soul",
     "name": "The Soul",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat The Lamb as The Lost"
+    "unlockDescription": "Defeat The Lamb as The Lost",
+    "category": "characterMark"
   },
   "133": {
     "link": "D100",
     "name": "The D100",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete the Boss Rush as The Lost"
+    "unlockDescription": "Complete the Boss Rush as The Lost",
+    "category": "characterMark"
   },
   "134": {
     "link": "Blue_Map",
     "name": "Blue Map",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Donate 10 Coins to the Donation Machine"
+    "unlockDescription": "Donate 10 Coins to the Donation Machine",
+    "category": "misc"
   },
   "135": {
     "link": "There%27s_Options",
     "name": "There's Options",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Donate 50 Coins to the Donation Machine"
+    "unlockDescription": "Donate 50 Coins to the Donation Machine",
+    "category": "misc"
   },
   "136": {
     "link": "Black_Candle",
     "name": "Black Candle",
     "inGameDescription": "Unlocked a new item",
-    "unlockDescription": "Donate 150 Coins to the Donation Machine"
+    "unlockDescription": "Donate 150 Coins to the Donation Machine",
+    "category": "misc"
   },
   "137": {
     "link": "Red_Candle",
     "name": "Red Candle",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Donate 400 Coins to the Donation Machine"
+    "unlockDescription": "Donate 400 Coins to the Donation Machine",
+    "category": "misc"
   },
   "138": {
     "link": "Stop_Watch",
     "name": "Stop Watch",
     "inGameDescription": "Unlocked a new item",
-    "unlockDescription": "Donate 999 Coins to the Donation Machine"
+    "unlockDescription": "Donate 999 Coins to the Donation Machine",
+    "category": "misc"
   },
   "139": {
     "link": "Wire_Coat_Hanger",
     "name": "Wire Coat Hanger",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Mom's Heart 4 times"
+    "unlockDescription": "Defeat Mom's Heart 4 times",
+    "category": "misc"
   },
   "140": {
     "link": "Ipecac",
     "name": "Ipecac",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Mom's Heart 6 times"
+    "unlockDescription": "Defeat Mom's Heart 6 times",
+    "category": "misc"
   },
   "141": {
     "link": "Experimental_Treatment",
     "name": "Experimental Treatment",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Mom's Heart 7 times"
+    "unlockDescription": "Defeat Mom's Heart 7 times",
+    "category": "misc"
   },
   "142": {
     "link": "Krampus",
     "name": "Krampus",
     "inGameDescription": "Unlocked another miniboss!",
-    "unlockDescription": "Take 20 items from Devil Rooms"
+    "unlockDescription": "Take 20 items from Devil Rooms",
+    "category": "misc"
   },
   "143": {
     "link": "Head_of_Krampus",
     "name": "Head of Krampus",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Krampus"
+    "unlockDescription": "Defeat Krampus",
+    "category": "misc"
   },
   "144": {
     "link": "Cube_of_Meat",
     "name": "Super Meat Boy",
     "inGameDescription": "Built him out of meat cubes.",
-    "unlockDescription": "Make a Super Meat Boy by picking up 4 copies of Cube of Meat in one run; see Unlocking Super Meat Boy &amp; Super Bandage Girl"
+    "unlockDescription": "Make a Super Meat Boy by picking up 4 copies of Cube of Meat in one run (See Unlocking Super Meat Boy & Super Bandage Girl)",
+    "category": "misc"
   },
   "145": {
     "link": "Butter_Bean",
     "name": "Butter Bean",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Destroy 100 Poops"
+    "unlockDescription": "Destroy 100 poops",
+    "category": "misc"
   },
   "146": {
     "link": "Little_Baggy",
     "name": "Little Baggy",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Pick up any 2 of the following items in a single run: Roid Rage, The Virus, Growth Hormones, Experimental Treatment, and Speed Ball (any 2 items that have the \"syringe\" item tag)"
+    "unlockDescription": "Pick up 2 syringe-related items in a single run (Syringe-related items have the 'syringe' item tag)",
+    "category": "misc"
   },
   "147": {
     "link": "Blood_Bag",
     "name": "Blood Bag",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Use the Blood Donation Machine 30 times"
+    "unlockDescription": "Use the Blood Donation Machine 30 times",
+    "category": "misc"
   },
   "148": {
     "link": "D4",
     "name": "The D4",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Blow up 30 Slot Machine"
+    "unlockDescription": "Blow up 30 Slot Machine",
+    "category": "misc"
   },
   "149": {
     "link": "Missing_Poster",
     "name": "Missing Poster",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat The Lamb as Isaac"
+    "unlockDescription": "Defeat The Lamb as Isaac",
+    "category": "characterMark"
   },
   "150": {
     "link": "Rubber_Cement",
     "name": "Rubber Cement",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Mom's Heart 2 times"
+    "unlockDescription": "Defeat Mom's Heart 2 times",
+    "category": "misc"
   },
   "151": {
-    "link": "Shop#Levels",
+    "link": "Shop#Layouts",
     "name": "Store Upgrade lv.1",
     "inGameDescription": "Donated 20 pennies to the shop.",
-    "unlockDescription": "Donate 20 Coins to the Donation Machine"
+    "unlockDescription": "Donate 20 Coins to the Donation Machine",
+    "category": "misc"
   },
   "152": {
-    "link": "Shop#Levels",
+    "link": "Shop#Layouts",
     "name": "Store Upgrade lv.2",
     "inGameDescription": "Donated 100 pennies to the shop.",
-    "unlockDescription": "Donate 100 Coins to the Donation Machine"
+    "unlockDescription": "Donate 100 Coins to the Donation Machine",
+    "category": "misc"
   },
   "153": {
-    "link": "Shop#Levels",
+    "link": "Shop#Layouts",
     "name": "Store Upgrade lv.3",
     "inGameDescription": "Donated 200 pennies to the shop.",
-    "unlockDescription": "Donate 200 Coins to the Donation Machine"
+    "unlockDescription": "Donate 200 Coins to the Donation Machine",
+    "category": "misc"
   },
   "154": {
-    "link": "Shop#Levels",
+    "link": "Shop#Layouts",
     "name": "Store Upgrade lv.4",
     "inGameDescription": "Donated 600 pennies to the shop.",
-    "unlockDescription": "Donate 600 Coins to the Donation Machine"
+    "unlockDescription": "Donate 600 Coins to the Donation Machine",
+    "category": "misc"
   },
   "155": {
     "link": "Angel",
     "name": "Angels",
     "inGameDescription": "They are waiting.",
-    "unlockDescription": "Complete Chapter 6"
+    "unlockDescription": "Complete Chapter 6",
+    "category": "misc"
   },
   "156": {
     "link": "Godhead",
     "name": "Godhead",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Earn all 12 Completion Marks on Hard mode as The Lost"
+    "unlockDescription": "Earn all 12 Completion Marks on Hard mode as The Lost",
+    "category": "characterMark"
   },
   "157": {
     "link": "Darkness_Falls",
     "name": "Darkness Falls",
     "inGameDescription": "Unlocked Challenge #4.",
-    "unlockDescription": "Defeat Mom's Heart 11 times Defeat Satan and ??? as Eve"
+    "unlockDescription": "Defeat Mom's Heart 11 times and defeat ??? as Eve",
+    "category": "characterMark"
   },
   "158": {
     "link": "The_Tank",
     "name": "The Tank",
     "inGameDescription": "Unlocked Challenge #5.",
-    "unlockDescription": "Have 7 or more Red Heart Containers at one time"
+    "unlockDescription": "Have 7 or more Red Heart Containers at one time",
+    "category": "misc"
   },
   "159": {
     "link": "Solar_System",
     "name": "Solar System",
     "inGameDescription": "Unlocked Challenge #6.",
-    "unlockDescription": "Defeat Mom's Heart 3 times"
+    "unlockDescription": "Defeat Mom's Heart 3 times",
+    "category": "misc"
   },
   "160": {
     "link": "Suicide_King_(Challenge)",
     "name": "Suicide King",
     "inGameDescription": "Unlocked Challenge #7.",
-    "unlockDescription": "Defeat Mom's Heart 11 times"
+    "unlockDescription": "Defeat Mom's Heart 11 times and unlock Lazarus",
+    "category": "misc"
   },
   "161": {
     "link": "Cat_Got_Your_Tongue",
     "name": "Cat Got Your Tongue",
     "inGameDescription": "Unlocked Challenge #8.",
-    "unlockDescription": "Become Guppy"
+    "unlockDescription": "Become Guppy",
+    "category": "misc"
   },
   "162": {
     "link": "Demo_Man",
     "name": "Demo Man",
     "inGameDescription": "Unlocked Challenge #9.",
-    "unlockDescription": "Defeat Mom's Heart 9 times"
+    "unlockDescription": "Defeat Mom's Heart 9 times",
+    "category": "misc"
   },
   "163": {
     "link": "Cursed!",
     "name": "Cursed!",
     "inGameDescription": "Unlocked Challenge #10.",
-    "unlockDescription": "Have 7 or more Red Heart Containers at one time"
+    "unlockDescription": "Have 7 or more Red Heart Containers at one time",
+    "category": "misc"
   },
   "164": {
     "link": "Glass_Cannon_(Challenge)",
     "name": "Glass Cannon",
     "inGameDescription": "Unlocked Challenge #11.",
-    "unlockDescription": "Beat The Family Man (challenge #19) and defeat Lokii"
+    "unlockDescription": "Beat The Family Man (challenge #19), defeat Lokii, and unlock Judas and It Lives!",
+    "category": "misc"
   },
   "165": {
     "link": "The_Family_Man",
     "name": "The Family Man",
     "inGameDescription": "Unlocked Challenge #19.",
-    "unlockDescription": "Pick up both Key Pieces from the Angels in one run"
+    "unlockDescription": "Pick up both Key Pieces from the Angels in one run and defeat Mom's Heart 11 times",
+    "category": "misc"
   },
   "166": {
     "link": "Purist",
     "name": "Purist",
     "inGameDescription": "Unlocked Challenge #20.",
-    "unlockDescription": "Defeat Mom"
+    "unlockDescription": "Defeat Mom",
+    "category": "misc"
   },
   "167": {
     "link": "Babies",
     "name": "Lost Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mom's Heart on Hard mode as Isaac"
+    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as Isaac",
+    "category": "characterMark"
   },
   "168": {
     "link": "Babies",
     "name": "Cute Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mom's Heart on Hard mode as Magdalene"
+    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as Magdalene",
+    "category": "characterMark"
   },
   "169": {
     "link": "Babies",
     "name": "Crow Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mom's Heart on Hard mode as Eve"
+    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as Eve",
+    "category": "characterMark"
   },
   "170": {
     "link": "Babies",
     "name": "Shadow Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mom's Heart on Hard mode as Judas"
+    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as Judas",
+    "category": "characterMark"
   },
   "171": {
     "link": "Babies",
     "name": "Glass Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mom's Heart on Hard mode as Cain"
+    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as Cain",
+    "category": "characterMark"
   },
   "172": {
     "link": "Babies",
     "name": "Wrapped Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mom's Heart on Hard mode as Azazel Defeat Mom's Heart on Hard mode as Lazarus"
+    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as Lazarus",
+    "category": "characterMark"
   },
   "173": {
     "link": "Babies",
     "name": "Begotten Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mom's Heart on Hard mode as Lazarus Defeat Mom's Heart on Hard mode as Azazel"
+    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as Azazel",
+    "category": "characterMark"
   },
   "174": {
     "link": "Babies",
     "name": "Dead Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mom's Heart on Hard mode as ???"
+    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as ???",
+    "category": "characterMark"
   },
   "175": {
     "link": "Babies",
     "name": "-0- Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mom's Heart on Hard mode as The Lost"
+    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as The Lost",
+    "category": "characterMark"
   },
   "176": {
     "link": "Babies",
     "name": "Glitch Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mom's Heart on Hard mode as Eden"
+    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as Eden",
+    "category": "characterMark"
   },
   "177": {
     "link": "Babies",
     "name": "Fighting Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mom's Heart on Hard mode as Samson"
+    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as Samson",
+    "category": "characterMark"
   },
   "178": {
     "link": "Beelzebub",
     "name": "Lord of the Flies",
     "inGameDescription": "You became Lord of the Flies.",
-    "unlockDescription": "Become Beelzebub"
+    "unlockDescription": "Become Beelzebub",
+    "category": "misc"
   },
   "179": {
-    "link": "",
+    "link": "Farting_Baby",
     "name": "Fart Baby",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Hush as Isaac"
+    "unlockDescription": "Defeat Hush as Isaac",
+    "category": "characterMark"
   },
   "180": {
-    "link": "",
+    "link": "Purity",
     "name": "Purity",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Hush as Magdalene"
+    "unlockDescription": "Defeat Hush as Magdalene",
+    "category": "characterMark"
   },
   "181": {
-    "link": "",
+    "link": "D12",
     "name": "D12",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Hush as Cain"
+    "unlockDescription": "Defeat Hush as Cain",
+    "category": "characterMark"
   },
   "182": {
-    "link": "",
+    "link": "Betrayal",
     "name": "Betrayal",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Hush as Judas"
+    "unlockDescription": "Defeat Hush as Judas",
+    "category": "characterMark"
   },
   "183": {
-    "link": "",
+    "link": "Fate%27s_Reward",
     "name": "Fate's Reward",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Hush as ???"
+    "unlockDescription": "Defeat Hush as ???",
+    "category": "characterMark"
   },
   "184": {
-    "link": "",
+    "link": "Athame",
     "name": "Athame",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Hush as Eve"
+    "unlockDescription": "Defeat Hush as Eve",
+    "category": "characterMark"
   },
   "185": {
-    "link": "",
+    "link": "Blind_Rage",
     "name": "Blind Rage",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Hush as Samson"
+    "unlockDescription": "Defeat Hush as Samson",
+    "category": "characterMark"
   },
   "186": {
-    "link": "",
+    "link": "Maw_Of_The_Void",
     "name": "Maw of the Void",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Hush as Azazel"
+    "unlockDescription": "Defeat Hush as Azazel",
+    "category": "characterMark"
   },
   "187": {
-    "link": "",
+    "link": "Empty_Vessel",
     "name": "Empty Vessel",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Hush as Lazarus"
+    "unlockDescription": "Defeat Hush as Lazarus",
+    "category": "characterMark"
   },
   "188": {
-    "link": "",
+    "link": "Eden%27s_Blessing",
     "name": "Eden's Blessing",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Hush as Eden"
+    "unlockDescription": "Defeat Hush as Eden",
+    "category": "characterMark"
   },
   "189": {
-    "link": "",
+    "link": "Sworn_Protector",
     "name": "Sworn Protector",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Hush as The Lost"
+    "unlockDescription": "Defeat Hush as The Lost",
+    "category": "characterMark"
   },
   "190": {
-    "link": "",
+    "link": "Incubus",
     "name": "Incubus",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Hush as Lilith"
+    "unlockDescription": "Defeat Hush as Lilith",
+    "category": "characterMark"
   },
   "191": {
-    "link": "",
+    "link": "Keeper",
     "name": "Keeper now holds... A Penny!",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Hush as Keeper"
+    "unlockDescription": "Defeat Hush as Keeper",
+    "category": "characterMark"
   },
   "192": {
-    "link": "",
+    "link": "Lil_Chest",
     "name": "Lil' Chest",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greed as Isaac"
+    "unlockDescription": "Defeat Ultra Greed as Isaac",
+    "category": "characterMark"
   },
   "193": {
-    "link": "",
+    "link": "Censer",
     "name": "Censer",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greed as Magdalene"
+    "unlockDescription": "Defeat Ultra Greed as Magdalene",
+    "category": "characterMark"
   },
   "194": {
-    "link": "",
+    "link": "Evil_Eye",
     "name": "Evil Eye",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greed as Cain"
+    "unlockDescription": "Defeat Ultra Greed as Cain",
+    "category": "characterMark"
   },
   "195": {
-    "link": "",
+    "link": "My_Shadow",
     "name": "My Shadow",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greed as Judas"
+    "unlockDescription": "Defeat Ultra Greed as Judas",
+    "category": "characterMark"
   },
   "196": {
-    "link": "",
+    "link": "Cracked_Dice",
     "name": "Cracked Dice",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greed as ???"
+    "unlockDescription": "Defeat Ultra Greed as ???",
+    "category": "characterMark"
   },
   "197": {
-    "link": "",
+    "link": "Black_Feather",
     "name": "Black Feather",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greed as Eve"
+    "unlockDescription": "Defeat Ultra Greed as Eve",
+    "category": "characterMark"
   },
   "198": {
-    "link": "",
+    "link": "Lusty_Blood",
     "name": "Lusty Blood",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greed as Samson"
+    "unlockDescription": "Defeat Ultra Greed as Samson",
+    "category": "characterMark"
   },
   "199": {
-    "link": "",
+    "link": "Lilith",
     "name": "Lilith",
     "inGameDescription": "Unlocked a new character.",
-    "unlockDescription": "Defeat Ultra Greed as Azazel"
+    "unlockDescription": "Defeat Ultra Greed as Azazel",
+    "category": "characterUnlock"
   },
   "200": {
-    "link": "",
+    "link": "Key_Bum",
     "name": "Key Bum",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greed as Lazarus"
+    "unlockDescription": "Defeat Ultra Greed as Lazarus",
+    "category": "characterMark"
   },
   "201": {
-    "link": "",
+    "link": "GB_Bug",
     "name": "GB Bug",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greed as Eden"
+    "unlockDescription": "Defeat Ultra Greed as Eden",
+    "category": "characterMark"
   },
   "202": {
-    "link": "",
+    "link": "Zodiac",
     "name": "Zodiac",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greed as The Lost"
+    "unlockDescription": "Defeat Ultra Greed as The Lost",
+    "category": "characterMark"
   },
   "203": {
-    "link": "",
+    "link": "Box_of_Friends",
     "name": "Box of Friends",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greed as Lilith"
+    "unlockDescription": "Defeat Ultra Greed as Lilith",
+    "category": "characterMark"
   },
   "204": {
-    "link": "",
+    "link": "Rib_of_Greed",
     "name": "Rib of Greed",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greed as Keeper"
+    "unlockDescription": "Defeat Ultra Greed as Keeper",
+    "category": "characterMark"
   },
   "205": {
-    "link": "",
+    "link": "Babies",
     "name": "Cry Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mega Satan as Isaac"
+    "unlockDescription": "Defeat Mega Satan as Isaac",
+    "category": "characterMark"
   },
   "206": {
-    "link": "",
+    "link": "Babies",
     "name": "Red Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mega Satan as Magdalene"
+    "unlockDescription": "Defeat Mega Satan as Magdalene",
+    "category": "characterMark"
   },
   "207": {
-    "link": "",
+    "link": "Babies",
     "name": "Green Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mega Satan as Cain"
+    "unlockDescription": "Defeat Mega Satan as Cain",
+    "category": "characterMark"
   },
   "208": {
-    "link": "",
+    "link": "Babies",
     "name": "Brown Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mega Satan as Judas"
+    "unlockDescription": "Defeat Mega Satan as Judas",
+    "category": "characterMark"
   },
   "209": {
-    "link": "",
+    "link": "Babies",
     "name": "Blue Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mega Satan as ???"
+    "unlockDescription": "Defeat Mega Satan as ???",
+    "category": "characterMark"
   },
   "210": {
-    "link": "",
+    "link": "Babies",
     "name": "Lil' Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mega Satan as Eve"
+    "unlockDescription": "Defeat Mega Satan as Eve",
+    "category": "characterMark"
   },
   "211": {
-    "link": "",
+    "link": "Babies",
     "name": "Rage Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mega Satan as Samson"
+    "unlockDescription": "Defeat Mega Satan as Samson",
+    "category": "characterMark"
   },
   "212": {
-    "link": "",
+    "link": "Babies",
     "name": "Black Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mega Satan as Azazel"
+    "unlockDescription": "Defeat Mega Satan as Azazel",
+    "category": "characterMark"
   },
   "213": {
-    "link": "",
+    "link": "Babies",
     "name": "Long Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mega Satan as Lazarus"
+    "unlockDescription": "Defeat Mega Satan as Lazarus",
+    "category": "characterMark"
   },
   "214": {
-    "link": "",
+    "link": "Babies",
     "name": "Yellow Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mega Satan as Eden"
+    "unlockDescription": "Defeat Mega Satan as Eden",
+    "category": "characterMark"
   },
   "215": {
-    "link": "",
+    "link": "Babies",
     "name": "White Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mega Satan as The Lost"
+    "unlockDescription": "Defeat Mega Satan as The Lost",
+    "category": "characterMark"
   },
   "216": {
-    "link": "",
+    "link": "Babies",
     "name": "Big Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mega Satan as Lilith"
+    "unlockDescription": "Defeat Mega Satan as Lilith",
+    "category": "characterMark"
   },
   "217": {
-    "link": "",
+    "link": "Babies",
     "name": "Noose Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mega Satan as Keeper"
+    "unlockDescription": "Defeat Mega Satan as Keeper",
+    "category": "characterMark"
   },
   "218": {
-    "link": "",
+    "link": "Rune_Bag",
     "name": "Rune Bag",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Isaac as Lilith"
+    "unlockDescription": "Defeat Isaac as Lilith",
+    "category": "characterMark"
   },
   "219": {
-    "link": "",
+    "link": "Cambion_Conception",
     "name": "Cambion Conception",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat ??? as Lilith"
+    "unlockDescription": "Defeat ??? as Lilith",
+    "category": "characterMark"
   },
   "220": {
-    "link": "",
+    "link": "Serpent%27s_Kiss",
     "name": "Serpent's Kiss",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Satan as Lilith"
+    "unlockDescription": "Defeat Satan as Lilith",
+    "category": "characterMark"
   },
   "221": {
-    "link": "",
+    "link": "Succubus",
     "name": "Succubus",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat The Lamb as Lilith"
+    "unlockDescription": "Defeat The Lamb as Lilith",
+    "category": "characterMark"
   },
   "222": {
-    "link": "",
+    "link": "Immaculate_Conception",
     "name": "Immaculate Conception",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete the Boss Rush as Lilith"
+    "unlockDescription": "Complete the Boss Rush as Lilith",
+    "category": "characterMark"
   },
   "223": {
-    "link": "",
+    "link": "Babies",
     "name": "Goat Head Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mom's Heart on Hard mode as Lilith"
+    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as Lilith",
+    "category": "characterMark"
   },
   "224": {
-    "link": "",
+    "link": "Hearts",
     "name": "Gold Heart",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete XXXXXXXXL (challenge #21)"
+    "unlockDescription": "Complete XXXXXXXXL (challenge #21)",
+    "category": "challenge"
   },
   "225": {
-    "link": "",
+    "link": "Get_out_of_Jail_Free_Card",
     "name": "Get out of Jail Free Card",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete SPEED! (challenge #22)"
+    "unlockDescription": "Complete SPEED! (challenge #22)",
+    "category": "challenge"
   },
   "226": {
-    "link": "",
+    "link": "Gold_Bomb",
     "name": "Gold Bomb",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete Blue Bomber (challenge #23)"
+    "unlockDescription": "Complete Blue Bomber (challenge #23)",
+    "category": "challenge"
   },
   "227": {
-    "link": "",
+    "link": "Percs!",
     "name": "2 new pills",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete PAY TO PLAY (challenge #24)"
+    "unlockDescription": "Complete PAY TO PLAY (challenge #24)",
+    "category": "challenge"
   },
   "228": {
-    "link": "",
+    "link": "Re-Lax",
     "name": "2 new pills",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete Have a Heart (challenge #25)"
+    "unlockDescription": "Complete Have a Heart (challenge #25)",
+    "category": "challenge"
   },
   "229": {
-    "link": "",
+    "link": "Poker_Chip",
     "name": "Poker Chip",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete I RULE! (challenge #26)"
+    "unlockDescription": "Complete I RULE! (challenge #26)",
+    "category": "challenge"
   },
   "230": {
-    "link": "",
+    "link": "Stud_Finder",
     "name": "Stud Finder",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete BRAINS! (challenge #27)"
+    "unlockDescription": "Complete BRAINS! (challenge #27)",
+    "category": "challenge"
   },
   "231": {
-    "link": "",
+    "link": "D8",
     "name": "D8",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete PRIDE DAY! (challenge #28)"
+    "unlockDescription": "Complete PRIDE DAY! (challenge #28)",
+    "category": "challenge"
   },
   "232": {
-    "link": "",
+    "link": "Kidney_Stone",
     "name": "Kidney Stone",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete The Guardian (challenge #30) Complete Onan's Streak (challenge #29)"
+    "unlockDescription": "Complete Onan's Streak (challenge #29)",
+    "category": "challenge"
   },
   "233": {
-    "link": "",
+    "link": "Blank_Rune_(Achievement)",
     "name": "Blank Rune",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete Onan's Streak (challenge #29) Complete The Guardian (challenge #30)"
+    "unlockDescription": "Complete The Guardian (challenge #30)",
+    "category": "challenge"
   },
   "234": {
-    "link": "",
+    "link": "Blue_Womb",
     "name": "Blue Womb",
     "inGameDescription": "Unlocked a hidden chapter.",
-    "unlockDescription": "Defeat Mom's Heart 10 times"
+    "unlockDescription": "Defeat Mom's Heart 10 times",
+    "category": "misc"
   },
   "235": {
     "link": "",
     "name": "1001%",
     "inGameDescription": "Nerd x 1000000",
-    "unlockDescription": "Unlock all secrets and endings, and collect every item in the game"
+    "unlockDescription": "Unlock 275 random achievements and have at least 510 items in the collection page",
+    "category": "misc"
   },
   "236": {
-    "link": "",
+    "link": "Keeper",
     "name": "Keeper holds Wooden Nickel",
     "inGameDescription": "Unlocked a new starting item.",
-    "unlockDescription": "Defeat Isaac as Keeper"
+    "unlockDescription": "Defeat Isaac as Keeper",
+    "category": "characterMark"
   },
   "237": {
-    "link": "",
+    "link": "Keeper",
     "name": "Keeper holds Store Key",
     "inGameDescription": "Unlocked a new starting item.",
-    "unlockDescription": "Defeat Satan as Keeper"
+    "unlockDescription": "Defeat Satan as Keeper",
+    "category": "characterMark"
   },
   "238": {
-    "link": "",
+    "link": "Deep_Pockets",
     "name": "Deep Pockets",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat ??? as Keeper"
+    "unlockDescription": "Defeat ??? as Keeper",
+    "category": "characterMark"
   },
   "239": {
-    "link": "",
+    "link": "Karma",
     "name": "Karma",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat The Lamb as Keeper"
+    "unlockDescription": "Defeat The Lamb as Keeper",
+    "category": "characterMark"
   },
   "240": {
-    "link": "",
+    "link": "Sticky_nickel",
     "name": "Sticky Nickels",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete the Boss Rush as Keeper"
+    "unlockDescription": "Complete the Boss Rush as Keeper",
+    "category": "characterMark"
   },
   "241": {
-    "link": "",
+    "link": "Babies",
     "name": "Super Greed Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mom's Heart on Hard mode as Keeper"
+    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as Keeper",
+    "category": "characterMark"
   },
   "242": {
-    "link": "",
+    "link": "Lucky_penny",
     "name": "Lucky Pennies",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Donate 1 Coin to the Greed Donation Machine"
+    "unlockDescription": "Donate 2 Coins to the Greed Donation Machine",
+    "category": "misc"
   },
   "243": {
-    "link": "",
+    "link": "Special_shopkeeper",
     "name": "Special Hanging Shopkeepers",
     "inGameDescription": "Unlocked a secret.",
-    "unlockDescription": "Donate 10 Coins to the Greed Donation Machine"
+    "unlockDescription": "Donate 14 Coins to the Greed Donation Machine",
+    "category": "misc"
   },
   "244": {
-    "link": "",
+    "link": "Wooden_Nickel",
     "name": "Wooden Nickel",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Donate 30 Coins to the Greed Donation Machine"
+    "unlockDescription": "Donate 33 Coins to the Greed Donation Machine",
+    "category": "misc"
   },
   "245": {
-    "link": "",
+    "link": "Cain",
     "name": "Cain holds Paperclip",
     "inGameDescription": "Unlocked a new starting item.",
-    "unlockDescription": "Donate 68 Coins to the Greed Donation Machine"
+    "unlockDescription": "Donate 68 Coins to the Greed Donation Machine",
+    "category": "misc"
   },
   "246": {
-    "link": "",
+    "link": "Ultra_Greed",
     "name": "Everything is Terrible 2!!!",
     "inGameDescription": "Greed just got harder!",
-    "unlockDescription": "Donate 111 Coins to the Greed Donation Machine"
+    "unlockDescription": "Donate 111 Coins to the Greed Donation Machine",
+    "category": "misc"
   },
   "247": {
-    "link": "",
+    "link": "Special_shopkeeper",
     "name": "Special Shopkeepers",
     "inGameDescription": "Unlocked a secret.",
-    "unlockDescription": "Donate 234 Coins to the Greed Donation Machine"
+    "unlockDescription": "Donate 234 Coins to the Greed Donation Machine",
+    "category": "misc"
   },
   "248": {
-    "link": "",
+    "link": "Eve",
     "name": "Eve now holds Razor Blade",
     "inGameDescription": "Unlocked a new starting item.",
-    "unlockDescription": "Donate 439 Coins to the Greed Donation Machine"
+    "unlockDescription": "Donate 439 Coins to the Greed Donation Machine",
+    "category": "misc"
   },
   "249": {
-    "link": "",
+    "link": "Store_Key",
     "name": "Store Key",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Donate 666 Coins to the Greed Donation Machine"
+    "unlockDescription": "Donate 666 Coins to the Greed Donation Machine",
+    "category": "misc"
   },
   "250": {
-    "link": "",
+    "link": "The_Lost",
     "name": "Lost holds Holy Mantle",
     "inGameDescription": "Unlocked a new starting item.",
-    "unlockDescription": "Donate 879 Coins to the Greed Donation Machine"
+    "unlockDescription": "Donate 879 Coins to the Greed Donation Machine",
+    "category": "misc"
   },
   "251": {
-    "link": "",
+    "link": "Keeper",
     "name": "Keeper",
     "inGameDescription": "Unlocked a new character.",
-    "unlockDescription": "Donate 1000 Coins to the Greed Donation Machine"
+    "unlockDescription": "Donate 1000 Coins to the Greed Donation Machine",
+    "category": "characterUnlock"
   },
   "252": {
-    "link": "",
+    "link": "Babies",
     "name": "Hive Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Earn all Hard mode Completion Marks as ???"
+    "unlockDescription": "Earn all Hard mode Completion Marks as ???",
+    "category": "characterMark"
   },
   "253": {
-    "link": "",
+    "link": "Babies",
     "name": "Buddy Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Earn all Hard mode Completion Marks as Isaac"
+    "unlockDescription": "Earn all Hard mode Completion Marks as Isaac",
+    "category": "characterMark"
   },
   "254": {
-    "link": "",
+    "link": "Babies",
     "name": "Colorful Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Earn all Hard mode Completion Marks as Magdalene"
+    "unlockDescription": "Earn all Hard mode Completion Marks as Magdalene",
+    "category": "characterMark"
   },
   "255": {
-    "link": "",
+    "link": "Babies",
     "name": "Whore Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Earn all Hard mode Completion Marks as Eve"
+    "unlockDescription": "Earn all Hard mode Completion Marks as Eve",
+    "category": "characterMark"
   },
   "256": {
-    "link": "",
+    "link": "Babies",
     "name": "Cracked Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Earn all Hard mode Completion Marks as Eden"
+    "unlockDescription": "Earn all Hard mode Completion Marks as Eden",
+    "category": "characterMark"
   },
   "257": {
-    "link": "",
+    "link": "Babies",
     "name": "Dripping Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Earn all Hard mode Completion Marks as Lazarus"
+    "unlockDescription": "Earn all Hard mode Completion Marks as Lazarus",
+    "category": "characterMark"
   },
   "258": {
-    "link": "",
+    "link": "Babies",
     "name": "Blinding Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Use Blank Card while holding XIX - The Sun"
+    "unlockDescription": "Use Blank Card while holding XIX - The Sun",
+    "category": "misc"
   },
   "259": {
-    "link": "",
+    "link": "Babies",
     "name": "Sucky Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Earn all Hard mode Completion Marks as Azazel"
+    "unlockDescription": "Earn all Hard mode Completion Marks as Azazel",
+    "category": "characterMark"
   },
   "260": {
-    "link": "",
+    "link": "Babies",
     "name": "Dark Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Earn all Hard mode Completion Marks as Lilith"
+    "unlockDescription": "Earn all Hard mode Completion Marks as Lilith",
+    "category": "characterMark"
   },
   "261": {
-    "link": "",
+    "link": "Babies",
     "name": "Picky Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Earn all Hard mode Completion Marks as Cain"
+    "unlockDescription": "Earn all Hard mode Completion Marks as Cain",
+    "category": "characterMark"
   },
   "262": {
-    "link": "",
+    "link": "Babies",
     "name": "Revenge Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Earn all Hard mode Completion Marks as Samson"
+    "unlockDescription": "Earn all Hard mode Completion Marks as Samson",
+    "category": "characterMark"
   },
   "263": {
-    "link": "",
+    "link": "Babies",
     "name": "Belial Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Earn all Hard mode Completion Marks as Judas"
+    "unlockDescription": "Earn all Hard mode Completion Marks as Judas",
+    "category": "characterMark"
   },
   "264": {
-    "link": "",
+    "link": "Babies",
     "name": "Sale Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Earn all Hard mode Completion Marks as Keeper"
+    "unlockDescription": "Earn all Hard mode Completion Marks as Keeper",
+    "category": "characterMark"
   },
   "265": {
-    "link": "",
+    "link": "XXXXXXXXL",
     "name": "XXXXXXXXL",
     "inGameDescription": "Unlocked Challenge #21.",
-    "unlockDescription": "Defeat Mom"
+    "unlockDescription": "Defeat Mom",
+    "category": "misc"
   },
   "266": {
-    "link": "",
+    "link": "SPEED!",
     "name": "SPEED!",
     "inGameDescription": "Unlocked Challenge #22.",
-    "unlockDescription": "Defeat Mom"
+    "unlockDescription": "Defeat Mom",
+    "category": "misc"
   },
   "267": {
-    "link": "",
+    "link": "Blue_Bomber",
     "name": "Blue Bomber",
     "inGameDescription": "Unlocked Challenge #23.",
-    "unlockDescription": "Destroy 10 Tinted Rocks and defeat Mom's Heart 11 times"
+    "unlockDescription": "Destroy 10 Tinted Rocks and defeat Mom's Heart 11 times",
+    "category": "misc"
   },
   "268": {
-    "link": "",
+    "link": "PAY_TO_PLAY",
     "name": "PAY TO PLAY",
     "inGameDescription": "Unlocked Challenge #24.",
-    "unlockDescription": "Defeat Isaac as Cain"
+    "unlockDescription": "Defeat Isaac as Cain",
+    "category": "characterMark"
   },
   "269": {
-    "link": "",
+    "link": "Have_a_Heart",
     "name": "Have a Heart",
     "inGameDescription": "Unlocked Challenge #25.",
-    "unlockDescription": "Defeat Mom"
+    "unlockDescription": "Defeat Mom",
+    "category": "misc"
   },
   "270": {
-    "link": "",
+    "link": "I_RULE!",
     "name": "I RULE!",
     "inGameDescription": "Unlocked Challenge #26.",
-    "unlockDescription": "Defeat ??? or The Lamb, and defeat Satan as Isaac Defeat Mega Satan"
+    "unlockDescription": "Defeat Mega Satan and unlock The Negative",
+    "category": "misc"
   },
   "271": {
-    "link": "",
+    "link": "BRAINS!",
     "name": "BRAINS!",
     "inGameDescription": "Unlocked Challenge #27.",
-    "unlockDescription": "Defeat Isaac 5 times"
+    "unlockDescription": "Defeat Isaac 5 times",
+    "category": "misc"
   },
   "272": {
-    "link": "",
+    "link": "PRIDE_DAY!",
     "name": "PRIDE DAY!",
     "inGameDescription": "Unlocked Challenge #28.",
-    "unlockDescription": "Defeat Mom"
+    "unlockDescription": "Defeat Mom",
+    "category": "misc"
   },
   "273": {
-    "link": "",
+    "link": "Onan%27s_Streak",
     "name": "Onan's Streak",
     "inGameDescription": "Unlocked Challenge #29.",
-    "unlockDescription": "Defeat Mom"
+    "unlockDescription": "Unlock Judas and It Lives!",
+    "category": "misc"
   },
   "274": {
-    "link": "",
+    "link": "The_Guardian",
     "name": "The Guardian",
     "inGameDescription": "Unlocked Challenge #30.",
-    "unlockDescription": "Defeat Mom"
+    "unlockDescription": "Defeat Mom",
+    "category": "misc"
   },
   "275": {
-    "link": "",
+    "link": "Greed_machine",
     "name": "Generosity",
     "inGameDescription": "If only everyone was as generous as you are...",
-    "unlockDescription": "Donate 999 Coins to the Greed Donation Machine"
+    "unlockDescription": "Donate 999 Coins to the Greed Donation Machine",
+    "category": "misc"
   },
   "276": {
-    "link": "",
+    "link": "Mega_Blast",
     "name": "Mega",
     "inGameDescription": "Unlocked...",
-    "unlockDescription": "Defeat Mega Satan as every character ( except Tainted characters)"
+    "unlockDescription": "Defeat Mega Satan as every character (except tainted characters)",
+    "category": "characterMark"
   },
   "277": {
-    "link": "",
+    "link": "Backasswards",
     "name": "Backasswards",
     "inGameDescription": "Unlocked a new challenge.",
-    "unlockDescription": "Defeat ??? or The Lamb Defeat Mega Satan"
+    "unlockDescription": "Defeat Mega Satan and unlock The Negative",
+    "category": "misc"
   },
   "278": {
-    "link": "",
+    "link": "Aprils_Fool",
     "name": "Aprils fool",
     "inGameDescription": "Unlocked a new challenge.",
-    "unlockDescription": "Defeat Mom"
+    "unlockDescription": "Defeat Mom",
+    "category": "misc"
   },
   "279": {
-    "link": "",
+    "link": "Pokey_Mans",
     "name": "Pokey Mans",
     "inGameDescription": "Unlocked a new challenge.",
-    "unlockDescription": "Defeat Mom's Heart 11 times"
+    "unlockDescription": "Defeat Mom's Heart 11 times",
+    "category": "misc"
   },
   "280": {
-    "link": "",
+    "link": "Ultra_Hard",
     "name": "Ultra Hard",
     "inGameDescription": "Unlocked a new challenge.",
-    "unlockDescription": "Defeat ??? or The Lamb. Possession of The Polaroid / The Negative is required, barring getting to Dark Room through a Sacrifice Room. Defeat Mega Satan"
+    "unlockDescription": "Defeat Mega Satan and unlock The Negative",
+    "category": "misc"
   },
   "281": {
-    "link": "",
+    "link": "Pong",
     "name": "PONG",
     "inGameDescription": "Unlocked a new challenge.",
-    "unlockDescription": "Defeat Isaac 5 times"
+    "unlockDescription": "Defeat Isaac 5 times",
+    "category": "misc"
   },
   "282": {
-    "link": "",
-    "name": "D Infinity",
+    "link": "D_infinity",
+    "name": "D infinity",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Delirium as Isaac"
+    "unlockDescription": "Defeat Delirium as Isaac",
+    "category": "characterMark"
   },
   "283": {
-    "link": "",
+    "link": "Eucharist",
     "name": "Eucharist",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Delirium as Magdalene"
+    "unlockDescription": "Defeat Delirium as Magdalene",
+    "category": "characterMark"
   },
   "284": {
-    "link": "",
+    "link": "Silver_Dollar",
     "name": "Silver Dollar",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Delirium as Cain"
+    "unlockDescription": "Defeat Delirium as Cain",
+    "category": "characterMark"
   },
   "285": {
-    "link": "",
+    "link": "Shade",
     "name": "Shade",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Delirium as Judas"
+    "unlockDescription": "Defeat Delirium as Judas",
+    "category": "characterMark"
   },
   "286": {
-    "link": "",
+    "link": "King_Baby",
     "name": "King Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Delirium as ???"
+    "unlockDescription": "Defeat Delirium as ???",
+    "category": "characterMark"
   },
   "287": {
-    "link": "",
+    "link": "Bloody_Crown",
     "name": "Bloody Crown",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Delirium as Samson"
+    "unlockDescription": "Defeat Delirium as Samson",
+    "category": "characterMark"
   },
   "288": {
-    "link": "",
+    "link": "Dull_Razor",
     "name": "Dull Razor",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Delirium as Eve"
+    "unlockDescription": "Defeat Delirium as Eve",
+    "category": "characterMark"
   },
   "289": {
-    "link": "",
+    "link": "Eden%27s_Soul",
     "name": "Eden's Soul",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Delirium as Eden"
+    "unlockDescription": "Defeat Delirium as Eden",
+    "category": "characterMark"
   },
   "290": {
-    "link": "",
+    "link": "Dark_Prince%27s_Crown",
     "name": "Dark Prince's Crown",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Delirium as Azazel"
+    "unlockDescription": "Defeat Delirium as Azazel",
+    "category": "characterMark"
   },
   "291": {
-    "link": "",
+    "link": "Compound_Fracture",
     "name": "Compound Fracture",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Delirium as Lazarus"
+    "unlockDescription": "Defeat Delirium as Lazarus",
+    "category": "characterMark"
   },
   "292": {
-    "link": "",
+    "link": "Euthanasia",
     "name": "Euthanasia",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Delirium as Lilith"
+    "unlockDescription": "Defeat Delirium as Lilith",
+    "category": "characterMark"
   },
   "293": {
-    "link": "",
+    "link": "Holy_Card",
     "name": "Holy Card",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Delirium as The Lost"
+    "unlockDescription": "Defeat Delirium as The Lost",
+    "category": "characterMark"
   },
   "294": {
-    "link": "",
+    "link": "Crooked_Penny",
     "name": "Crooked Penny",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Delirium as Keeper"
+    "unlockDescription": "Defeat Delirium as Keeper",
+    "category": "characterMark"
   },
   "295": {
-    "link": "",
+    "link": "Void",
     "name": "Void",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Delirium as Apollyon"
+    "unlockDescription": "Defeat Delirium as Apollyon",
+    "category": "characterMark"
   },
   "296": {
-    "link": "",
+    "link": "D1",
     "name": "D1",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greedier as Isaac"
+    "unlockDescription": "Defeat Ultra Greedier as Isaac",
+    "category": "characterMark"
   },
   "297": {
-    "link": "",
+    "link": "Glyph_of_Balance",
     "name": "Glyph of Balance",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greedier as Magdalene"
+    "unlockDescription": "Defeat Ultra Greedier as Magdalene",
+    "category": "characterMark"
   },
   "298": {
-    "link": "",
+    "link": "Sack_of_Sacks",
     "name": "Sack of Sacks",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greedier as Cain"
+    "unlockDescription": "Defeat Ultra Greedier as Cain",
+    "category": "characterMark"
   },
   "299": {
-    "link": "",
+    "link": "Eye_of_Belial",
     "name": "Eye of Belial",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greedier as Judas"
+    "unlockDescription": "Defeat Ultra Greedier as Judas",
+    "category": "characterMark"
   },
   "300": {
-    "link": "",
+    "link": "Meconium",
     "name": "Meconium",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greedier as ???"
+    "unlockDescription": "Defeat Ultra Greedier as ???",
+    "category": "characterMark"
   },
   "301": {
-    "link": "",
+    "link": "Stem_Cell",
     "name": "Stem Cell",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greedier as Samson"
+    "unlockDescription": "Defeat Ultra Greedier as Samson",
+    "category": "characterMark"
   },
   "302": {
-    "link": "",
+    "link": "Crow_Heart",
     "name": "Crow Heart",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greedier as Eve"
+    "unlockDescription": "Defeat Ultra Greedier as Eve",
+    "category": "characterMark"
   },
   "303": {
-    "link": "",
+    "link": "Metronome",
     "name": "Metronome",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greedier as Eden"
+    "unlockDescription": "Defeat Ultra Greedier as Eden",
+    "category": "characterMark"
   },
   "304": {
-    "link": "",
+    "link": "Bat_Wing",
     "name": "Bat Wing",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greedier as Azazel"
+    "unlockDescription": "Defeat Ultra Greedier as Azazel",
+    "category": "characterMark"
   },
   "305": {
-    "link": "",
+    "link": "Plan_C",
     "name": "Plan C",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greedier as Lazarus"
+    "unlockDescription": "Defeat Ultra Greedier as Lazarus",
+    "category": "characterMark"
   },
   "306": {
-    "link": "",
+    "link": "Duality",
     "name": "Duality",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greedier as Lilith"
+    "unlockDescription": "Defeat Ultra Greedier as Lilith",
+    "category": "characterMark"
   },
   "307": {
-    "link": "",
+    "link": "Dad%27s_Lost_Coin",
     "name": "Dad's Lost Coin",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greedier as The Lost"
+    "unlockDescription": "Defeat Ultra Greedier as The Lost",
+    "category": "characterMark"
   },
   "308": {
-    "link": "",
+    "link": "Eye_of_Greed",
     "name": "Eye of Greed",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greedier as Keeper"
+    "unlockDescription": "Defeat Ultra Greedier as Keeper",
+    "category": "characterMark"
   },
   "309": {
-    "link": "",
+    "link": "Black_Rune",
     "name": "Black Rune",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greedier as Apollyon"
+    "unlockDescription": "Defeat Ultra Greedier as Apollyon",
+    "category": "characterMark"
   },
   "310": {
-    "link": "",
+    "link": "Locust_of_War",
     "name": "Locust of Wrath",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Isaac as Apollyon"
+    "unlockDescription": "Defeat Isaac as Apollyon",
+    "category": "characterMark"
   },
   "311": {
-    "link": "",
+    "link": "Locust_of_Pestilence",
     "name": "Locust of Pestilence",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Satan as Apollyon"
+    "unlockDescription": "Defeat Satan as Apollyon",
+    "category": "characterMark"
   },
   "312": {
-    "link": "",
+    "link": "Locust_of_Famine",
     "name": "Locust of Famine",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat ??? as Apollyon"
+    "unlockDescription": "Defeat ??? as Apollyon",
+    "category": "characterMark"
   },
   "313": {
-    "link": "",
+    "link": "Locust_of_Death",
     "name": "Locust of Death",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat The Lamb as Apollyon"
+    "unlockDescription": "Defeat The Lamb as Apollyon",
+    "category": "characterMark"
   },
   "314": {
-    "link": "",
+    "link": "Locust_of_Conquest",
     "name": "Locust of Conquest",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete the Boss Rush as Apollyon"
+    "unlockDescription": "Complete the Boss Rush as Apollyon",
+    "category": "characterMark"
   },
   "315": {
-    "link": "",
+    "link": "Hushy",
     "name": "Hushy",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Hush as Apollyon"
+    "unlockDescription": "Defeat Hush as Apollyon",
+    "category": "characterMark"
   },
   "316": {
-    "link": "",
+    "link": "Brown_Nugget",
     "name": "Brown Nugget",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greed as Apollyon"
+    "unlockDescription": "Defeat Ultra Greed as Apollyon",
+    "category": "characterMark"
   },
   "317": {
-    "link": "",
+    "link": "Babies",
     "name": "Mort Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mega Satan as Apollyon"
+    "unlockDescription": "Defeat Mega Satan as Apollyon",
+    "category": "characterMark"
   },
   "318": {
-    "link": "",
+    "link": "Smelter",
     "name": "Smelter",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as Apollyon"
+    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as Apollyon",
+    "category": "characterMark"
   },
   "319": {
-    "link": "",
+    "link": "Babies",
     "name": "Apollyon Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Earn all Hard mode Completion Marks as Apollyon"
+    "unlockDescription": "Earn all Hard mode Completion Marks as Apollyon",
+    "category": "characterMark"
   },
   "320": {
-    "link": "",
+    "link": "The_Void",
     "name": "New Area",
     "inGameDescription": "Unlocked a new area.",
-    "unlockDescription": "Defeat Hush"
+    "unlockDescription": "Defeat Hush",
+    "category": "misc"
   },
   "321": {
-    "link": "",
+    "link": "Gulp!",
     "name": "Once More with Feeling!",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete a Victory Lap, defeating The Lamb"
+    "unlockDescription": "Complete a Victory Lap by defeating The Lamb",
+    "category": "misc"
   },
   "322": {
-    "link": "",
+    "link": "Ace_of_Clubs",
     "name": "Hat trick!",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Get a 3-win streak"
+    "unlockDescription": "Get a 3-win streak",
+    "category": "misc"
   },
   "323": {
-    "link": "",
+    "link": "Super_special_rock",
     "name": "5 Nights at Mom's",
     "inGameDescription": "Unlocked super special rocks.",
-    "unlockDescription": "Get a 5-win streak ( 3-win streak), using a different character each time"
+    "unlockDescription": "Get a 5-win streak, using a different character each time",
+    "category": "misc"
   },
   "324": {
-    "link": "",
+    "link": "Feels_Like_I%27m_Walking_on_Sunshine!",
     "name": "Sin collector",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Collect every entry in the Bestiary (bugged v190 - Mobs that don't exist in the bestiary are being counted. This allows Sin Collector to be unlocked without a complete bestiary)"
+    "unlockDescription": "Collect every entry in the Bestiary (Bugged v190 - Mobs that don't exist in the bestiary are being counted. This allows Sin Collector to be unlocked without a complete bestiary)",
+    "category": "misc"
   },
   "325": {
-    "link": "",
+    "link": "Horf!",
     "name": "Dedication",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Participate in 31 Daily Challenges (they don't have to be consecutive; it will still count if Isaac dies in the first room)"
+    "unlockDescription": "Participate in 31 Daily Challenges (They don't have to be consecutive; it will still count if Isaac dies in the first room)",
+    "category": "dailyOnline"
   },
   "326": {
-    "link": "",
+    "link": "Ace_of_Diamonds",
     "name": "ZIP!",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat The Lamb in under 20 minutes"
+    "unlockDescription": "Defeat The Lamb in under 20 minutes",
+    "category": "misc"
   },
   "327": {
-    "link": "",
+    "link": "Ace_of_Spades_(Card)",
     "name": "It's the Key",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat The Lamb without taking Hearts, Coins, or Bombs through the entire run"
+    "unlockDescription": "Defeat The Lamb without taking Hearts, Coins, or Bombs through the entire run (Letting certain familiars (e.g. Bum Friend, Dark Bum, Bumbo or Lil Portal) or bosses (e.g. Bumbino) pick up the consumables fails this condition as well)",
+    "category": "misc"
   },
   "328": {
-    "link": "",
+    "link": "Hearts#Scared_Heart",
     "name": "Mr. Resetter!",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Reset 7 times in a row"
+    "unlockDescription": "Reset 7 times in a row",
+    "category": "misc"
   },
   "329": {
-    "link": "",
+    "link": "Ace_of_Hearts",
     "name": "Living on the edge",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete a Chapter (floors I and II) after Basement, start-to-finish, with only half a Heart total (can use The Lost)"
+    "unlockDescription": "Complete a Chapter (floors I and II) after Basement, start-to-finish, with only half a Heart total (can use The Lost)",
+    "category": "misc"
   },
   "330": {
-    "link": "",
+    "link": "Vurp!",
     "name": "U Broke It!",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Obtain 50 items in a run (duplicate passive items/familiars count towards the total, e.g., multiple Breakfast)"
+    "unlockDescription": "Obtain 50 items in a run (Duplicate passive items/familiars count towards the total, e.g., multiple Breakfast)",
+    "category": "misc"
   },
   "331": {
-    "link": "",
+    "link": "Lazarus",
     "name": "Laz Bleeds More!",
     "inGameDescription": "Unlocked a new starting item.",
-    "unlockDescription": "Complete Backasswards (challenge #31)"
+    "unlockDescription": "Complete Backasswards (challenge #31)",
+    "category": "challenge"
   },
   "332": {
-    "link": "",
+    "link": "Magdalene",
     "name": "Maggy Now Holds a Pill!",
     "inGameDescription": "Unlocked a new starting item.",
-    "unlockDescription": "Complete Aprils Fool (challenge #32)"
+    "unlockDescription": "Complete Aprils Fool (challenge #32)",
+    "category": "challenge"
   },
   "333": {
-    "link": "",
+    "link": "Charged_Key",
     "name": "Charged Key",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete Pokey Mans (challenge #33)"
+    "unlockDescription": "Complete Pokey Mans (challenge #33)",
+    "category": "challenge"
   },
   "334": {
-    "link": "",
+    "link": "Samson",
     "name": "Samson Feels Healthy!",
     "inGameDescription": "Unlocked a new starting item.",
-    "unlockDescription": "Complete Ultra Hard (challenge #34)"
+    "unlockDescription": "Complete Ultra Hard (challenge #34)",
+    "category": "challenge"
   },
   "335": {
-    "link": "",
+    "link": "Greed%27s_Gullet",
     "name": "Greed's Gullet",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete Pong (challenge #35)"
+    "unlockDescription": "Complete Pong (challenge #35)",
+    "category": "challenge"
   },
   "336": {
-    "link": "",
+    "link": "Cracked_Crown",
     "name": "The Marathon",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Get a 5-win streak in the Daily Challenges ( Isaac must have a score above 0 on the score screen)"
+    "unlockDescription": "Get a 5-win streak in the Daily Challenges (They don't have to be consecutive days, only the runs you play are counted)",
+    "category": "dailyOnline"
   },
   "337": {
-    "link": "",
+    "link": "RERUN",
     "name": "RERUN",
     "inGameDescription": "Unlocked the power of RERUN.",
-    "unlockDescription": "Complete 3 Victory Laps and start a 4th"
+    "unlockDescription": "Complete 3 Victory Laps by defeating The Lamb",
+    "category": "misc"
   },
   "338": {
-    "link": "",
+    "link": "Delirious",
     "name": "Delirious",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Delirium"
+    "unlockDescription": "Defeat Delirium",
+    "category": "misc"
   },
   "339": {
     "link": "",
     "name": "1000000%",
     "inGameDescription": "Just Stop!",
-    "unlockDescription": "Collect every item in the game, unlock all secrets and endings, and complete the Bestiary"
+    "unlockDescription": "Unlock 402 random achievements and have at least 510 items in the collection page",
+    "category": "misc"
   },
   "340": {
-    "link": "",
+    "link": "Apollyon",
     "name": "Apollyon",
     "inGameDescription": "Unlocked a new character.",
-    "unlockDescription": "Defeat Mega Satan"
+    "unlockDescription": "Defeat Mega Satan",
+    "category": "characterUnlock"
   },
   "341": {
-    "link": "",
+    "link": "Greedier_Mode",
     "name": "Greedier!",
     "inGameDescription": "New mode unlocked!",
-    "unlockDescription": "Donate 500 Coins to the Greed Donation Machine"
+    "unlockDescription": "Donate 500 Coins to the Greed Donation Machine",
+    "category": "misc"
   },
   "342": {
-    "link": "",
+    "link": "Burning_Basement",
     "name": "Burning Basement",
     "inGameDescription": "Alt stage to the basement.",
-    "unlockDescription": "Defeat Mom's Heart 11 times"
+    "unlockDescription": "Defeat Mom's Heart 11 times",
+    "category": "misc"
   },
   "343": {
-    "link": "",
+    "link": "Flooded_Caves",
     "name": "Flooded Caves",
     "inGameDescription": "Alt stage to the caves.",
-    "unlockDescription": "Defeat It Lives! 16 times"
+    "unlockDescription": "Defeat Mom's Heart/It Lives! 16 times",
+    "category": "misc"
   },
   "344": {
-    "link": "",
+    "link": "Dank_Depths",
     "name": "Dank Depths",
     "inGameDescription": "Alt stage to the depths.",
-    "unlockDescription": "Defeat It Lives! 21 times"
+    "unlockDescription": "Defeat Mom's Heart/It Lives! 21 times",
+    "category": "misc"
   },
   "345": {
-    "link": "",
+    "link": "Scarred_Womb",
     "name": "Scarred Womb",
     "inGameDescription": "Alt stage to the womb.",
-    "unlockDescription": "Defeat It Lives! 30 times"
+    "unlockDescription": "Defeat Mom's Heart/It Lives! 30 times",
+    "category": "misc"
   },
   "346": {
-    "link": "",
+    "link": "Something_wicked_this_way_comes!",
     "name": "Something wicked this way comes!",
     "inGameDescription": "Unlocked new bosses!",
-    "unlockDescription": "Defeat ??? as 3 different Characters"
+    "unlockDescription": "Defeat ??? as 3 different Characters",
+    "category": "misc"
   },
   "347": {
-    "link": "",
+    "link": "Something_wicked_this_way_comes%2B!",
     "name": "Something wicked this way comes+!",
     "inGameDescription": "Unlocked even more bosses!",
-    "unlockDescription": "Defeat ??? as 6 different Characters"
+    "unlockDescription": "Defeat ??? as 6 different Characters",
+    "category": "misc"
   },
   "348": {
-    "link": "",
+    "link": "Portal",
     "name": "The gate is open!",
     "inGameDescription": "Unlocked new enemies!",
-    "unlockDescription": "Defeat The Lamb"
+    "unlockDescription": "Defeat The Lamb",
+    "category": "misc"
   },
   "349": {
-    "link": "",
+    "link": "Black_Hole",
     "name": "Black Hole",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat 20 Portals"
+    "unlockDescription": "Defeat 20 Portals",
+    "category": "misc"
   },
   "350": {
-    "link": "",
+    "link": "Mystery_Gift",
     "name": "Mystery Gift",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Destroy 500 rocks"
+    "unlockDescription": "Destroy 500 rocks",
+    "category": "misc"
   },
   "351": {
-    "link": "",
+    "link": "Sprinkler",
     "name": "Sprinkler",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Beat Chapter 1 without taking damage"
+    "unlockDescription": "Beat Chapter 1 without taking damage",
+    "category": "misc"
   },
   "352": {
-    "link": "",
+    "link": "Angry_Fly",
     "name": "Angry Fly",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Become Beelzebub"
+    "unlockDescription": "Become Beelzebub",
+    "category": "misc"
   },
   "353": {
-    "link": "",
+    "link": "Bozo",
     "name": "Bozo",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Destroy 5 rainbow poops"
+    "unlockDescription": "Destroy 5 rainbow poops",
+    "category": "misc"
   },
   "354": {
-    "link": "",
+    "link": "Broken_Modem",
     "name": "Broken Modem",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete 7 Daily Challenges (by touching the trophy at the end)"
+    "unlockDescription": "Complete 7 Daily Challenges (by touching the trophy at the end)",
+    "category": "dailyOnline"
   },
   "355": {
-    "link": "",
+    "link": "Buddy_in_a_Box",
     "name": "Buddy in a Box",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Pick up 5 familiars in a single run"
+    "unlockDescription": "Pick up 5 familiars in a single run",
+    "category": "misc"
   },
   "356": {
-    "link": "",
+    "link": "Fast_Bombs",
     "name": "Fast Bombs",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Little Horn 20 times"
+    "unlockDescription": "Defeat Little Horn 20 times",
+    "category": "misc"
   },
   "357": {
-    "link": "",
+    "link": "Lil_Delirium",
     "name": "Lil Delirium",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Delirium for the 1st time"
+    "unlockDescription": "Defeat Delirium for the 1st time",
+    "category": "misc"
   },
   "358": {
-    "link": "",
+    "link": "Hairpin",
     "name": "Hairpin",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Recharge using Lil' Batteries 20 times"
+    "unlockDescription": "Recharge using Lil' Batteries 20 times",
+    "category": "misc"
   },
   "359": {
-    "link": "",
+    "link": "Wooden_Cross",
     "name": "Wooden Cross",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Sleep in a bed"
+    "unlockDescription": "Sleep in a bed",
+    "category": "misc"
   },
   "360": {
-    "link": "",
+    "link": "Butter!",
     "name": "Butter!",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete 2 Victory Laps and start a 3rd"
+    "unlockDescription": "Complete 2 Victory Laps by defeating The Lamb",
+    "category": "misc"
   },
   "361": {
-    "link": "",
+    "link": "Huge_Growth",
     "name": "Huge Growth",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Increase in size 5 times in a single run via Magic Mushroom, \"One Makes you Larger\" pills, XI - Strength, etc."
+    "unlockDescription": "Be 3 times larger than the starting size. Depending on the item/card/pill size's multiplier, 5 to 7 size increases will be required.",
+    "category": "misc"
   },
   "362": {
-    "link": "",
+    "link": "Ancient_Recall",
     "name": "Ancient Recall",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Use Cards and Runes 20 times"
+    "unlockDescription": "Use Cards and Runes 20 times",
+    "category": "misc"
   },
   "363": {
-    "link": "",
+    "link": "Era_Walk",
     "name": "Era Walk",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Have both the Broken Watch and the Stop Watch unlocked"
+    "unlockDescription": "Add both the Broken Watch and the Stop Watch to your collection",
+    "category": "misc"
   },
   "364": {
-    "link": "",
+    "link": "Coupon",
     "name": "Coupon",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Purchase anything from Shops, Devil Rooms, and/or Black Markets 50 times"
+    "unlockDescription": "Purchase anything from Shops, Devil Rooms, and/or Black Markets 50 times",
+    "category": "misc"
   },
   "365": {
-    "link": "",
+    "link": "Telekinesis",
     "name": "Telekinesis",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Beat Chapter 2 without taking damage"
+    "unlockDescription": "Beat Chapter 2 without taking damage",
+    "category": "misc"
   },
   "366": {
-    "link": "",
+    "link": "Moving_Box",
     "name": "Moving Box",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Use Pandora's Box in Dark Room"
+    "unlockDescription": "Use Pandora's Box in Dark Room",
+    "category": "misc"
   },
   "367": {
-    "link": "",
+    "link": "Jumper_Cables",
     "name": "Jumper Cables",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Pick up any 2 of the following items/trinkets in a single run: 9 Volt, The Battery, Car Battery, AAA Battery, and Watch Battery (any 2 items that have the \"battery\" item tag)"
+    "unlockDescription": "Pick up 2 battery-related items in a single run (Battery-related items have the 'battery' item tag)",
+    "category": "misc"
   },
   "368": {
-    "link": "",
+    "link": "Leprosy",
     "name": "Leprosy",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Beat Chapter 3 without taking damage"
+    "unlockDescription": "Beat Chapter 3 without taking damage",
+    "category": "misc"
   },
   "369": {
-    "link": "",
+    "link": "Technology_Zero",
     "name": "Technology Zero",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Pick up any 2 technology items in a single run (any 2 items that have the \"tech\" item tag)"
+    "unlockDescription": "Pick up 2 technology-related items in a single run (Technology-related items have the 'tech' item tag)",
+    "category": "misc"
   },
   "370": {
-    "link": "",
+    "link": "Filigree_Feather",
     "name": "Filigree Feather",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Acquire both Key Piece 1 and Key Piece 2"
+    "unlockDescription": "Acquire both Key Piece 1 and Key Piece 2",
+    "category": "misc"
   },
   "371": {
-    "link": "",
+    "link": "Mr._ME!",
     "name": "Mr. ME!",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Open 20 Locked Chests"
+    "unlockDescription": "Open 20 Locked Chests",
+    "category": "misc"
   },
   "372": {
-    "link": "",
+    "link": "7_Seals",
     "name": "7 Seals",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat all 5 Harbingers"
+    "unlockDescription": "Defeat all 5 Harbingers",
+    "category": "misc"
   },
   "373": {
-    "link": "",
+    "link": "Angelic_Prism",
     "name": "Angelic Prism",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat an Angel 10 times"
+    "unlockDescription": "Defeat an Angel 10 times",
+    "category": "misc"
   },
   "374": {
-    "link": "",
+    "link": "Pop!",
     "name": "Pop!",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Beat Chapter 4 without taking damage"
+    "unlockDescription": "Beat Chapter 4 without taking damage",
+    "category": "misc"
   },
   "375": {
-    "link": "",
+    "link": "Door_Stop",
     "name": "Door Stop",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Blow up doors and Secret Room walls 50 times"
+    "unlockDescription": "Blow up doors and Secret Room walls 50 times",
+    "category": "misc"
   },
   "376": {
-    "link": "",
+    "link": "Death%27s_List",
     "name": "Death's List",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Take 25 Deals with the Devil"
+    "unlockDescription": "Take 25 Deals with the Devil",
+    "category": "misc"
   },
   "377": {
-    "link": "",
+    "link": "Haemolacria",
     "name": "Haemolacria",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Acquire Blood Clot 10 times"
+    "unlockDescription": "Acquire Blood Clot 10 times",
+    "category": "misc"
   },
   "378": {
-    "link": "",
+    "link": "Lachryphagy",
     "name": "Lachryphagy",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Collect 10 \"Tears Up\" items or pills in one run"
+    "unlockDescription": "Collect 10 \"Tears Up\" items or pills in one run",
+    "category": "misc"
   },
   "379": {
-    "link": "",
+    "link": "Schoolbag",
     "name": "Schoolbag",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Enter every Shop from Chapter 1 through Chapter 3 in one run"
+    "unlockDescription": "Enter 6 Shops in one run",
+    "category": "misc"
   },
   "380": {
-    "link": "",
+    "link": "Trisagion",
     "name": "Trisagion",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Take 25 Angel Rooms items"
+    "unlockDescription": "Take 25 Angel Rooms items",
+    "category": "misc"
   },
   "381": {
-    "link": "",
+    "link": "Extension_Cord",
     "name": "Extension Cord",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Have The Battery, 9 Volt, and Car Battery in Isaac's collection"
+    "unlockDescription": "Have The Battery, 9 Volt, and Car Battery in Isaac's collection",
+    "category": "misc"
   },
   "382": {
-    "link": "",
+    "link": "Flat_Stone",
     "name": "Flat Stone",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Acquire Rubber Cement 5 times"
+    "unlockDescription": "Acquire Rubber Cement 5 times",
+    "category": "misc"
   },
   "383": {
-    "link": "",
+    "link": "Sacrificial_Altar",
     "name": "Sacrificial Altar",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Take 50 Deals with the Devil"
+    "unlockDescription": "Take 50 Deals with the Devil",
+    "category": "misc"
   },
   "384": {
-    "link": "",
+    "link": "Lil_Spewer",
     "name": "Lil Spewer",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Have Isaac die to his own explosion from Ipecac, Bob's Rotten Head, or a Horf! pill"
+    "unlockDescription": "Have Isaac die to his own explosion from any explosive and poisoned tear (Ipecac, Bob's Rotten Head, Fire Mind / Explosivo + Scorpio, or a Horf! pill)",
+    "category": "misc"
   },
   "385": {
-    "link": "",
+    "link": "Blanket",
     "name": "Blanket",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Sleep in 10 beds"
+    "unlockDescription": "Sleep in 10 beds",
+    "category": "misc"
   },
   "386": {
-    "link": "",
+    "link": "Marbles",
     "name": "Marbles",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Use 5 Gulp! pills in one run ( Placebo uses count)"
+    "unlockDescription": "Use 5 Gulp! pills in one run (Placebo uses count)",
+    "category": "misc"
   },
   "387": {
-    "link": "",
+    "link": "Mystery_Egg",
     "name": "Mystery Egg",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Spawn three charmed enemies in the same room"
+    "unlockDescription": "Spawn three charmed enemies in the same room",
+    "category": "misc"
   },
   "388": {
-    "link": "",
+    "link": "Rotten_Penny",
     "name": "Rotten Penny",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Have 20 Blue Flies at the same time"
+    "unlockDescription": "Have 20 Blue Flies at the same time",
+    "category": "misc"
   },
   "389": {
-    "link": "",
+    "link": "Baby-Bender",
     "name": "Baby-Bender",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Use I - The Magician or Telepathy for Dummies while already having homing tears"
+    "unlockDescription": "Use I - The Magician or Telepathy For Dummies while already having homing tears",
+    "category": "misc"
   },
   "390": {
-    "link": "",
+    "link": "The_Forgotten",
     "name": "The Forgotten",
     "inGameDescription": "Unlocked a new character.",
-    "unlockDescription": "It's complicated"
+    "unlockDescription": "It's complicated",
+    "category": "characterUnlock"
   },
   "391": {
-    "link": "",
+    "link": "Hearts_(Pickup)",
     "name": "Bone Heart",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "It's complicated"
+    "unlockDescription": "It's complicated",
+    "category": "misc"
   },
   "392": {
-    "link": "",
+    "link": "Marrow",
     "name": "Marrow",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as The Forgotten"
+    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as The Forgotten",
+    "category": "characterMark"
   },
   "393": {
-    "link": "",
+    "link": "Slipped_Rib",
     "name": "Slipped Rib",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Isaac as The Forgotten"
+    "unlockDescription": "Defeat Isaac as The Forgotten",
+    "category": "characterMark"
   },
   "394": {
-    "link": "",
+    "link": "Pointy_Rib",
     "name": "Pointy Rib",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Satan as The Forgotten"
+    "unlockDescription": "Defeat Satan as The Forgotten",
+    "category": "characterMark"
   },
   "395": {
-    "link": "",
+    "link": "Jaw_Bone",
     "name": "Jaw Bone",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat ??? as The Forgotten"
+    "unlockDescription": "Defeat ??? as The Forgotten",
+    "category": "characterMark"
   },
   "396": {
-    "link": "",
+    "link": "Brittle_Bones",
     "name": "Brittle Bones",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat The Lamb as The Forgotten"
+    "unlockDescription": "Defeat The Lamb as The Forgotten",
+    "category": "characterMark"
   },
   "397": {
-    "link": "",
+    "link": "Divorce_Papers",
     "name": "Divorce Papers",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Complete the Boss Rush as The Forgotten"
+    "unlockDescription": "Complete the Boss Rush as The Forgotten",
+    "category": "characterMark"
   },
   "398": {
-    "link": "",
+    "link": "Hallowed_Ground",
     "name": "Hallowed Ground",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Hush as The Forgotten"
+    "unlockDescription": "Defeat Hush as The Forgotten",
+    "category": "characterMark"
   },
   "399": {
-    "link": "",
+    "link": "Finger_Bone",
     "name": "Finger Bone",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greed as The Forgotten"
+    "unlockDescription": "Defeat Ultra Greed as The Forgotten",
+    "category": "characterMark"
   },
   "400": {
-    "link": "",
+    "link": "Dad%27s_Ring",
     "name": "Dad's Ring",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Ultra Greedier as The Forgotten"
+    "unlockDescription": "Defeat Ultra Greedier as The Forgotten",
+    "category": "characterMark"
   },
   "401": {
-    "link": "",
+    "link": "Book_of_the_Dead",
     "name": "Book of the Dead",
     "inGameDescription": "Unlocked a new item.",
-    "unlockDescription": "Defeat Delirium as The Forgotten"
+    "unlockDescription": "Defeat Delirium as The Forgotten",
+    "category": "characterMark"
   },
   "402": {
-    "link": "",
+    "link": "Babies",
     "name": "Bone Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Earn all Hard mode Completion Marks as The Forgotten"
+    "unlockDescription": "Earn all Hard mode Completion Marks as The Forgotten",
+    "category": "characterMark"
   },
   "403": {
-    "link": "",
+    "link": "Babies",
     "name": "Bound Baby",
     "inGameDescription": "Unlocked a new co-player baby.",
-    "unlockDescription": "Defeat Mega Satan as The Forgotten"
+    "unlockDescription": "Defeat Mega Satan as The Forgotten",
+    "category": "characterMark"
   },
   "404": {
-    "link": "",
+    "link": "Bethany",
     "name": "Bethany",
     "inGameDescription": "Beat Hard mode as Lazarus without losing a life",
-    "unlockDescription": "Defeat Mom's Heart/It Lives! on hard mode as Lazarus, without dying at all"
+    "unlockDescription": "Defeat Mom's Heart or It Lives! on hard mode as Lazarus, without dying at all",
+    "category": "characterUnlock"
   },
   "405": {
-    "link": "",
+    "link": "Jacob_and_Esau",
     "name": "Jacob and Esau",
     "inGameDescription": "You are just like your father...",
-    "unlockDescription": "Defeat Mother"
+    "unlockDescription": "Defeat Mother",
+    "category": "characterUnlock"
   },
   "406": {
-    "link": "",
+    "link": "Planetarium",
     "name": "The Planetarium",
     "inGameDescription": "Kids shouldn't believe in fortunes...",
-    "unlockDescription": "Collect any 3 items with the \"stars\" item tag in a single run"
+    "unlockDescription": "Collect any 3 items with the 'stars' item tag in a single run",
+    "category": "misc"
   },
   "407": {
-    "link": "",
+    "link": "Downpour",
     "name": "A Secret Exit",
-    "inGameDescription": "Complete&#160;??? 3 times.",
-    "unlockDescription": "Defeat Hush 3 times"
+    "inGameDescription": "Complete ??? 3 times.",
+    "unlockDescription": "Defeat Hush 3 times",
+    "category": "misc"
   },
   "408": {
-    "link": "",
+    "link": "Forgotten_Lullaby",
     "name": "Forgotten Lullaby",
     "inGameDescription": "Get that song out of her head.",
-    "unlockDescription": "Blow up The Siren's skull after defeating her"
+    "unlockDescription": "Blow up The Siren's skull after defeating her",
+    "category": "misc"
   },
   "409": {
-    "link": "",
+    "link": "Fruity_Plum",
     "name": "Fruity Plum",
     "inGameDescription": "Defeat Baby Plum 10 times.",
-    "unlockDescription": "Defeat Baby Plum 10 times"
+    "unlockDescription": "Defeat Baby Plum 10 times",
+    "category": "misc"
   },
   "410": {
-    "link": "",
+    "link": "Plum_Flute",
     "name": "Plum Flute",
     "inGameDescription": "Make a new friend!",
-    "unlockDescription": "Allow Baby Plum to escape instead of defeating her"
+    "unlockDescription": "Allow Baby Plum to escape instead of defeating her",
+    "category": "misc"
   },
   "411": {
-    "link": "",
+    "link": "Rotten_Heart",
     "name": "Rotten Heart",
     "inGameDescription": "Enter the Corpse...",
-    "unlockDescription": "Enter Corpse for the first time"
+    "unlockDescription": "Enter Corpse for the first time",
+    "category": "misc"
   },
   "412": {
-    "link": "",
+    "link": "Dross",
     "name": "Dross",
     "inGameDescription": "Defeat all bosses in Downpour.",
-    "unlockDescription": "Defeat all bosses in Downpour"
+    "unlockDescription": "Defeat all bosses in Downpour",
+    "category": "misc"
   },
   "413": {
-    "link": "",
+    "link": "Ashpit",
     "name": "Ashpit",
     "inGameDescription": "Defeat all bosses in the Mines.",
-    "unlockDescription": "Defeat all bosses in Mines"
+    "unlockDescription": "Defeat all bosses in Mines",
+    "category": "misc"
   },
   "414": {
-    "link": "",
+    "link": "Gehenna",
     "name": "Gehenna",
     "inGameDescription": "Defeat all bosses in the Mausoleum.",
-    "unlockDescription": "Defeat all bosses in Mausoleum"
+    "unlockDescription": "Defeat all bosses in Mausoleum",
+    "category": "misc"
   },
   "415": {
-    "link": "",
+    "link": "Red_Key",
     "name": "Red Key",
     "inGameDescription": "The other side is calling...",
-    "unlockDescription": "Open Mom's Chest in Home"
+    "unlockDescription": "Open Mom's Chest in Home",
+    "category": "misc"
   },
   "416": {
-    "link": "",
+    "link": "Co-op#Repentance_babies",
     "name": "Wisp Baby",
     "inGameDescription": "Beat the game in Hard mode with Bethany.",
-    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as Bethany"
+    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as Bethany",
+    "category": "characterMark"
   },
   "417": {
-    "link": "",
+    "link": "Book_of_Virtues",
     "name": "Book of Virtues",
     "inGameDescription": "Complete the Cathedral with Bethany.",
-    "unlockDescription": "Defeat Isaac as Bethany"
+    "unlockDescription": "Defeat Isaac as Bethany",
+    "category": "characterMark"
   },
   "418": {
-    "link": "",
+    "link": "Urn_of_Souls",
     "name": "Urn of Souls",
     "inGameDescription": "Complete Sheol with Bethany.",
-    "unlockDescription": "Defeat Satan as Bethany"
+    "unlockDescription": "Defeat Satan as Bethany",
+    "category": "characterMark"
   },
   "419": {
-    "link": "",
+    "link": "Blessed_Penny",
     "name": "Blessed Penny",
     "inGameDescription": "Complete the Chest with Bethany.",
-    "unlockDescription": "Defeat ??? as Bethany"
+    "unlockDescription": "Defeat ??? as Bethany",
+    "category": "characterMark"
   },
   "420": {
-    "link": "",
+    "link": "Alabaster_Box",
     "name": "Alabaster Box",
     "inGameDescription": "Complete the Dark Room with Bethany.",
-    "unlockDescription": "Defeat The Lamb as Bethany"
+    "unlockDescription": "Defeat The Lamb as Bethany",
+    "category": "characterMark"
   },
   "421": {
-    "link": "",
+    "link": "Beth%27s_Faith",
     "name": "Beth's Faith",
     "inGameDescription": "Complete Boss Rush with Bethany.",
-    "unlockDescription": "Complete the Boss Rush as Bethany"
+    "unlockDescription": "Complete the Boss Rush as Bethany",
+    "category": "characterMark"
   },
   "422": {
-    "link": "",
+    "link": "Soul_Locket",
     "name": "Soul Locket",
     "inGameDescription": "Beat Greed mode with Bethany.",
-    "unlockDescription": "Defeat Ultra Greed as Bethany"
+    "unlockDescription": "Defeat Ultra Greed as Bethany",
+    "category": "characterMark"
   },
   "423": {
-    "link": "",
+    "link": "Divine_Intervention",
     "name": "Divine Intervention",
-    "inGameDescription": "Complete&#160;??? with Bethany.",
-    "unlockDescription": "Defeat Hush as Bethany"
+    "inGameDescription": "Complete ??? with Bethany.",
+    "unlockDescription": "Defeat Hush as Bethany",
+    "category": "characterMark"
   },
   "424": {
-    "link": "",
+    "link": "Vade_Retro",
     "name": "Vade Retro",
     "inGameDescription": "Beat Greedier mode with Bethany.",
-    "unlockDescription": "Defeat Ultra Greedier as Bethany"
+    "unlockDescription": "Defeat Ultra Greedier as Bethany",
+    "category": "characterMark"
   },
   "425": {
-    "link": "",
+    "link": "Star_of_Bethlehem",
     "name": "Star of Bethlehem",
     "inGameDescription": "Beat the Void with Bethany.",
-    "unlockDescription": "Defeat Delirium as Bethany"
+    "unlockDescription": "Defeat Delirium as Bethany",
+    "category": "characterMark"
   },
   "426": {
-    "link": "",
+    "link": "Co-op#Repentance_babies",
     "name": "Hope Baby",
     "inGameDescription": "Beat everything in Hard mode with Bethany.",
-    "unlockDescription": "Earn all Hard mode Completion Marks as Bethany"
+    "unlockDescription": "Earn all Hard mode Completion Marks as Bethany",
+    "category": "characterMark"
   },
   "427": {
-    "link": "",
+    "link": "Co-op#Repentance_babies",
     "name": "Glowing Baby",
     "inGameDescription": "Defeat Mega Satan with Bethany.",
-    "unlockDescription": "Defeat Mega Satan as Bethany"
+    "unlockDescription": "Defeat Mega Satan as Bethany",
+    "category": "characterMark"
   },
   "428": {
-    "link": "",
+    "link": "Co-op#Repentance_babies",
     "name": "Double Baby",
     "inGameDescription": "Beat the game in Hard mode with Jacob and Esau.",
-    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as Jacob and Esau"
+    "unlockDescription": "Defeat Mom's Heart or It Lives! on Hard mode as Jacob and Esau",
+    "category": "characterMark"
   },
   "429": {
-    "link": "",
+    "link": "The_Stairway",
     "name": "The Stairway",
     "inGameDescription": "Complete the Cathedral with Jacob and Esau.",
-    "unlockDescription": "Defeat Isaac as Jacob and Esau"
+    "unlockDescription": "Defeat Isaac as Jacob and Esau",
+    "category": "characterMark"
   },
   "430": {
-    "link": "",
+    "link": "Red_Stew",
     "name": "Red Stew",
     "inGameDescription": "Complete Sheol with Jacob and Esau.",
-    "unlockDescription": "Defeat Satan as Jacob and Esau"
+    "unlockDescription": "Defeat Satan as Jacob and Esau",
+    "category": "characterMark"
   },
   "431": {
-    "link": "",
+    "link": "Birthright",
     "name": "Birthright",
     "inGameDescription": "Complete the Chest with Jacob and Esau.",
-    "unlockDescription": "Defeat ??? as Jacob and Esau"
+    "unlockDescription": "Defeat ??? as Jacob and Esau",
+    "category": "characterMark"
   },
   "432": {
-    "link": "",
+    "link": "Damocles",
     "name": "Damocles",
     "inGameDescription": "Complete the Dark Room with Jacob and Esau.",
-    "unlockDescription": "Defeat The Lamb as Jacob and Esau"
+    "unlockDescription": "Defeat The Lamb as Jacob and Esau",
+    "category": "characterMark"
   },
   "433": {
-    "link": "",
+    "link": "Rock_Bottom",
     "name": "Rock Bottom",
     "inGameDescription": "Complete Boss Rush with Jacob and Esau.",
-    "unlockDescription": "Complete Boss Rush as Jacob and Esau"
+    "unlockDescription": "Complete Boss Rush as Jacob and Esau",
+    "category": "characterMark"
   },
   "434": {
-    "link": "",
+    "link": "Inner_Child",
     "name": "Inner Child",
     "inGameDescription": "Beat Greed mode with Jacob and Esau.",
-    "unlockDescription": "Defeat Ultra Greed as Jacob and Esau"
+    "unlockDescription": "Defeat Ultra Greed as Jacob and Esau",
+    "category": "characterMark"
   },
   "435": {
-    "link": "",
+    "link": "Vanishing_Twin",
     "name": "Vanishing Twin",
-    "inGameDescription": "Complete&#160;??? with Jacob and Esau.",
-    "unlockDescription": "Defeat Hush as Jacob and Esau"
+    "inGameDescription": "Complete ??? with Jacob and Esau.",
+    "unlockDescription": "Defeat Hush as Jacob and Esau",
+    "category": "characterMark"
   },
   "436": {
-    "link": "",
+    "link": "Genesis",
     "name": "Genesis",
     "inGameDescription": "Beat Greedier mode with Jacob and Esau.",
-    "unlockDescription": "Defeat Ultra Greedier as Jacob and Esau"
+    "unlockDescription": "Defeat Ultra Greedier as Jacob and Esau",
+    "category": "characterMark"
   },
   "437": {
-    "link": "",
+    "link": "Suplex!",
     "name": "Suplex!",
     "inGameDescription": "Complete the Void with Jacob and Esau.",
-    "unlockDescription": "Defeat Delirium as Jacob and Esau"
+    "unlockDescription": "Defeat Delirium as Jacob and Esau",
+    "category": "characterMark"
   },
   "438": {
-    "link": "",
+    "link": "Co-op#Repentance_babies",
     "name": "Solomon's Baby",
     "inGameDescription": "Beat everything in Hard mode with Jacob and Esau.",
-    "unlockDescription": "Earn all Hard mode Completion Marks as Jacob and Esau"
+    "unlockDescription": "Earn all Hard mode Completion Marks as Jacob and Esau",
+    "category": "characterMark"
   },
   "439": {
-    "link": "",
+    "link": "Co-op#Repentance_babies",
     "name": "Illusion Baby",
     "inGameDescription": "Defeat Mega Satan with Jacob and Esau.",
-    "unlockDescription": "Defeat Mega Satan as Jacob and Esau"
+    "unlockDescription": "Defeat Mega Satan as Jacob and Esau",
+    "category": "characterMark"
   },
   "440": {
-    "link": "",
+    "link": "Meat_Cleaver",
     "name": "Meat Cleaver",
     "inGameDescription": "Complete the Corpse with Isaac.",
-    "unlockDescription": "Defeat Mother as Isaac"
+    "unlockDescription": "Defeat Mother as Isaac",
+    "category": "characterMark"
   },
   "441": {
-    "link": "",
+    "link": "Options%3F",
     "name": "Options?",
     "inGameDescription": "Complete the final chapter with Isaac.",
-    "unlockDescription": "Defeat The Beast as Isaac"
+    "unlockDescription": "Defeat The Beast as Isaac",
+    "category": "characterMark"
   },
   "442": {
-    "link": "",
+    "link": "Yuck_Heart",
     "name": "Yuck Heart",
     "inGameDescription": "Complete the Corpse with Magdalene.",
-    "unlockDescription": "Defeat Mother as Magdalene"
+    "unlockDescription": "Defeat Mother as Magdalene",
+    "category": "characterMark"
   },
   "443": {
-    "link": "",
+    "link": "Candy_Heart",
     "name": "Candy Heart",
     "inGameDescription": "Complete the final chapter with Magdalene.",
-    "unlockDescription": "Defeat The Beast as Magdalene"
+    "unlockDescription": "Defeat The Beast as Magdalene",
+    "category": "characterMark"
   },
   "444": {
-    "link": "",
+    "link": "Guppy%27s_Eye",
     "name": "Guppy's Eye",
     "inGameDescription": "Complete the Corpse with Cain.",
-    "unlockDescription": "Defeat Mother as Cain"
+    "unlockDescription": "Defeat Mother as Cain",
+    "category": "characterMark"
   },
   "445": {
-    "link": "",
+    "link": "A_Pound_of_Flesh",
     "name": "A Pound of Flesh",
     "inGameDescription": "Complete the final chapter with Cain.",
-    "unlockDescription": "Defeat The Beast as Cain"
+    "unlockDescription": "Defeat The Beast as Cain",
+    "category": "characterMark"
   },
   "446": {
-    "link": "",
+    "link": "Akeldama",
     "name": "Akeldama",
     "inGameDescription": "Complete the Corpse with Judas.",
-    "unlockDescription": "Defeat Mother as Judas"
+    "unlockDescription": "Defeat Mother as Judas",
+    "category": "characterMark"
   },
   "447": {
-    "link": "",
+    "link": "Redemption",
     "name": "Redemption",
     "inGameDescription": "Complete the final chapter with Judas.",
-    "unlockDescription": "Defeat The Beast as Judas"
+    "unlockDescription": "Defeat The Beast as Judas",
+    "category": "characterMark"
   },
   "448": {
-    "link": "",
+    "link": "Eternal_D6",
     "name": "Eternal D6",
-    "inGameDescription": "Complete the Corpse with&#160;???.",
-    "unlockDescription": "Defeat Mother as ???"
+    "inGameDescription": "Complete the Corpse with ???.",
+    "unlockDescription": "Defeat Mother as ???",
+    "category": "characterMark"
   },
   "449": {
-    "link": "",
+    "link": "Montezuma%27s_Revenge",
     "name": "Montezuma's Revenge",
-    "inGameDescription": "Complete the final chapter with&#160;???.",
-    "unlockDescription": "Defeat The Beast as ???"
+    "inGameDescription": "Complete the final chapter with ???.",
+    "unlockDescription": "Defeat The Beast as ???",
+    "category": "characterMark"
   },
   "450": {
-    "link": "",
+    "link": "Bird_Cage",
     "name": "Bird Cage",
     "inGameDescription": "Complete the Corpse with Eve.",
-    "unlockDescription": "Defeat Mother as Eve"
+    "unlockDescription": "Defeat Mother as Eve",
+    "category": "characterMark"
   },
   "451": {
-    "link": "",
+    "link": "Cracked_Orb",
     "name": "Cracked Orb",
     "inGameDescription": "Complete the final chapter with Eve.",
-    "unlockDescription": "Defeat The Beast as Eve"
+    "unlockDescription": "Defeat The Beast as Eve",
+    "category": "characterMark"
   },
   "452": {
-    "link": "",
+    "link": "Bloody_Gust",
     "name": "Bloody Gust",
     "inGameDescription": "Complete the Corpse with Samson.",
-    "unlockDescription": "Defeat Mother as Samson"
+    "unlockDescription": "Defeat Mother as Samson",
+    "category": "characterMark"
   },
   "453": {
-    "link": "",
+    "link": "Empty_Heart",
     "name": "Empty Heart",
     "inGameDescription": "Complete the final chapter with Samson.",
-    "unlockDescription": "Defeat The Beast as Samson"
+    "unlockDescription": "Defeat The Beast as Samson",
+    "category": "characterMark"
   },
   "454": {
-    "link": "",
+    "link": "Devil%27s_Crown",
     "name": "Devil's Crown",
     "inGameDescription": "Complete the Corpse with Azazel.",
-    "unlockDescription": "Defeat Mother as Azazel"
+    "unlockDescription": "Defeat Mother as Azazel",
+    "category": "characterMark"
   },
   "455": {
-    "link": "",
+    "link": "Lil_Abaddon",
     "name": "Lil Abaddon",
     "inGameDescription": "Complete the final chapter with Azazel.",
-    "unlockDescription": "Defeat The Beast as Azazel"
+    "unlockDescription": "Defeat The Beast as Azazel",
+    "category": "characterMark"
   },
   "456": {
-    "link": "",
+    "link": "Tinytoma",
     "name": "Tinytoma",
     "inGameDescription": "Complete the Corpse with Lazarus.",
-    "unlockDescription": "Defeat Mother as Lazarus"
+    "unlockDescription": "Defeat Mother as Lazarus",
+    "category": "characterMark"
   },
   "457": {
-    "link": "",
+    "link": "Astral_Projection",
     "name": "Astral Projection",
     "inGameDescription": "Complete the final chapter with Lazarus.",
-    "unlockDescription": "Defeat The Beast as Lazarus"
+    "unlockDescription": "Defeat The Beast as Lazarus",
+    "category": "characterMark"
   },
   "458": {
-    "link": "",
+    "link": "%27M",
     "name": "'M",
     "inGameDescription": "Complete the Corpse with Eden.",
-    "unlockDescription": "Defeat Mother as Eden"
+    "unlockDescription": "Defeat Mother as Eden",
+    "category": "characterMark"
   },
   "459": {
-    "link": "",
+    "link": "Everything_Jar",
     "name": "Everything Jar",
     "inGameDescription": "Complete the final chapter with Eden.",
-    "unlockDescription": "Defeat The Beast as Eden"
+    "unlockDescription": "Defeat The Beast as Eden",
+    "category": "characterMark"
   },
   "460": {
-    "link": "",
+    "link": "Lost_Soul",
     "name": "Lost Soul",
     "inGameDescription": "Complete the Corpse with the Lost.",
-    "unlockDescription": "Defeat Mother as The Lost"
+    "unlockDescription": "Defeat Mother as The Lost",
+    "category": "characterMark"
   },
   "461": {
-    "link": "",
+    "link": "Hungry_Soul",
     "name": "Hungry Soul",
     "inGameDescription": "Complete the final chapter with the Lost.",
-    "unlockDescription": "Defeat The Beast as The Lost"
+    "unlockDescription": "Defeat The Beast as The Lost",
+    "category": "characterMark"
   },
   "462": {
-    "link": "",
+    "link": "Blood_Puppy",
     "name": "Blood Puppy",
     "inGameDescription": "Complete the Corpse with Lilith.",
-    "unlockDescription": "Defeat Mother as Lilith"
+    "unlockDescription": "Defeat Mother as Lilith",
+    "category": "characterMark"
   },
   "463": {
-    "link": "",
+    "link": "C_Section",
     "name": "C Section",
     "inGameDescription": "Complete the final chapter with Lilith.",
-    "unlockDescription": "Defeat The Beast as Lilith"
+    "unlockDescription": "Defeat The Beast as Lilith",
+    "category": "characterMark"
   },
   "464": {
-    "link": "",
+    "link": "Keeper%27s_Sack",
     "name": "Keeper's Sack",
     "inGameDescription": "Complete the Corpse with Keeper.",
-    "unlockDescription": "Defeat Mother as Keeper"
+    "unlockDescription": "Defeat Mother as Keeper",
+    "category": "characterMark"
   },
   "465": {
-    "link": "",
+    "link": "Keeper%27s_Box",
     "name": "Keeper's Box",
     "inGameDescription": "Complete the final chapter with Keeper.",
-    "unlockDescription": "Defeat The Beast as Keeper"
+    "unlockDescription": "Defeat The Beast as Keeper",
+    "category": "characterMark"
   },
   "466": {
-    "link": "",
+    "link": "Lil_Portal",
     "name": "Lil Portal",
     "inGameDescription": "Complete the Corpse with Apollyon.",
-    "unlockDescription": "Defeat Mother as Apollyon"
+    "unlockDescription": "Defeat Mother as Apollyon",
+    "category": "characterMark"
   },
   "467": {
-    "link": "",
+    "link": "Worm_Friend",
     "name": "Worm Friend",
     "inGameDescription": "Complete the final chapter with Apollyon.",
-    "unlockDescription": "Defeat The Beast as Apollyon"
+    "unlockDescription": "Defeat The Beast as Apollyon",
+    "category": "characterMark"
   },
   "468": {
-    "link": "",
+    "link": "Bone_Spurs",
     "name": "Bone Spurs",
     "inGameDescription": "Complete the Corpse with the Forgotten.",
-    "unlockDescription": "Defeat Mother as The Forgotten"
+    "unlockDescription": "Defeat Mother as The Forgotten",
+    "category": "characterMark"
   },
   "469": {
-    "link": "",
+    "link": "Spirit_Shackles",
     "name": "Spirit Shackles",
     "inGameDescription": "Complete the final chapter with the Forgotten.",
-    "unlockDescription": "Defeat The Beast as The Forgotten"
+    "unlockDescription": "Defeat The Beast as The Forgotten",
+    "category": "characterMark"
   },
   "470": {
-    "link": "",
+    "link": "Revelation",
     "name": "Revelation",
     "inGameDescription": "Complete the Corpse with Bethany.",
-    "unlockDescription": "Defeat Mother as Bethany"
+    "unlockDescription": "Defeat Mother as Bethany",
+    "category": "characterMark"
   },
   "471": {
-    "link": "",
+    "link": "Jar_of_Wisps",
     "name": "Jar of Wisps",
     "inGameDescription": "Complete the final chapter with Bethany.",
-    "unlockDescription": "Defeat The Beast as Bethany"
+    "unlockDescription": "Defeat The Beast as Bethany",
+    "category": "characterMark"
   },
   "472": {
-    "link": "",
+    "link": "Magic_Skin",
     "name": "Magic Skin",
     "inGameDescription": "Complete the Corpse with Jacob and Esau.",
-    "unlockDescription": "Defeat Mother as Jacob and Esau"
+    "unlockDescription": "Defeat Mother as Jacob and Esau",
+    "category": "characterMark"
   },
   "473": {
-    "link": "",
+    "link": "Friend_Finder",
     "name": "Friend Finder",
     "inGameDescription": "Complete the final chapter with Jacob and Esau.",
-    "unlockDescription": "Defeat The Beast as Jacob and Esau"
+    "unlockDescription": "Defeat The Beast as Jacob and Esau",
+    "category": "characterMark"
   },
   "474": {
-    "link": "",
+    "link": "Tainted_Isaac",
     "name": "The Broken",
     "inGameDescription": "???",
-    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Isaac"
+    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Isaac",
+    "category": "tainted"
   },
   "475": {
-    "link": "",
+    "link": "Tainted_Magdalene",
     "name": "The Dauntless",
     "inGameDescription": "???",
-    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Magdalene"
+    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Magdalene",
+    "category": "tainted"
   },
   "476": {
-    "link": "",
+    "link": "Tainted_Cain",
     "name": "The Hoarder",
     "inGameDescription": "???",
-    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Cain"
+    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Cain",
+    "category": "tainted"
   },
   "477": {
-    "link": "",
+    "link": "Tainted_Judas",
     "name": "The Deceiver",
     "inGameDescription": "???",
-    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Judas"
+    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Judas",
+    "category": "tainted"
   },
   "478": {
-    "link": "",
+    "link": "Tainted_%3F%3F%3F",
     "name": "The Soiled",
     "inGameDescription": "???",
-    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as ???"
+    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as ???",
+    "category": "tainted"
   },
   "479": {
-    "link": "",
+    "link": "Tainted_Eve",
     "name": "The Curdled",
     "inGameDescription": "???",
-    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Eve"
+    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Eve",
+    "category": "tainted"
   },
   "480": {
-    "link": "",
+    "link": "Tainted_Samson",
     "name": "The Savage",
     "inGameDescription": "???",
-    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Samson"
+    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Samson",
+    "category": "tainted"
   },
   "481": {
-    "link": "",
+    "link": "Tainted_Azazel",
     "name": "The Benighted",
     "inGameDescription": "???",
-    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Azazel"
+    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Azazel",
+    "category": "tainted"
   },
   "482": {
-    "link": "",
+    "link": "Tainted_Lazarus",
     "name": "The Enigma",
     "inGameDescription": "???",
-    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Lazarus"
+    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Lazarus",
+    "category": "tainted"
   },
   "483": {
-    "link": "",
+    "link": "Tainted_Eden",
     "name": "The Capricious",
     "inGameDescription": "???",
-    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Eden"
+    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Eden",
+    "category": "tainted"
   },
   "484": {
-    "link": "",
+    "link": "Tainted_Lost",
     "name": "The Baleful",
     "inGameDescription": "???",
-    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as The Lost"
+    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as The Lost",
+    "category": "tainted"
   },
   "485": {
-    "link": "",
+    "link": "Tainted_Lilith",
     "name": "The Harlot",
     "inGameDescription": "???",
-    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Lilith"
+    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Lilith",
+    "category": "tainted"
   },
   "486": {
-    "link": "",
+    "link": "Tainted_Keeper",
     "name": "The Miser",
     "inGameDescription": "???",
-    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Keeper"
+    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Keeper",
+    "category": "tainted"
   },
   "487": {
-    "link": "",
+    "link": "Tainted_Apollyon",
     "name": "The Empty",
     "inGameDescription": "???",
-    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Apollyon"
+    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Apollyon",
+    "category": "tainted"
   },
   "488": {
-    "link": "",
+    "link": "Tainted_Forgotten",
     "name": "The Fettered",
     "inGameDescription": "???",
-    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as The Forgotten"
+    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as The Forgotten",
+    "category": "tainted"
   },
   "489": {
-    "link": "",
+    "link": "Tainted_Bethany",
     "name": "The Zealot",
     "inGameDescription": "???",
-    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Bethany"
+    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Bethany",
+    "category": "tainted"
   },
   "490": {
-    "link": "",
+    "link": "Tainted_Jacob",
     "name": "The Deserter",
     "inGameDescription": "???",
-    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Jacob and Esau"
+    "unlockDescription": "Use Red Key (etc.) to open the hidden closet in Home as Jacob and Esau",
+    "category": "tainted"
   },
   "491": {
-    "link": "",
+    "link": "Glitched_Crown",
     "name": "Glitched Crown",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat The Beast as Tainted Isaac"
+    "unlockDescription": "Defeat The Beast as Tainted Isaac",
+    "category": "tainted"
   },
   "492": {
-    "link": "",
+    "link": "Belly_Jelly",
     "name": "Belly Jelly",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat The Beast as Tainted Magdalene"
+    "unlockDescription": "Defeat The Beast as Tainted Magdalene",
+    "category": "tainted"
   },
   "493": {
-    "link": "",
+    "link": "Blue_Key",
     "name": "Blue Key",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat The Beast as Tainted Cain"
+    "unlockDescription": "Defeat The Beast as Tainted Cain",
+    "category": "tainted"
   },
   "494": {
-    "link": "",
+    "link": "Sanguine_Bond",
     "name": "Sanguine Bond",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat The Beast as Tainted Judas"
+    "unlockDescription": "Defeat The Beast as Tainted Judas",
+    "category": "tainted"
   },
   "495": {
-    "link": "",
+    "link": "The_Swarm",
     "name": "The Swarm",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat The Beast as Tainted&#160;???"
+    "unlockDescription": "Defeat The Beast as Tainted ???",
+    "category": "tainted"
   },
   "496": {
-    "link": "",
+    "link": "Heartbreak",
     "name": "Heartbreak",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat The Beast as Tainted Eve"
+    "unlockDescription": "Defeat The Beast as Tainted Eve",
+    "category": "tainted"
   },
   "497": {
-    "link": "",
+    "link": "Larynx",
     "name": "Larynx",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat The Beast as Tainted Samson"
+    "unlockDescription": "Defeat The Beast as Tainted Samson",
+    "category": "tainted"
   },
   "498": {
-    "link": "",
+    "link": "Azazel%27s_Rage",
     "name": "Azazel's Rage",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat The Beast as Tainted Azazel"
+    "unlockDescription": "Defeat The Beast as Tainted Azazel",
+    "category": "tainted"
   },
   "499": {
-    "link": "",
+    "link": "Salvation",
     "name": "Salvation",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat The Beast as Tainted Lazarus"
+    "unlockDescription": "Defeat The Beast as Tainted Lazarus",
+    "category": "tainted"
   },
   "500": {
-    "link": "",
+    "link": "TMTRAINER",
     "name": "TMTRAINER",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat The Beast as Tainted Eden"
+    "unlockDescription": "Defeat The Beast as Tainted Eden",
+    "category": "tainted"
   },
   "501": {
-    "link": "",
+    "link": "Sacred_Orb",
     "name": "Sacred Orb",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat The Beast as Tainted Lost"
+    "unlockDescription": "Defeat The Beast as Tainted Lost",
+    "category": "tainted"
   },
   "502": {
-    "link": "",
+    "link": "Twisted_Pair",
     "name": "Twisted Pair",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat The Beast as Tainted Lilith"
+    "unlockDescription": "Defeat The Beast as Tainted Lilith",
+    "category": "tainted"
   },
   "503": {
-    "link": "",
+    "link": "Strawman",
     "name": "Strawman",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat The Beast as Tainted Keeper"
+    "unlockDescription": "Defeat The Beast as Tainted Keeper",
+    "category": "tainted"
   },
   "504": {
-    "link": "",
+    "link": "Echo_Chamber",
     "name": "Echo Chamber",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat The Beast as Tainted Apollyon"
+    "unlockDescription": "Defeat The Beast as Tainted Apollyon",
+    "category": "tainted"
   },
   "505": {
-    "link": "",
+    "link": "Isaac%27s_Tomb",
     "name": "Isaac's Tomb",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat The Beast as Tainted Forgotten"
+    "unlockDescription": "Defeat The Beast as Tainted Forgotten",
+    "category": "tainted"
   },
   "506": {
-    "link": "",
+    "link": "Vengeful_Spirit",
     "name": "Vengeful Spirit",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat The Beast as Tainted Bethany"
+    "unlockDescription": "Defeat The Beast as Tainted Bethany",
+    "category": "tainted"
   },
   "507": {
-    "link": "",
+    "link": "Esau_Jr.",
     "name": "Esau Jr.",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat The Beast as Tainted Jacob"
+    "unlockDescription": "Defeat The Beast as Tainted Jacob",
+    "category": "tainted"
   },
   "508": {
-    "link": "",
+    "link": "Bloody_Mary",
     "name": "Bloody Mary",
     "inGameDescription": "Unlocked a new challenge.",
-    "unlockDescription": "Unlock Bethany, Blood Bag, and It Lives!"
+    "unlockDescription": "Unlock Bethany, Blood Bag, and It Lives!",
+    "category": "misc"
   },
   "509": {
-    "link": "",
+    "link": "Baptism_by_Fire",
     "name": "Baptism by Fire",
     "inGameDescription": "Unlocked a new challenge.",
-    "unlockDescription": "Defeat Satan as Bethany, defeat Mom's Heart 11 times, and unlock Maggy's Faith"
+    "unlockDescription": "Defeat Satan as Bethany, defeat Mom's Heart 11 times, and unlock Maggy's Faith",
+    "category": "characterMark"
   },
   "510": {
-    "link": "",
+    "link": "Isaac%27s_Awakening",
     "name": "Isaac's Awakening",
     "inGameDescription": "Unlocked a new challenge.",
-    "unlockDescription": "Defeat Mother"
+    "unlockDescription": "Defeat Mother",
+    "category": "misc"
   },
   "511": {
-    "link": "",
+    "link": "Seeing_Double",
     "name": "Seeing Double",
     "inGameDescription": "Unlocked a new challenge.",
-    "unlockDescription": "Defeat Mother"
+    "unlockDescription": "Defeat Mother",
+    "category": "misc"
   },
   "512": {
-    "link": "",
+    "link": "Pica_Run",
     "name": "Pica Run",
     "inGameDescription": "Unlocked a new challenge.",
-    "unlockDescription": "Defeat Mom's Heart 11 times and unlock Marbles"
+    "unlockDescription": "Defeat Mom's Heart 11 times and unlock Marbles",
+    "category": "misc"
   },
   "513": {
-    "link": "",
+    "link": "Hot_Potato",
     "name": "Hot Potato",
     "inGameDescription": "Unlocked a new challenge.",
-    "unlockDescription": "Unlock Tainted Forgotten"
+    "unlockDescription": "Unlock Tainted Forgotten",
+    "category": "tainted"
   },
   "514": {
-    "link": "",
+    "link": "Cantripped!",
     "name": "Cantripped!",
     "inGameDescription": "Unlocked a new challenge.",
-    "unlockDescription": "Unlock Tainted Cain"
+    "unlockDescription": "Unlock Tainted Cain",
+    "category": "tainted"
   },
   "515": {
-    "link": "",
+    "link": "Red_Redemption",
     "name": "Red Redemption",
     "inGameDescription": "Unlocked a new challenge.",
-    "unlockDescription": "Unlock Tainted Jacob"
+    "unlockDescription": "Unlock Tainted Jacob",
+    "category": "tainted"
   },
   "516": {
-    "link": "",
+    "link": "DELETE_THIS",
     "name": "DELETE THIS",
     "inGameDescription": "TODO: remove this achievement",
-    "unlockDescription": "Unlock Tainted Eden"
+    "unlockDescription": "Unlock Tainted Eden",
+    "category": "tainted"
   },
   "517": {
-    "link": "",
+    "link": "Dirty_Mind",
     "name": "Dirty Mind",
     "inGameDescription": "Complete Challenge 36.",
-    "unlockDescription": "Complete Scat Man (challenge #36)"
+    "unlockDescription": "Complete Scat Man (challenge #36)",
+    "category": "challenge"
   },
   "518": {
-    "link": "",
+    "link": "Sigil_of_Baphomet",
     "name": "Sigil of Baphomet",
     "inGameDescription": "Complete Challenge 37.",
-    "unlockDescription": "Complete Bloody Mary (challenge #37)"
+    "unlockDescription": "Complete Bloody Mary (challenge #37)",
+    "category": "challenge"
   },
   "519": {
-    "link": "",
+    "link": "Purgatory",
     "name": "Purgatory",
     "inGameDescription": "Complete Challenge 38.",
-    "unlockDescription": "Complete Baptism by Fire (challenge #38)"
+    "unlockDescription": "Complete Baptism by Fire (challenge #38)",
+    "category": "challenge"
   },
   "520": {
-    "link": "",
+    "link": "Spirit_Sword",
     "name": "Spirit Sword",
     "inGameDescription": "Complete Challenge 39.",
-    "unlockDescription": "Complete Isaac's Awakening (challenge #39)"
+    "unlockDescription": "Complete Isaac's Awakening (challenge #39)",
+    "category": "challenge"
   },
   "521": {
-    "link": "",
+    "link": "Broken_Glasses",
     "name": "Broken Glasses",
     "inGameDescription": "Complete Challenge 40.",
-    "unlockDescription": "Complete Seeing Double (challenge #40)"
+    "unlockDescription": "Complete Seeing Double (challenge #40)",
+    "category": "challenge"
   },
   "522": {
-    "link": "",
+    "link": "Ice_Cube",
     "name": "Ice Cube",
     "inGameDescription": "Complete Challenge 41.",
-    "unlockDescription": "Complete Pica Run (challenge #41)"
+    "unlockDescription": "Complete Pica Run (challenge #41)",
+    "category": "challenge"
   },
   "523": {
-    "link": "",
+    "link": "Charged_Penny",
     "name": "Charged Penny",
     "inGameDescription": "They will charge you up... for a small fee.",
-    "unlockDescription": "Donate to Battery Bums until they pay out with an item 5 times"
+    "unlockDescription": "Donate to Battery Bums until they pay out with an item 5 times",
+    "category": "misc"
   },
   "524": {
-    "link": "",
+    "link": "0_-_The_Fool%3F",
     "name": "The Fool",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Ultra Greedier as Tainted Lost"
+    "unlockDescription": "Defeat Ultra Greedier as Tainted Lost",
+    "category": "tainted"
   },
   "525": {
-    "link": "",
+    "link": "I_-_The_Magician%3F",
     "name": "The Magician",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Ultra Greedier as Tainted Judas"
+    "unlockDescription": "Defeat Ultra Greedier as Tainted Judas",
+    "category": "tainted"
   },
   "526": {
-    "link": "",
+    "link": "II_-_The_High_Priestess%3F",
     "name": "The High Priestess",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Ultra Greedier as Tainted Lilith"
+    "unlockDescription": "Defeat Ultra Greedier as Tainted Lilith",
+    "category": "tainted"
   },
   "527": {
-    "link": "",
+    "link": "III_-_The_Empress%3F",
     "name": "The Empress",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Ultra Greedier as Tainted Eve"
+    "unlockDescription": "Defeat Ultra Greedier as Tainted Eve",
+    "category": "tainted"
   },
   "528": {
-    "link": "",
+    "link": "IV_-_The_Emperor%3F",
     "name": "The Emperor",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Ultra Greedier as Tainted&#160;???"
+    "unlockDescription": "Defeat Ultra Greedier as Tainted ???",
+    "category": "tainted"
   },
   "529": {
-    "link": "",
+    "link": "V_-_The_Hierophant%3F",
     "name": "The Hierophant",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Ultra Greedier as Tainted Bethany"
+    "unlockDescription": "Defeat Ultra Greedier as Tainted Bethany",
+    "category": "tainted"
   },
   "530": {
-    "link": "",
+    "link": "VI_-_The_Lovers%3F",
     "name": "The Lovers",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Ultra Greedier as Tainted Magdalene"
+    "unlockDescription": "Defeat Ultra Greedier as Tainted Magdalene",
+    "category": "tainted"
   },
   "531": {
-    "link": "",
+    "link": "VII_-_The_Chariot%3F",
     "name": "The Chariot",
     "inGameDescription": "Complete Challenge 42.",
-    "unlockDescription": "Complete Hot Potato (challenge #42)"
+    "unlockDescription": "Complete Hot Potato (challenge #42)",
+    "category": "challenge"
   },
   "532": {
-    "link": "",
+    "link": "VIII_-_Justice%3F",
     "name": "Justice",
     "inGameDescription": "Complete Challenge 43.",
-    "unlockDescription": "Complete Cantripped (challenge #43)"
+    "unlockDescription": "Complete Cantripped (challenge #43)",
+    "category": "challenge"
   },
   "533": {
-    "link": "",
+    "link": "IX_-_The_Hermit%3F",
     "name": "The Hermit",
     "inGameDescription": "Complete Challenge 44.",
-    "unlockDescription": "Complete Red Redemption (challenge #44)"
+    "unlockDescription": "Complete Red Redemption (challenge #44)",
+    "category": "challenge"
   },
   "534": {
-    "link": "",
+    "link": "X_-_Wheel_of_Fortune%3F",
     "name": "Wheel of Fortune",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Ultra Greedier as Tainted Cain"
+    "unlockDescription": "Defeat Ultra Greedier as Tainted Cain",
+    "category": "tainted"
   },
   "535": {
-    "link": "",
+    "link": "XI_-_Strength%3F",
     "name": "Strength",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Ultra Greedier as Tainted Samson"
+    "unlockDescription": "Defeat Ultra Greedier as Tainted Samson",
+    "category": "tainted"
   },
   "536": {
-    "link": "",
+    "link": "XII_-_The_Hanged_Man%3F",
     "name": "The Hanged Man",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Ultra Greedier as Tainted Keeper"
+    "unlockDescription": "Defeat Ultra Greedier as Tainted Keeper",
+    "category": "tainted"
   },
   "537": {
-    "link": "",
+    "link": "XIII_-_Death%3F",
     "name": "Death",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Ultra Greedier as Tainted Forgotten"
+    "unlockDescription": "Defeat Ultra Greedier as Tainted Forgotten",
+    "category": "tainted"
   },
   "538": {
-    "link": "",
+    "link": "XIV_-_Temperance%3F",
     "name": "Temperance",
-    "inGameDescription": "INVALID_DESCRIPTION",
-    "unlockDescription": "Complete DELETE THIS (challenge #45)"
+    "inGameDescription": "???",
+    "unlockDescription": "Complete DELETE THIS (challenge #45)",
+    "category": "challenge"
   },
   "539": {
-    "link": "",
+    "link": "XV_-_The_Devil%3F",
     "name": "The Devil",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Ultra Greedier as Tainted Azazel"
+    "unlockDescription": "Defeat Ultra Greedier as Tainted Azazel",
+    "category": "tainted"
   },
   "540": {
-    "link": "",
+    "link": "XVI_-_The_Tower%3F",
     "name": "The Tower",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Ultra Greedier as Tainted Apollyon"
+    "unlockDescription": "Defeat Ultra Greedier as Tainted Apollyon",
+    "category": "tainted"
   },
   "541": {
-    "link": "",
+    "link": "XVII_-_The_Stars%3F",
     "name": "The Stars",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Ultra Greedier as Tainted Isaac"
+    "unlockDescription": "Defeat Ultra Greedier as Tainted Isaac",
+    "category": "tainted"
   },
   "542": {
-    "link": "",
+    "link": "XVIII_-_The_Moon%3F",
     "name": "The Sun and the Moon",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Ultra Greedier as Tainted Jacob"
+    "unlockDescription": "Defeat Ultra Greedier as Tainted Jacob",
+    "category": "tainted"
   },
   "543": {
-    "link": "",
+    "link": "XX_-_Judgement%3F",
     "name": "Judgement",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Ultra Greedier as Tainted Lazarus"
+    "unlockDescription": "Defeat Ultra Greedier as Tainted Lazarus",
+    "category": "tainted"
   },
   "544": {
-    "link": "",
+    "link": "XXI_-_The_World%3F",
     "name": "The World",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Ultra Greedier as Tainted Eden"
+    "unlockDescription": "Defeat Ultra Greedier as Tainted Eden",
+    "category": "tainted"
   },
   "545": {
-    "link": "",
+    "link": "Old_Capacitor",
     "name": "Old Capacitor",
     "inGameDescription": "Kill 10 Battery Bums.",
-    "unlockDescription": "Kill 10 Battery Bums"
+    "unlockDescription": "Kill 10 Battery Bums",
+    "category": "misc"
   },
   "546": {
-    "link": "",
+    "link": "Brimstone_Bombs",
     "name": "Brimstone Bombs",
     "inGameDescription": "Kill Hornfel before he escapes!",
-    "unlockDescription": "After breaking Hornfel's minecart, kill him before he can escape"
+    "unlockDescription": "After breaking Hornfel's minecart, kill him before he can escape",
+    "category": "misc"
   },
   "547": {
-    "link": "",
+    "link": "Mega_Mush",
     "name": "Mega Mush",
     "inGameDescription": "Beat everything in Hard Mode as every character.",
-    "unlockDescription": "Earn all Hard mode Completion Marks for all non-Tainted characters"
+    "unlockDescription": "Earn all Hard mode Completion Marks for all non-Tainted characters",
+    "category": "characterMark"
   },
   "548": {
-    "link": "",
+    "link": "Mom%27s_Lock",
     "name": "Mom's Lock",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Isaac"
+    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Isaac",
+    "category": "tainted"
   },
   "549": {
-    "link": "",
+    "link": "Dice_Bag",
     "name": "Dice Bag",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mother as Tainted Isaac"
+    "unlockDescription": "Defeat Mother as Tainted Isaac",
+    "category": "tainted"
   },
   "550": {
-    "link": "",
+    "link": "Holy_Crown",
     "name": "Holy Crown",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Magdalene"
+    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Magdalene",
+    "category": "tainted"
   },
   "551": {
-    "link": "",
+    "link": "Mother%27s_Kiss",
     "name": "Mother's Kiss",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mother as Tainted Magdalene"
+    "unlockDescription": "Defeat Mother as Tainted Magdalene",
+    "category": "tainted"
   },
   "552": {
-    "link": "",
+    "link": "Gilded_Key",
     "name": "Gilded Key",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Cain"
+    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Cain",
+    "category": "tainted"
   },
   "553": {
-    "link": "",
+    "link": "Lucky_Sack",
     "name": "Lucky Sack",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mother as Tainted Cain"
+    "unlockDescription": "Defeat Mother as Tainted Cain",
+    "category": "tainted"
   },
   "554": {
-    "link": "",
+    "link": "Your_Soul",
     "name": "Your Soul",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Judas"
+    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Judas",
+    "category": "tainted"
   },
   "555": {
-    "link": "",
+    "link": "Number_Magnet",
     "name": "Number Magnet",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mother as Tainted Judas"
+    "unlockDescription": "Defeat Mother as Tainted Judas",
+    "category": "tainted"
   },
   "556": {
-    "link": "",
+    "link": "Dingle_Berry",
     "name": "Dingle Berry",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted&#160;???"
+    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted ???",
+    "category": "tainted"
   },
   "557": {
-    "link": "",
+    "link": "Ring_Cap",
     "name": "Ring Cap",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mother as Tainted&#160;???"
+    "unlockDescription": "Defeat Mother as Tainted ???",
+    "category": "tainted"
   },
   "558": {
-    "link": "",
+    "link": "Strange_Key",
     "name": "Strange Key",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Eve"
+    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Eve",
+    "category": "tainted"
   },
   "559": {
-    "link": "",
+    "link": "Lil_Clot",
     "name": "Lil Clot",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mother as Tainted Eve"
+    "unlockDescription": "Defeat Mother as Tainted Eve",
+    "category": "tainted"
   },
   "560": {
-    "link": "",
+    "link": "Temporary_Tattoo",
     "name": "Temporary Tattoo",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Samson"
+    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Samson",
+    "category": "tainted"
   },
   "561": {
-    "link": "",
+    "link": "Swallowed_M80",
     "name": "Swallowed M80",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mother as Tainted Samson"
+    "unlockDescription": "Defeat Mother as Tainted Samson",
+    "category": "tainted"
   },
   "562": {
-    "link": "",
+    "link": "Wicked_Crown",
     "name": "Wicked Crown",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Azazel"
+    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Azazel",
+    "category": "tainted"
   },
   "563": {
-    "link": "",
+    "link": "Azazel%27s_Stump",
     "name": "Azazel's Stump",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mother as Tainted Azazel"
+    "unlockDescription": "Defeat Mother as Tainted Azazel",
+    "category": "tainted"
   },
   "564": {
-    "link": "",
+    "link": "Torn_Pocket",
     "name": "Torn Pocket",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Lazarus"
+    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Lazarus",
+    "category": "tainted"
   },
   "565": {
-    "link": "",
+    "link": "Torn_Card",
     "name": "Torn Card",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mother as Tainted Lazarus"
+    "unlockDescription": "Defeat Mother as Tainted Lazarus",
+    "category": "tainted"
   },
   "566": {
-    "link": "",
+    "link": "Nuh_Uh!",
     "name": "Nuh Uh!",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Eden"
+    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Eden",
+    "category": "tainted"
   },
   "567": {
-    "link": "",
+    "link": "Modeling_Clay",
     "name": "Modeling Clay",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mother as Tainted Eden"
+    "unlockDescription": "Defeat Mother as Tainted Eden",
+    "category": "tainted"
   },
   "568": {
-    "link": "",
+    "link": "Kid%27s_Drawing",
     "name": "Kid's Drawing",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Lost"
+    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Lost",
+    "category": "tainted"
   },
   "569": {
-    "link": "",
+    "link": "Crystal_Key",
     "name": "Crystal Key",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mother as Tainted Lost"
+    "unlockDescription": "Defeat Mother as Tainted Lost",
+    "category": "tainted"
   },
   "570": {
-    "link": "",
+    "link": "The_Twins",
     "name": "The Twins",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Lilith"
+    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Lilith",
+    "category": "tainted"
   },
   "571": {
-    "link": "",
+    "link": "Adoption_Papers",
     "name": "Adoption Papers",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mother as Tainted Lilith"
+    "unlockDescription": "Defeat Mother as Tainted Lilith",
+    "category": "tainted"
   },
   "572": {
-    "link": "",
+    "link": "Keeper%27s_Bargain",
     "name": "Keeper's Bargain",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Keeper"
+    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Keeper",
+    "category": "tainted"
   },
   "573": {
-    "link": "",
+    "link": "Cursed_Penny",
     "name": "Cursed Penny",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mother as Tainted Keeper"
+    "unlockDescription": "Defeat Mother as Tainted Keeper",
+    "category": "tainted"
   },
   "574": {
-    "link": "",
+    "link": "Cricket_Leg",
     "name": "Cricket Leg",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Apollyon"
+    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Apollyon",
+    "category": "tainted"
   },
   "575": {
-    "link": "",
+    "link": "Apollyon%27s_Best_Friend",
     "name": "Apollyon's Best Friend",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mother as Tainted Apollyon"
+    "unlockDescription": "Defeat Mother as Tainted Apollyon",
+    "category": "tainted"
   },
   "576": {
-    "link": "",
+    "link": "Polished_Bone",
     "name": "Polished Bone",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Forgotten"
+    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Forgotten",
+    "category": "tainted"
   },
   "577": {
-    "link": "",
+    "link": "Hollow_Heart",
     "name": "Hollow Heart",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mother as Tainted Forgotten"
+    "unlockDescription": "Defeat Mother as Tainted Forgotten",
+    "category": "tainted"
   },
   "578": {
-    "link": "",
+    "link": "Expansion_Pack",
     "name": "Expansion Pack",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Bethany"
+    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Bethany",
+    "category": "tainted"
   },
   "579": {
-    "link": "",
+    "link": "Beth%27s_Essence",
     "name": "Beth's Essence",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mother as Tainted Bethany"
+    "unlockDescription": "Defeat Mother as Tainted Bethany",
+    "category": "tainted"
   },
   "580": {
-    "link": "",
+    "link": "RC_Remote",
     "name": "RC Remote",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Jacob"
+    "unlockDescription": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Jacob",
+    "category": "tainted"
   },
   "581": {
-    "link": "",
+    "link": "Found_Soul",
     "name": "Found Soul",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mother as Tainted Jacob"
+    "unlockDescription": "Defeat Mother as Tainted Jacob",
+    "category": "tainted"
   },
   "582": {
-    "link": "",
+    "link": "Member_Card",
     "name": "Member Card",
     "inGameDescription": "Spend 40+ pennies in a single shop.",
-    "unlockDescription": "Spend 40+ coins in a single Shop"
+    "unlockDescription": "Spend 40+ coins in a single Shop",
+    "category": "misc"
   },
   "583": {
-    "link": "",
+    "link": "Golden_Razor",
     "name": "Golden Razor",
     "inGameDescription": "Obtain 99 pennies. Then spend every single one of them.",
-    "unlockDescription": "In a single run, obtain 99 Coins, then spend all of them."
+    "unlockDescription": "In a single run, obtain 99 Coins, then spend all of them",
+    "category": "misc"
   },
   "584": {
-    "link": "",
+    "link": "Spindown_Dice",
     "name": "Spindown Dice",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Delirium as Tainted Isaac"
+    "unlockDescription": "Defeat Delirium as Tainted Isaac",
+    "category": "tainted"
   },
   "585": {
-    "link": "",
+    "link": "Hypercoagulation",
     "name": "Hypercoagulation",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Delirium as Tainted Magdalene"
+    "unlockDescription": "Defeat Delirium as Tainted Magdalene",
+    "category": "tainted"
   },
   "586": {
-    "link": "",
+    "link": "Bag_of_Crafting",
     "name": "Bag of Crafting",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Delirium as Tainted Cain"
+    "unlockDescription": "Defeat Delirium as Tainted Cain",
+    "category": "tainted"
   },
   "587": {
-    "link": "",
+    "link": "Dark_Arts",
     "name": "Dark Arts",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Delirium as Tainted Judas"
+    "unlockDescription": "Defeat Delirium as Tainted Judas",
+    "category": "tainted"
   },
   "588": {
-    "link": "",
+    "link": "IBS",
     "name": "IBS",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Delirium as Tainted&#160;???"
+    "unlockDescription": "Defeat Delirium as Tainted ???",
+    "category": "tainted"
   },
   "589": {
-    "link": "",
+    "link": "Sumptorium",
     "name": "Sumptorium",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Delirium as Tainted Eve"
+    "unlockDescription": "Defeat Delirium as Tainted Eve",
+    "category": "tainted"
   },
   "590": {
-    "link": "",
+    "link": "Berserk!",
     "name": "Berserk!",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Delirium as Tainted Samson"
+    "unlockDescription": "Defeat Delirium as Tainted Samson",
+    "category": "tainted"
   },
   "591": {
-    "link": "",
+    "link": "Hemoptysis",
     "name": "Hemoptysis",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Delirium as Tainted Azazel"
+    "unlockDescription": "Defeat Delirium as Tainted Azazel",
+    "category": "tainted"
   },
   "592": {
-    "link": "",
+    "link": "Flip",
     "name": "Flip",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Delirium as Tainted Lazarus"
+    "unlockDescription": "Defeat Delirium as Tainted Lazarus",
+    "category": "tainted"
   },
   "593": {
-    "link": "",
+    "link": "Corrupted_Data",
     "name": "Corrupted Data",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Delirium as Tainted Eden"
+    "unlockDescription": "Defeat Delirium as Tainted Eden",
+    "category": "tainted"
   },
   "594": {
-    "link": "",
+    "link": "Ghost_Bombs",
     "name": "Ghost Bombs",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Delirium as Tainted Lost"
+    "unlockDescription": "Defeat Delirium as Tainted Lost",
+    "category": "tainted"
   },
   "595": {
-    "link": "",
+    "link": "Gello",
     "name": "Gello",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Delirium as Tainted Lilith"
+    "unlockDescription": "Defeat Delirium as Tainted Lilith",
+    "category": "tainted"
   },
   "596": {
-    "link": "",
+    "link": "Keeper%27s_Kin",
     "name": "Keeper's Kin",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Delirium as Tainted Keeper"
+    "unlockDescription": "Defeat Delirium as Tainted Keeper",
+    "category": "tainted"
   },
   "597": {
-    "link": "",
+    "link": "Abyss",
     "name": "Abyss",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Delirium as Tainted Apollyon"
+    "unlockDescription": "Defeat Delirium as Tainted Apollyon",
+    "category": "tainted"
   },
   "598": {
-    "link": "",
+    "link": "Decap_Attack",
     "name": "Decap Attack",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Delirium as Tainted Forgotten"
+    "unlockDescription": "Defeat Delirium as Tainted Forgotten",
+    "category": "tainted"
   },
   "599": {
-    "link": "",
+    "link": "Lemegeton",
     "name": "Lemegeton",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Delirium as Tainted Bethany"
+    "unlockDescription": "Defeat Delirium as Tainted Bethany",
+    "category": "tainted"
   },
   "600": {
-    "link": "",
+    "link": "Anima_Sola",
     "name": "Anima Sola",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Delirium as Tainted Jacob"
+    "unlockDescription": "Defeat Delirium as Tainted Jacob",
+    "category": "tainted"
   },
   "601": {
-    "link": "",
+    "link": "Mega_Chest",
     "name": "Mega Chest",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mega Satan as Tainted Isaac"
+    "unlockDescription": "Defeat Mega Satan as Tainted Isaac",
+    "category": "tainted"
   },
   "602": {
-    "link": "",
+    "link": "Queen_of_Hearts",
     "name": "Queen of Hearts",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mega Satan as Tainted Magdalene"
+    "unlockDescription": "Defeat Mega Satan as Tainted Magdalene",
+    "category": "tainted"
   },
   "603": {
-    "link": "",
+    "link": "Pills#Gold_Pills",
     "name": "Gold Pill",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mega Satan as Tainted Cain"
+    "unlockDescription": "Defeat Mega Satan as Tainted Cain",
+    "category": "tainted"
   },
   "604": {
-    "link": "",
+    "link": "Black_Sack",
     "name": "Black Sack",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mega Satan as Tainted Judas"
+    "unlockDescription": "Defeat Mega Satan as Tainted Judas",
+    "category": "tainted"
   },
   "605": {
-    "link": "",
+    "link": "Charming_Poop",
     "name": "Charming Poop",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mega Satan as Tainted&#160;???"
+    "unlockDescription": "Defeat Mega Satan as Tainted ???",
+    "category": "tainted"
   },
   "606": {
-    "link": "",
+    "link": "Pills#Horse_Pills",
     "name": "Horse Pill",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mega Satan as Tainted Eve"
+    "unlockDescription": "Defeat Mega Satan as Tainted Eve",
+    "category": "tainted"
   },
   "607": {
-    "link": "",
+    "link": "Crane_Game",
     "name": "Crane Game",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mega Satan as Tainted Samson"
+    "unlockDescription": "Defeat Mega Satan as Tainted Samson",
+    "category": "tainted"
   },
   "608": {
-    "link": "",
+    "link": "Hell_Game",
     "name": "Hell Game",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mega Satan as Tainted Azazel"
+    "unlockDescription": "Defeat Mega Satan as Tainted Azazel",
+    "category": "tainted"
   },
   "609": {
-    "link": "",
+    "link": "Wooden_Chest",
     "name": "Wooden Chest",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mega Satan as Tainted Lazarus"
+    "unlockDescription": "Defeat Mega Satan as Tainted Lazarus",
+    "category": "tainted"
   },
   "610": {
-    "link": "",
+    "link": "Wild_Card",
     "name": "Wild Card",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mega Satan as Tainted Eden"
+    "unlockDescription": "Defeat Mega Satan as Tainted Eden",
+    "category": "tainted"
   },
   "611": {
-    "link": "",
+    "link": "Haunted_Chest",
     "name": "Haunted Chest",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mega Satan as Tainted Lost"
+    "unlockDescription": "Defeat Mega Satan as Tainted Lost",
+    "category": "tainted"
   },
   "612": {
-    "link": "",
+    "link": "Fool%27s_Gold",
     "name": "Fool's Gold",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mega Satan as Tainted Lilith"
+    "unlockDescription": "Defeat Mega Satan as Tainted Lilith",
+    "category": "tainted"
   },
   "613": {
-    "link": "",
+    "link": "Golden_Penny",
     "name": "Golden Penny",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mega Satan as Tainted Keeper"
+    "unlockDescription": "Defeat Mega Satan as Tainted Keeper",
+    "category": "tainted"
   },
   "614": {
-    "link": "",
+    "link": "Rotten_Beggar",
     "name": "Rotten Beggar",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mega Satan as Tainted Apollyon"
+    "unlockDescription": "Defeat Mega Satan as Tainted Apollyon",
+    "category": "tainted"
   },
   "615": {
-    "link": "",
+    "link": "Golden_Battery",
     "name": "Golden Battery",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mega Satan as Tainted Forgotten"
+    "unlockDescription": "Defeat Mega Satan as Tainted Forgotten",
+    "category": "tainted"
   },
   "616": {
-    "link": "",
+    "link": "Confessional",
     "name": "Confessional",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mega Satan as Tainted Bethany"
+    "unlockDescription": "Defeat Mega Satan as Tainted Bethany",
+    "category": "tainted"
   },
   "617": {
-    "link": "",
+    "link": "Golden_Trinket",
     "name": "Golden Trinket",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Mega Satan as Tainted Jacob"
+    "unlockDescription": "Defeat Mega Satan as Tainted Jacob",
+    "category": "tainted"
   },
   "618": {
-    "link": "",
+    "link": "Soul_of_Isaac",
     "name": "Soul of Isaac",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Isaac"
+    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Isaac",
+    "category": "tainted"
   },
   "619": {
-    "link": "",
+    "link": "Soul_of_Magdalene",
     "name": "Soul of Magdalene",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Magdalene"
+    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Magdalene",
+    "category": "tainted"
   },
   "620": {
-    "link": "",
+    "link": "Soul_of_Cain",
     "name": "Soul of Cain",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Cain"
+    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Cain",
+    "category": "tainted"
   },
   "621": {
-    "link": "",
+    "link": "Soul_of_Judas",
     "name": "Soul of Judas",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Judas"
+    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Judas",
+    "category": "tainted"
   },
   "622": {
-    "link": "",
-    "name": "Soul of&#160;???",
+    "link": "Soul_of_%3F%3F%3F",
+    "name": "Soul of ???",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Hush and Boss Rush as Tainted&#160;???"
+    "unlockDescription": "Defeat Hush and Boss Rush as Tainted ???",
+    "category": "tainted"
   },
   "623": {
-    "link": "",
+    "link": "Soul_of_Eve",
     "name": "Soul of Eve",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Eve"
+    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Eve",
+    "category": "tainted"
   },
   "624": {
-    "link": "",
+    "link": "Soul_of_Samson",
     "name": "Soul of Samson",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Samson"
+    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Samson",
+    "category": "tainted"
   },
   "625": {
-    "link": "",
+    "link": "Soul_of_Azazel",
     "name": "Soul of Azazel",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Azazel"
+    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Azazel",
+    "category": "tainted"
   },
   "626": {
-    "link": "",
+    "link": "Soul_of_Lazarus",
     "name": "Soul of Lazarus",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Lazarus"
+    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Lazarus",
+    "category": "tainted"
   },
   "627": {
-    "link": "",
+    "link": "Soul_of_Eden",
     "name": "Soul of Eden",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Eden"
+    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Eden",
+    "category": "tainted"
   },
   "628": {
-    "link": "",
+    "link": "Soul_of_the_Lost",
     "name": "Soul of the Lost",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Lost"
+    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Lost",
+    "category": "tainted"
   },
   "629": {
-    "link": "",
+    "link": "Soul_of_Lilith",
     "name": "Soul of Lilith",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Lilith"
+    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Lilith",
+    "category": "tainted"
   },
   "630": {
-    "link": "",
+    "link": "Soul_of_the_Keeper",
     "name": "Soul of the Keeper",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Keeper"
+    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Keeper",
+    "category": "tainted"
   },
   "631": {
-    "link": "",
+    "link": "Soul_of_Apollyon",
     "name": "Soul of Apollyon",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Apollyon"
+    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Apollyon",
+    "category": "tainted"
   },
   "632": {
-    "link": "",
+    "link": "Soul_of_the_Forgotten",
     "name": "Soul of the Forgotten",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Forgotten"
+    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Forgotten",
+    "category": "tainted"
   },
   "633": {
-    "link": "",
+    "link": "Soul_of_Bethany",
     "name": "Soul of Bethany",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Bethany"
+    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Bethany",
+    "category": "tainted"
   },
   "634": {
-    "link": "",
+    "link": "Soul_of_Jacob_and_Esau",
     "name": "Soul of Jacob and Esau",
     "inGameDescription": "???",
-    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Jacob"
+    "unlockDescription": "Defeat Hush and Boss Rush as Tainted Jacob",
+    "category": "tainted"
   },
   "635": {
-    "link": "",
+    "link": "A_Strange_Door",
     "name": "A Strange Door",
     "inGameDescription": "Where could it lead to?",
-    "unlockDescription": "Defeat Mother"
+    "unlockDescription": "Defeat Mother",
+    "category": "misc"
   },
   "636": {
-    "link": "",
+    "link": "Death_Certificate",
     "name": "Death Certificate",
     "inGameDescription": "...",
-    "unlockDescription": "Earn all Hard mode Completion Marks for all characters, including tainted ones"
+    "unlockDescription": "Earn all Hard mode Completion Marks for all characters, including tainted ones",
+    "category": "tainted"
   },
   "637": {
     "link": "",
     "name": "Dead God",
     "inGameDescription": "",
-    "unlockDescription": "Unlock all the other achievements (including the 4 Repentance+ achievements) and collect every item in the game"
+    "unlockDescription": "Unlock all the other achievements (including the 4 Repentance+ achievements) and collect every item in the game",
+    "category": "misc"
   },
   "638": {
     "link": "",
     "name": "Play Online",
     "inGameDescription": "Played Online",
-    "unlockDescription": "Play an Online game"
+    "unlockDescription": "Play an Online game",
+    "category": "dailyOnline"
   },
   "639": {
     "link": "",
     "name": "Win Online",
     "inGameDescription": "Won Online",
-    "unlockDescription": "Win an Online run"
+    "unlockDescription": "Win an Online run",
+    "category": "dailyOnline"
   },
   "640": {
     "link": "",
     "name": "Win Online Daily",
     "inGameDescription": "Won Online Daily",
-    "unlockDescription": "Win an Online Daily run"
+    "unlockDescription": "Win an Online Daily run",
+    "category": "dailyOnline"
   },
   "641": {
     "link": "",
     "name": "Item Descriptions",
     "inGameDescription": "Read Up!",
-    "unlockDescription": "Defeat Mom"
+    "unlockDescription": "Defeat Mom",
+    "category": "misc"
+  },
+  "NEW": {
+    "link": "Unknown",
+    "name": "Unknown Achievement",
+    "inGameDescription": "undefined",
+    "unlockDescription": "Tracker doesn't know this achievement yet",
+    "category": "misc"
   }
 }
