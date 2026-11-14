@@ -1,66 +1,321 @@
-/* INTERIM styles for the completion marks table. Phase 2B rewrites this file together with
-   src/view/marks.ts. */
+/* The "Hard completion marks" section (Phase 2B): header, "still to do" summary, legend, and the
+   character cards. Shared primitives (card, badge, bar, seg) are in base.css. */
 
-.isv-marks-section h2 {
+.marks {
+  /* The mark icons are dark red pixel art, so they sit on a light tile in both themes. */
+  --slot-bg: var(--surface-2);
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--s4);
+}
+
+[data-theme="dark"] .marks {
+  --slot-bg: #e9e2d4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .marks {
+    --slot-bg: #e9e2d4;
+  }
+}
+
+/* ===== header ===== */
+
+.marks-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s2) var(--s3);
+  margin-bottom: calc(-1 * var(--s2));
+}
+
+.marks-head h2 {
   font-size: var(--fs-xl);
   line-height: 1.2;
-  margin-bottom: var(--s3);
+  margin-right: auto;
 }
 
-/* The table is wider than a phone, so it scrolls sideways inside the card, not the page. */
-.isv-marks-wrap {
-  overflow-x: auto;
+.marks-count .num {
+  color: var(--ink);
+  font-size: var(--fs-l);
 }
 
-.isv-marks {
-  width: 100%;
-  border-collapse: collapse;
+/* ===== still to do ===== */
+
+.marks-todo {
+  padding: var(--s3) var(--s4);
+  border: 1.5px solid var(--accent);
+  border-radius: var(--r);
+  background: var(--accent-soft);
 }
 
-.isv-marks th,
-.isv-marks td {
-  padding: var(--s1) var(--s2);
-  vertical-align: middle;
-  border-bottom: 1px solid var(--line);
+.marks-todo-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s2) var(--s3);
 }
 
-.isv-marks thead th {
+.marks-todo h3 {
+  font-size: var(--fs-l);
+}
+
+/* The summary badge sits on a tinted panel, so it gets the plain card colour. */
+.marks-todo .badge.need {
+  background: var(--surface);
+}
+
+.marks-todo ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
+  gap: var(--s2) var(--s4);
+  margin-top: var(--s3);
+}
+
+.marks-todo li {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  min-width: 0;
+}
+
+.marks-todo li > div {
+  min-width: 0;
+  line-height: 1.3;
+}
+
+.marks-todo li .small {
+  display: block;
+  color: var(--ink);
+}
+
+.marks-todo .px {
+  flex: none;
+  width: 32px;
+  height: 32px;
+}
+
+/* ===== legend ===== */
+
+.marks-legend {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: var(--s3) var(--s4);
+}
+
+.marks-legend h3 {
+  font-size: var(--fs-m);
+}
+
+.marks-legend ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(118px, 100%), 1fr));
+  gap: var(--s2) var(--s3);
+  margin: var(--s3) 0;
+  counter-reset: mark;
+}
+
+.marks-legend li {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
   font-size: var(--fs-s);
+  counter-increment: mark;
+}
+
+.marks-legend li::before {
+  content: counter(mark);
+  width: 18px;
+  flex: none;
+  font-weight: 700;
   color: var(--ink-2);
+  text-align: right;
 }
 
-.isv-marks th[scope="row"] {
-  text-align: left;
+.marks-legend .px {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background: var(--slot-bg);
 }
 
-.isv-mark-cell,
-.isv-mark-total {
+/* ===== filter ===== */
+
+.marks-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s2) var(--s3);
+}
+
+/* ===== groups ===== */
+
+.marks-groups {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--s4);
+}
+
+.marks-group-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s1) var(--s3);
+  margin-bottom: var(--s2);
+}
+
+.marks-group-head h3 {
+  font-size: var(--fs-l);
+}
+
+.marks-group-done {
+  padding: var(--s2) 0;
+}
+
+.marks-all-done {
+  display: grid;
+  justify-items: center;
+  gap: var(--s3);
+  padding: var(--s5) var(--s4);
   text-align: center;
+  background: var(--ok-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  color: var(--ok);
 }
 
-.isv-mark-total {
-  white-space: nowrap;
+.marks-all-done .i {
+  width: 32px;
+  height: 32px;
 }
 
-.isv-marks img {
-  display: inline-block;
-  vertical-align: middle;
-  image-rendering: pixelated;
+.marks-all-done p {
+  color: var(--ink);
 }
 
-.isv-marks .isv-locked img {
-  filter: grayscale(1);
-  opacity: 0.35;
+/* ===== character cards ===== */
+
+.chars {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(124px, 100%), 1fr));
+  gap: var(--s2);
 }
 
-.isv-character {
-  white-space: nowrap;
+.char {
+  display: grid;
+  align-content: start;
+  gap: var(--s2);
+  min-width: 0;
+  padding: var(--s2);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
 }
 
-.isv-character img {
-  margin-right: var(--s2);
+/* A card with marks still to do: a thicker accent border, easy to spot in a wall of complete ones. */
+.char.gap {
+  border: 2px solid var(--accent);
+  padding: calc(var(--s2) - 1px);
 }
 
-.isv-first-tainted > * {
-  border-top: 2px solid var(--line-strong);
+.char-head {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  min-width: 0;
+}
+
+.char-head .px {
+  flex: none;
+  width: 32px;
+  height: 32px;
+}
+
+.char-name {
+  display: grid;
+  justify-items: start;
+  gap: 3px;
+  flex: 1;
+  min-width: 0;
+}
+
+.char h4 {
+  font-size: var(--fs-s);
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.frac {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 4px 7px;
+  border-radius: var(--r-pill);
+  font: 600 var(--fs-s) / 1 var(--font-body);
+}
+
+.frac .i {
+  width: 12px;
+  height: 12px;
+  stroke-width: 3;
+}
+
+.frac.ok {
+  background: var(--ok-soft);
+  color: var(--ok);
+}
+
+.frac.need {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.mark-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 2px;
+}
+
+.slot {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  min-width: 0;
+  border-radius: 4px;
+  background: var(--slot-bg);
+  border: 1px solid var(--line);
+}
+
+.slot .px {
+  width: 16px;
+  height: 16px;
+}
+
+/* Not done: a dashed, empty slot. The shape differs, not just the shade. */
+.slot.empty {
+  background: transparent;
+  border: 1.5px dashed var(--line-strong);
+}
+
+@media (max-width: 420px) {
+  .marks {
+    padding: var(--s3);
+  }
+
+  .chars {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .frac {
+    padding: 3px 5px;
+  }
+
+  .marks-todo,
+  .marks-legend {
+    padding-inline: var(--s3);
+  }
 }
