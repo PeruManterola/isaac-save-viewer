@@ -1,14 +1,18 @@
 import { parseIntSafe } from "complete-common";
 import * as achievements from "./data/achievements.json";
-import * as easterEggs from "./data/easterEggs.json";
 import * as itemPools from "./data/itempools.json";
 import * as items from "./data/items.json";
 import { ChunkType } from "./enums/ChunkType.js";
 import { ITEM_POOL_NAME_MAP } from "./itemPoolNameMap.js";
+import type IsaacSaveFile from "./kaitai/IsaacSaveFile.cjs";
+import type {
+  AchievementsChunk,
+  CollectiblesChunk,
+} from "./kaitai/IsaacSaveFile.cjs";
 import { hideSelectSaveFileArea } from "./selectSaveFileSubroutines.js";
 import { getElement, hide, show, toggle } from "./utils.js";
 
-type Prefix = "achievements" | "collectibles" | "easter-eggs";
+type Prefix = "achievements" | "collectibles";
 
 interface AchievementJSON {
   link: string;
@@ -26,7 +30,6 @@ export function fillPage(isaacSaveFile: IsaacSaveFile): void {
   // Build the tables on the page.
   fillAchievements(isaacSaveFile);
   fillCollectibles(isaacSaveFile);
-  fillEasterEggs(isaacSaveFile);
 
   // Show it.
   hideSelectSaveFileArea();
@@ -181,65 +184,6 @@ function getPoolsText(pools: readonly string[]) {
   return pools.join(", ");
 }
 
-function fillEasterEggs(isaacSaveFile: IsaacSaveFile) {
-  const chunk = isaacSaveFile.chunks[ChunkType.SPECIAL_SEED_COUNTERS - 1];
-  if (chunk === undefined) {
-    throw new Error("Failed to get the easter egg chunk.");
-  }
-
-  const easterEggChunk = chunk.body as SpecialSeedCountersChunk;
-  const ourEasterEggs = easterEggChunk.countById;
-
-  // We can't derive the number of easter eggs from the save file, because they are not contiguous.
-  // Instead, we derive it from the JSON file.
-  const numEasterEggs = getNumEasterEggsFromJSON();
-
-  fillTable("easter-eggs", ourEasterEggs, numEasterEggs, fillEasterEggsAddRow);
-}
-
-function getNumEasterEggsFromJSON() {
-  let numEasterEggs = 0;
-  for (const key of Object.keys(easterEggs)) {
-    const collectibleType = parseIntSafe(key);
-    if (Number.isNaN(collectibleType)) {
-      continue;
-    }
-
-    numEasterEggs++;
-  }
-
-  return numEasterEggs;
-}
-
-function fillEasterEggsAddRow(i: number, tBody: HTMLTableElement) {
-  // The easter eggs IDs are not contiguous, so do nothing if this particular item does not exist.
-  const easterEggDescription = getEasterEggDescription(i);
-  if (easterEggDescription === undefined) {
-    return;
-  }
-  const { seed, inGameDescription, effectsDescription } = easterEggDescription;
-
-  const rowData: string[] = [];
-
-  const id = i.toString();
-  rowData.push(id, seed, inGameDescription, effectsDescription);
-
-  addRow(tBody, rowData);
-}
-
-interface EasterEggDescription {
-  seed: string;
-  inGameDescription: string;
-  effectsDescription: string;
-}
-
-function getEasterEggDescription(id: number): EasterEggDescription | undefined {
-  const key = id as unknown as keyof typeof easterEggs;
-  const easterEggDescription = easterEggs[key];
-
-  return easterEggDescription;
-}
-
 function fillTable(
   prefix: Prefix,
   things: readonly number[],
@@ -262,10 +206,7 @@ function fillTable(
 
     // Some arrays contain data that is not contiguous.
     if (gotten) {
-      if (
-        (prefix === "collectibles" && !isValidCollectibleID(i))
-        || (prefix === "easter-eggs" && !isValidEasterEgg(i))
-      ) {
+      if (prefix === "collectibles" && !isValidCollectibleID(i)) {
         continue;
       }
 
@@ -299,10 +240,6 @@ function addRow(tBody: HTMLTableElement, rowData: readonly string[]) {
 
 function isValidCollectibleID(id: number) {
   return getCollectibleDescription(id) !== undefined;
-}
-
-function isValidEasterEgg(id: number) {
-  return getEasterEggDescription(id) !== undefined;
 }
 
 function swapLinkText(element: HTMLElement) {

@@ -17,30 +17,9 @@ jobs:
       - uses: ./.github/workflows/setup
       - run: npm run lint
 
-  # @template-customization-start
-
-  deploy_website:
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-    needs: [build, lint]
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    steps:
-      - uses: actions/checkout@v5
-      - uses: ./.github/workflows/setup
-      - run: npm run build
-      - uses: actions/upload-pages-artifact@v4
-        with:
-          path: ./static
-      - uses: actions/deploy-pages@v4
-
-  # @template-customization-end
-
   discord:
     name: Discord Failure Notification
-    # @template-ignore-next-line
-    needs: [build, lint, deploy_website]
+    needs: [build, lint]
     if: failure()
     runs-on: ubuntu-latest
     steps:

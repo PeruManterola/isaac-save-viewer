@@ -21,13 +21,9 @@ export default defineConfig(
   },
 
   // @template-customization-start
-  // Don't bother linting compiled output.
+  // Don't bother linting generated code.
   {
-    ignores: [
-      "static/main.js",
-      "static/lib/KaitaiStream.js",
-      "static/lib/IsaacSaveFile.js",
-    ],
+    ignores: ["src/kaitai/IsaacSaveFile.cjs"],
   },
   // @template-customization-end
 );

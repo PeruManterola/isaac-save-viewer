@@ -1,6 +1,8 @@
 import { ReadonlySet } from "complete-common";
+import KaitaiStream from "kaitai-struct/KaitaiStream";
 import { ChunkType } from "./enums/ChunkType.js";
 import { fillPage } from "./fillPage.js";
+import IsaacSaveFile from "./kaitai/IsaacSaveFile.cjs";
 import { selectSaveFileError } from "./selectSaveFileSubroutines.js";
 
 const HEADER_LENGTH = 16;
@@ -89,7 +91,7 @@ function verifyHeader(arrayBuffer: ArrayBuffer) {
     console.error("Unknown header:");
     console.error(header);
     throw new Error(
-      "That is not a valid save file for <i>The Binding of Isaac: Repentance</i>.",
+      "That is not a valid save file for <i>The Binding of Isaac: Repentance+</i>.",
     );
   }
 }
@@ -119,6 +121,6 @@ function verifyNotAfterbirthPlus(isaacSaveFile: IsaacSaveFile) {
 
 function errorWrongGameType(gameType: string) {
   throw new Error(
-    `That is a save file for <i>The Binding of Isaac: ${gameType}</i>.<br />This site only supports save files for <i>The Binding of Isaac: Repentance</i>.`,
+    `That is a save file for <i>The Binding of Isaac: ${gameType}</i>.<br />This site only supports save files for <i>The Binding of Isaac: Repentance+</i>.`,
   );
 }

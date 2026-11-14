@@ -9,11 +9,7 @@ const config = {
     "eslint.config.mjs", // ESLint is provided by "complete-lint".
     "prettier.config.mjs", // Prettier is provided by "complete-lint".
     // @template-customization-start
-    "src/types/IsaacSaveFile.d.ts",
-    "src/types/KaitariStream.d.ts",
-    "static/lib/IsaacSaveFile.js",
-    "static/lib/KaitaiStream.js",
-    "static/main.js",
+    "src/kaitai/IsaacSaveFile.d.cts", // Types for the generated Kaitai Struct parser.
     // @template-customization-end
   ],
   ignoreBinaries: [
@@ -21,6 +17,10 @@ const config = {
   ],
   ignoreDependencies: [
     "complete-lint", // This is a linting meta-package.
+    // @template-customization-start
+    "@fontsource/source-sans-pro", // Copied into "dist" by "scripts/build.ts".
+    "bulma", // Copied into "dist" by "scripts/build.ts".
+    // @template-customization-end
   ],
 };
 

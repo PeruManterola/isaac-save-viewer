@@ -1,3 +1,8 @@
+:root {
+  /* Bulma sets the font on "body", so we override its variable instead of styling "html". */
+  --bulma-family-primary: "Source Sans Pro", sans-serif;
+}
+
 html {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
