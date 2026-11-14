@@ -10,6 +10,9 @@ const config = {
     "prettier.config.mjs", // Prettier is provided by "complete-lint".
     // @template-customization-start
     "src/kaitai/IsaacSaveFile.d.cts", // Types for the generated Kaitai Struct parser.
+    "static/theme-init.js", // A blocking script that "static/index.html" loads.
+    "mockups/**", // Reference material for the UI overhaul, not part of the app.
+    ".agents/**", // Agent skills.
     // @template-customization-end
   ],
   ignoreBinaries: [
@@ -18,8 +21,7 @@ const config = {
   ignoreDependencies: [
     "complete-lint", // This is a linting meta-package.
     // @template-customization-start
-    "@fontsource/source-sans-pro", // Copied into "dist" by "scripts/build.ts".
-    "bulma", // Copied into "dist" by "scripts/build.ts".
+    "@fontsource/rubik", // Copied into "dist" by "scripts/build.ts".
     // @template-customization-end
   ],
 };

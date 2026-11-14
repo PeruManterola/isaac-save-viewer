@@ -1,5 +1,5 @@
-// Preferences that are remembered in the browser: the view and filter of each section, and which
-// sections and groups are collapsed.
+// Preferences that are remembered in the browser: the colour theme, the view and filter of each
+// section, and which sections and groups are collapsed.
 
 import type { Filter, ViewMode } from "./filter.js";
 import {
@@ -8,6 +8,8 @@ import {
   isFilter,
   isViewMode,
 } from "./filter.js";
+import type { Theme } from "./theme.js";
+import { DEFAULT_THEME, isTheme } from "./theme.js";
 
 /** All keys start with this, so that they do not clash with anything else on the same origin. */
 export const KEY_PREFIX = "isv:";
@@ -31,6 +33,15 @@ export class Preferences {
 
   constructor(storage: KeyValueStorage | undefined) {
     this.storage = storage;
+  }
+
+  getTheme(): Theme {
+    const value = this.get("theme");
+    return isTheme(value) ? value : DEFAULT_THEME;
+  }
+
+  setTheme(theme: Theme): void {
+    this.set("theme", theme);
   }
 
   getViewMode(section: string): ViewMode {

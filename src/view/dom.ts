@@ -1,8 +1,5 @@
-// Small helpers for building and showing DOM elements. Elements are built with `createElement` and
+// Small helpers for building DOM elements. Elements are built with `createElement` and
 // `textContent` so that no data is ever interpreted as HTML.
-
-const DISPLAY_VISIBLE = "block";
-const DISPLAY_HIDDEN = "none";
 
 type Child = Node | string;
 
@@ -53,12 +50,4 @@ export function lazyImage(
   }
 
   return h("img", attributes);
-}
-
-export function hide(element: HTMLElement): void {
-  element.style.display = DISPLAY_HIDDEN;
-}
-
-export function show(element: HTMLElement): void {
-  element.style.display = DISPLAY_VISIBLE;
 }

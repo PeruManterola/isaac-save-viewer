@@ -11,3 +11,9 @@ bun.lock
 *.min.js
 *.min.css
 
+
+# @template-customization-start
+# Reference material and agent skills are not part of the app.
+mockups
+.agents
+# @template-customization-end

@@ -109,6 +109,29 @@ describe("Preferences", () => {
     expect(preferences.getFilter("items")).toBe("locked");
   });
 
+  test("defaults to following the system theme", () => {
+    expect(new Preferences(memoryStorage()).getTheme()).toBe("system");
+  });
+
+  test("remembers the theme as isv:theme", () => {
+    const storage = memoryStorage();
+    const preferences = new Preferences(storage);
+    preferences.setTheme("dark");
+    expect(storage.items.get("isv:theme")).toBe("dark");
+    expect(new Preferences(storage).getTheme()).toBe("dark");
+
+    preferences.setTheme("light");
+    expect(new Preferences(storage).getTheme()).toBe("light");
+    preferences.setTheme("system");
+    expect(new Preferences(storage).getTheme()).toBe("system");
+  });
+
+  test("ignores an invalid stored theme", () => {
+    const storage = memoryStorage();
+    storage.setItem("isv:theme", "sepia");
+    expect(new Preferences(storage).getTheme()).toBe("system");
+  });
+
   test("works without storage", () => {
     for (const storage of [undefined, throwingStorage()]) {
       const preferences = new Preferences(storage);
@@ -117,7 +140,9 @@ describe("Preferences", () => {
         preferences.setFilter("items", "all");
         preferences.setCollapsed("items", true);
         preferences.setCollapsed("items", false);
+        preferences.setTheme("dark");
       }).not.toThrow();
+      expect(preferences.getTheme()).toBe("system");
       expect(preferences.getViewMode("items")).toBe("list");
       expect(preferences.getFilter("items")).toBe("locked");
       expect(preferences.isCollapsed("items")).toBe(false);

@@ -1,52 +1,44 @@
+// The loaded save: the stat cards, then the achievements, items, and marks sections. Each section
+// renders itself. This file only gives each one its stable ID, for the links in the stat cards.
+
 import type { SaveModel } from "../save/model.js";
-import { getMarksProgress, getProgress } from "../save/model.js";
 import type { Preferences } from "../state/preferences.js";
 import { renderAchievementsSection } from "./achievements.js";
-import { getElement, h, show } from "./dom.js";
+import { getElement, h } from "./dom.js";
 import { renderItemsSection } from "./items.js";
 import { renderMarksSection } from "./marks.js";
-import { progressText } from "./progress.js";
+import { SECTION_IDS } from "./sections.js";
+import { renderStatCards } from "./statCards.js";
 import { initTooltips } from "./tooltip.js";
 
-const SAVE_FILE_STATS_ID = "save-file-stats";
+export const RESULTS_ID = "results";
 
 export function renderSaveModel(
   saveModel: SaveModel,
   preferences: Preferences,
 ): void {
-  const container = getElement(SAVE_FILE_STATS_ID);
+  const container = getElement(RESULTS_ID);
   container.replaceChildren(
-    renderSummary(saveModel),
-    renderAchievementsSection(saveModel.achievements, preferences),
-    renderItemsSection(saveModel.items, preferences),
-    renderMarksSection(saveModel.marks, preferences),
-  );
-  initTooltips(container);
-  show(container);
-}
-
-/** The achievement count is the headline. Items and marks are shown next to it. */
-function renderSummary(saveModel: SaveModel): HTMLElement {
-  return h("div", { class: "isv-summary-header" }, [
-    summaryItem(
-      "Achievements",
-      progressText(getProgress(saveModel.achievements)),
-      "is-2",
-    ),
-    h("div", { class: "isv-summary-secondary" }, [
-      summaryItem("Items", progressText(getProgress(saveModel.items)), "is-4"),
-      summaryItem(
-        "Hard marks",
-        progressText(getMarksProgress(saveModel.marks)),
-        "is-4",
+    renderStatCards(saveModel),
+    h("div", { class: "sections" }, [
+      section(
+        SECTION_IDS.achievements,
+        renderAchievementsSection(saveModel.achievements, preferences),
+      ),
+      section(
+        SECTION_IDS.items,
+        renderItemsSection(saveModel.items, preferences),
+      ),
+      section(
+        SECTION_IDS.marks,
+        renderMarksSection(saveModel.marks, preferences),
       ),
     ]),
-  ]);
+  );
+  initTooltips(container);
+  container.hidden = false;
 }
 
-function summaryItem(label: string, value: string, size: string): HTMLElement {
-  return h("div", { class: "isv-summary-item" }, [
-    h("p", { class: "heading" }, [label]),
-    h("p", { class: `title ${size}` }, [value]),
-  ]);
+function section(id: string, content: HTMLElement): HTMLElement {
+  return h("section", { id, class: "sec" }, [content]);
 }
