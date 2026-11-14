@@ -1,0 +1,11 @@
+# Runs the Isaac Save Viewer at http://<host>:8080/
+# - For TrueNAS: Apps → Discover Apps → Custom App → Install via YAML, then paste this file.
+# - Change the image tag to the release that you want to run. (Every release is also tagged with
+#   "X.Y" and "latest".)
+
+services:
+  isaac-save-viewer:
+    image: ghcr.io/perumanterola/isaac-save-viewer:1.0.0
+    ports:
+      - "8080:80"
+    restart: unless-stopped

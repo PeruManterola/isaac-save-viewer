@@ -2,7 +2,7 @@
 
 This is the source code for the Isaac Save Viewer, a tool to view save completion status for [_The Binding of Isaac: Repentance+_](https://store.steampowered.com/app/3353470/).
 
-This is a personal fork of [Zamiell/isaac-save-viewer](https://github.com/Zamiell/isaac-save-viewer). It is self-hosted as a static website. The save file is read entirely in the browser and never leaves it.
+This is a personal fork of [Zamiell/isaac-save-viewer](https://github.com/Zamiell/isaac-save-viewer). It is self-hosted as a static website (see [Deploy](#deploy)). The save file is read entirely in the browser and never leaves it.
 
 - The save file format was reversed by [Blade](https://github.com/bladecoding) using [Kaitai Struct](https://kaitai.io/).
 - It is written using [TypeScript](https://www.typescriptlang.org/).
@@ -25,3 +25,26 @@ npm run lint    # Type-check, lint, format-check, and spell-check the project.
 - `src/` contains the TypeScript source code. `src/kaitai/` contains the save file parser, which is generated from `IsaacSaveFile.ksy` by the Kaitai Struct compiler.
 - `static/` contains the HTML, CSS, and images. The build copies it into `dist/`, along with the bundled `main.js`, Bulma, and the font.
 - `dist/` is a complete static website that makes no requests to other servers.
+
+## Deploy
+
+The site is published as a Docker image on the GitHub Container Registry (GHCR): `ghcr.io/perumanterola/isaac-save-viewer`. The image builds the site with Node.js and serves `dist/` with [Static Web Server](https://static-web-server.net/) on port 80. It is built for `linux/amd64`.
+
+### Publishing an image
+
+The [Docker workflow](.github/workflows/docker.yml) builds and pushes the image:
+
+- **Publishing a GitHub release** (e.g. `v1.0.0`) pushes the tags `1.0.0`, `1.0`, and `latest`.
+- **Running the workflow manually** (Actions → Docker → Run workflow) pushes the tags `edge` and `sha-<short SHA>`.
+
+GHCR packages are private when they are first published. After the first run, either make the package public (GitHub → your profile → Packages → `isaac-save-viewer` → Package settings → Change visibility), or give TrueNAS credentials for GHCR (a personal access token with the `read:packages` scope).
+
+### TrueNAS
+
+1. Go to Apps → Discover Apps → Custom App → Install via YAML.
+1. Paste the contents of [`compose.yaml`](compose.yaml). Change the image tag to the version that you published.
+1. Open `http://<truenas-ip>:8080/`.
+
+No reverse proxy is needed. The page makes no requests to other servers, and the save file is only read in the browser.
+
+With Docker Compose anywhere else, run `docker compose up -d` in the directory that contains `compose.yaml`.

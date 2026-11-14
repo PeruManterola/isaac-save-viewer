@@ -1,0 +1,14 @@
+# Only the files that are needed to build the "dist" directory should be sent to Docker.
+.git
+.github
+.vscode
+**/node_modules
+dist
+saves
+test
+coverage
+*.log
+*.md
+Dockerfile
+.dockerignore
+compose.yaml
