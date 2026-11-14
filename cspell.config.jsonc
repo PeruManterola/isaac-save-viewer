@@ -26,6 +26,7 @@
     "items.json",
     "itempools.json",
     "itempools.xml",
+    "skills-lock.json",
     // @template-customization-end
   ],
   "words": [

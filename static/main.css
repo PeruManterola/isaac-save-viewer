@@ -32,6 +32,28 @@ a:hover {
   margin-top: 1em;
 }
 
+/* Shown while a file is dragged over the window. It ignores pointer events so that the drag events
+   keep reaching the page underneath. */
+#drop-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 4px dashed var(--bulma-warning);
+  background-color: rgb(0 0 0 / 60%);
+  pointer-events: none;
+}
+
+#drop-overlay.is-active {
+  display: flex;
+}
+
+#drop-overlay .title {
+  color: white;
+}
+
 #save-file-stats {
   display: none;
 }

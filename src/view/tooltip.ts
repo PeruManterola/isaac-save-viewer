@@ -6,8 +6,18 @@ const TOOLTIP_SELECTOR = ".isv-tooltip";
 const ACTIVE_CLASS = "is-active";
 const WINDOW_MARGIN_PX = 8;
 
-/** Sets up the tiles inside the container. Tiles that are added later are handled too. */
+const initializedContainers = new WeakSet<HTMLElement>();
+
+/**
+ * Sets up the tiles inside the container. Tiles that are added later are handled too, so calling
+ * this again for the same container (e.g. after loading another save file) does nothing.
+ */
 export function initTooltips(container: HTMLElement): void {
+  if (initializedContainers.has(container)) {
+    return;
+  }
+  initializedContainers.add(container);
+
   container.addEventListener("click", (event) => {
     const target = event.target as Element;
     // Let links inside a description work normally.
