@@ -26,7 +26,6 @@
     "items.json",
     "itempools.json",
     "itempools.xml",
-    "wiki-achievement-html.txt",
     // @template-customization-end
   ],
   "words": [
@@ -40,7 +39,6 @@
     "ISAACNGSAVE",
     "itempools",
     "Kaitai",
-    "lazyload",
     "MINIBOSSES",
     "Pastebin",
     "persistentgamedata",

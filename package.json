@@ -15,6 +15,9 @@
   "type": "module",
   "scripts": {
     "build": "tsx ./scripts/build.ts",
+    "data:achievements": "tsx ./scripts/scrape-achievements.ts",
+    "data:marks": "tsx ./scripts/generate-marks.ts",
+    "data:validate": "tsx ./scripts/validate-data.ts",
     "dev": "tsx ./scripts/build.ts --dev",
     "lint": "tsx ./scripts/lint.ts",
     "test": "vitest run",
