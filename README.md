@@ -8,9 +8,9 @@ After you load a save file, it shows:
 
 - your achievements (out of 641), in six groups: character unlocks, character marks, tainted, challenges, daily & online, and misc;
 - the items you have touched (out of 720);
-- a grid of the Hard completion marks of all 34 characters.
+- the Hard completion marks of all 34 characters, as one card per character, with a list of the marks that are still missing.
 
-The achievements and items can be shown as a list or as a grid, and filtered to all, locked, or unlocked. These choices, and which sections are collapsed, are remembered in the browser.
+The achievements and items can be shown as a wall of icons or as a list, filtered to all, locked, or unlocked, and searched by name, requirement, item pool, or ID. Selecting an icon shows its details. These choices, the theme (system, light, or dark), and which groups are collapsed are remembered in the browser.
 
 - The save file format was reversed by [Blade](https://github.com/bladecoding) using [Kaitai Struct](https://kaitai.io/).
 - It is written using [TypeScript](https://www.typescriptlang.org/).

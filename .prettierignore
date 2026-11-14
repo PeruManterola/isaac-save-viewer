@@ -13,7 +13,6 @@ bun.lock
 
 
 # @template-customization-start
-# Reference material and agent skills are not part of the app.
-mockups
+# Agent skills are not part of the app.
 .agents
 # @template-customization-end

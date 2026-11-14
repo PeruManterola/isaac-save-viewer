@@ -8,12 +8,13 @@ Planned 2026-11-14. This is a personal fork, self-hosted on TrueNAS with Docker.
 
 - **"Complete" means all 641 achievements unlocked** (Repentance+ 638–641 included) **and all 720 items touched.** The achievement count is the headline number. Items and Hard completion marks get their own sections, but they do not change it.
 - Achievements are shown in 6 flat groups, and each one shows what you need to do to unlock it.
-- Each section has a list/grid toggle and an All / Locked / Unlocked filter. Both are remembered in the browser.
-- A completion-marks grid shows 34 characters × 12 marks, counting Hard only.
+- Achievements and items each have a Wall / List toggle, an All / Locked / Unlocked filter and a search field. View and filter are remembered in the browser; the search is not.
+- Completion marks are shown as one card per character (34 characters × 12 marks), counting Hard only.
+- Light and dark themes, following the system or switched by hand.
 - Easter eggs are removed completely.
 - Self-hosted Docker image on GHCR. The page makes no requests to outside servers at runtime, and the save never leaves the browser.
 
-**Out of scope:** bestiary, bosses seen, Normal-difficulty marks, Rep+ online marks, search/sort, comparing saves, loading another save without a page refresh.
+**Out of scope:** bestiary, bosses seen, Normal-difficulty marks, Rep+ online marks, sorting, comparing saves.
 
 ---
 
@@ -21,8 +22,9 @@ Planned 2026-11-14. This is a personal fork, self-hosted on TrueNAS with Docker.
 
 ### Page layout (after a save is loaded)
 
-1. **Summary header:** `Achievements X / 641` as the headline, then `Items Y / 720` and `Hard marks Z / 408`.
-2. **Achievements section.** One toolbar (view + filter) applies to all groups. Groups appear in this order, each collapsible with its own `x / n` count, flat (not split per character) and sorted by achievement ID:
+0. **Header:** app name, theme switch (System / Light / Dark), the loaded file name, and "Load another save".
+1. **Stat cards:** `Achievements X / 641`, `Items Y / 720` and `Hard marks Z / 408`, each with a progress bar, percentage and a "N to unlock" / "Complete" badge. Each card jumps to its section.
+2. **Achievements section.** One toolbar (filter, view, search) applies to all groups. Groups appear in this order as cards, each collapsible with its own `x / n` count and progress bar, flat (not split per character) and sorted by achievement ID:
 
    | Group             | `category` id     | Contents                                                              |
    | ----------------- | ----------------- | --------------------------------------------------------------------- |
@@ -33,27 +35,34 @@ Planned 2026-11-14. This is a personal fork, self-hosted on TrueNAS with Docker.
    | Daily & Online    | `dailyOnline`     | Daily-run achievements and Rep+ online achievements                   |
    | Misc              | `misc`            | Everything else                                                       |
 
-3. **Items section.** Its own toolbar. One flat list sorted by ID. Here "Locked" means "not touched".
-4. **Completion marks section.** Always a grid: rows are the 34 characters, columns are the 12 marks. It has no list view and no filter, and it can be collapsed.
+   Complete groups start collapsed and show a "Complete" badge. Under the Locked filter they are a compact header only.
+
+3. **Items section.** Its own toolbar. "Still to touch" (name, ID, pools) comes first, then the touched items. Here "Locked" means "not touched".
+4. **Completion marks section.** A "Still to do" list of missing marks (hidden when none are missing), a numbered legend, and one card per character in two groups (Regular / Tainted). Filter: `All | Incomplete only`.
 
 ### Toolbar
 
-- View: `List | Grid`. Filter: `All | Locked | Unlocked`. The default is List + Locked, which matches what the site does today.
-- Each section has its own toolbar. View, filter and collapsed state (sections and groups) are saved in `localStorage` under keys prefixed `isv:`.
-- Header counts always show the full totals, whatever the filter is set to.
+- Filter: `All | Locked | Unlocked`, with counts. View: `Wall | List`. Search field. The default is Wall + Locked.
+- Each section has its own toolbar. View, filter, theme, the marks filter and the collapsed state of groups are saved in `localStorage` under keys prefixed `isv:`. The search query is not saved.
+- Header and group counts always show the full totals, whatever the filter or search is.
+
+### Search
+
+- Matches achievement name, unlock requirement, in-game description and ID, or item name, pools and ID. Case- and diacritic-insensitive; every word must match; `#12` matches the ID only.
+- Groups without matches are hidden, matches inside collapsed groups are shown without changing their saved state, and a "No matches" card offers a reset.
+
+### Wall view
+
+- Square 64px icon tiles, no text. Locked tiles: grey icon on a hatched, dashed tile with a lock badge.
+- Selecting a tile (click, tap, Enter or Space) opens one shared details popover: name, ID, category, status, in-game text, how to unlock, and a wiki link (achievements) or pools (items). It becomes a bottom sheet at 480px and below. No information needs hover.
 
 ### List view
 
-- A table like today's, plus a status column, because "All" now shows unlocked rows too.
-- Achievements: ID, name (linked to the wiki), icon, in-game description, unlock requirement.
-- Items: ID, name, icon, item pools.
+- Compact rows: 32px icon, name and ID, unlock requirement or pools, status badge. Rows open the same details popover.
 
-### Grid view
+### Images
 
-- Each tile shows the icon and the name.
-- The description appears on hover, and also on keyboard focus or tap for touch screens. For achievements it includes the unlock requirement; for items it includes the item pools.
-- Locked tiles are greyed out (grayscale and lower opacity).
-- All images use `loading="lazy"`.
+- Pixel art is drawn with `image-rendering: pixelated` at integer scales, with `loading="lazy"` and explicit sizes.
 
 ### Completion marks
 
@@ -117,7 +126,7 @@ These are shared between milestones. Do not change them without updating this fi
 
 ### Build output
 
-`npm ci && npm run build` produces `dist/`, a complete static site: `index.html`, `main.js`, CSS, images, and the self-hosted Bulma 1.x and font. It loads nothing from CDNs or other outside servers at runtime. `static/` stays the source folder for HTML, CSS and images.
+`npm ci && npm run build` produces `dist/`, a complete static site: `index.html`, `main.js`, the hand-written CSS in `static/css/`, images, and the self-hosted Rubik font. It loads nothing from CDNs or other outside servers at runtime. `static/` stays the source folder for HTML, CSS and images.
 
 ---
 
@@ -218,6 +227,10 @@ The user's saves are to be committed under `test/fixtures/`. Source: `/home/stor
    - Pure tests for the filter and preference logic.
 
 **Done when:** `npm run lint`, `npm test` and `npm run build` all pass, and the UI behaves as the product spec describes.
+
+### M6: UI overhaul (done 2026-11-15)
+
+Bulma was replaced by hand-written token CSS in `static/css/` (`tokens`, `base`, `shell`, `entries`, `marks`) with a light/dark theme switch, following the approved "Collection Wall" mockup. It added the stat cards, the wall view with a shared details popover, search, and the per-character marks cards described in the product spec above.
 
 ---
 

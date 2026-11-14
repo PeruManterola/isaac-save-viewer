@@ -25,8 +25,7 @@ export default defineConfig(
   {
     ignores: [
       "src/kaitai/IsaacSaveFile.cjs",
-      // Reference material and agent skills are not part of the app.
-      "mockups/**",
+      // Agent skills are not part of the app.
       ".agents/**",
       // A plain browser script that is not part of the TypeScript project.
       "static/theme-init.js",

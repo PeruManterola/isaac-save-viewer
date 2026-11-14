@@ -11,7 +11,6 @@ const config = {
     // @template-customization-start
     "src/kaitai/IsaacSaveFile.d.cts", // Types for the generated Kaitai Struct parser.
     "static/theme-init.js", // A blocking script that "static/index.html" loads.
-    "mockups/**", // Reference material for the UI overhaul, not part of the app.
     ".agents/**", // Agent skills.
     // @template-customization-end
   ],

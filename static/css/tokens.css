@@ -1,4 +1,4 @@
-/* Design tokens (Phase 1). Light is the base set. The dark set applies when the user forces it
+/* Design tokens. Light is the base set. The dark set applies when the user forces it
    (`data-theme="dark"` on <html>, set by the theme switch) or, when nothing is forced, when the
    system prefers dark. The dark values are therefore listed twice. Keep both copies identical. */
 
