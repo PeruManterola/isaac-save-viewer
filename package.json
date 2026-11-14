@@ -24,8 +24,7 @@
     "update": "complete-cli update"
   },
   "dependencies": {
-    "@fontsource/source-sans-pro": "5.3.0",
-    "bulma": "1.0.4",
+    "@fontsource/rubik": "5.3.0",
     "complete-common": "2.5.0",
     "kaitai-struct": "0.11.0"
   },
