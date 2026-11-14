@@ -2,7 +2,7 @@
 
 This is the source code for the Isaac Save Viewer, a tool to view save completion status for [_The Binding of Isaac: Repentance+_](https://store.steampowered.com/app/3353470/).
 
-This is a personal fork of [Zamiell/isaac-save-viewer](https://github.com/Zamiell/isaac-save-viewer). It is self-hosted as a static website (see [Deploy](#deploy)). The save file is read entirely in the browser and never leaves it.
+This is a personal fork of [Zamiell/isaac-save-viewer](https://github.com/Zamiell/isaac-save-viewer), forked on 2026-11-14 and modified substantially since (see [License](#license)). It is self-hosted as a static website (see [Deploy](#deploy)). The save file is read entirely in the browser and never leaves it.
 
 After you load a save file, it shows:
 
@@ -68,3 +68,22 @@ GHCR packages are private when they are first published. After the first run, ei
 No reverse proxy is needed. The page makes no requests to other servers, and the save file is only read in the browser.
 
 With Docker Compose anywhere else, run `docker compose up -d` in the directory that contains `compose.yaml`.
+
+## License
+
+This fork is licensed under the [GNU General Public License, version 3](LICENSE), the same license as the upstream project, because it is a derivative work of it.
+
+It was forked from [Zamiell/isaac-save-viewer](https://github.com/Zamiell/isaac-save-viewer) on 2026-11-14 and has been modified substantially since. The changes are documented by this repository's Git history. This repository is also the Corresponding Source for the published Docker images: use the release tag, or the `sha-<short SHA>` tag, to find the revision that an image was built from.
+
+If you convey this software, or a work based on it, the GPL additionally requires that you:
+
+- keep the copyright and license notices, and ship a copy of the license;
+- license the whole work under the GPL version 3, with no additional restrictions;
+- mark your own modifications with a prominent notice and a date;
+- provide the Corresponding Source, free of charge, for as long as you convey the work.
+
+Sublicensing is not permitted. Each recipient receives their license directly from the original licensors.
+
+### Third-party assets
+
+The GPL covers the code, not the game. The achievement images are taken from the [Isaac wiki](https://bindingofisaacrebirth.wiki.gg/wiki/Binding_of_Isaac:_Rebirth_Wiki), and the "items.json" file and collectible images are taken from the [Rebirth Item Tracker](https://github.com/Rchardon/RebirthItemTracker). _The Binding of Isaac_ and its artwork belong to their respective rights holders, and nothing here grants any rights to them. They are included for personal, self-hosted use.
