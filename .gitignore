@@ -141,3 +141,7 @@ dist
 
 # Local save files used for testing
 /saves/
+
+# Python bytecode (e.g. from the agent skill scripts)
+__pycache__/
+*.pyc
