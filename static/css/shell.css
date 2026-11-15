@@ -435,6 +435,11 @@ details.where[open] > summary .i {
   gap: var(--s1);
 }
 
+.site-foot p {
+  max-width: 72ch;
+  margin-inline: auto;
+}
+
 .site-foot a {
   color: inherit;
 }

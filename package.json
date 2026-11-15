@@ -2,21 +2,25 @@
   "name": "isaac-save-viewer",
   "version": "0.0.0",
   "description": "A tool to track completion status for The Binding of Isaac: Repentance+",
-  "homepage": "https://github.com/Zamiell/isaac-save-viewer#readme",
+  "homepage": "https://github.com/PeruManterola/isaac-save-viewer#readme",
   "bugs": {
-    "url": "https://github.com/Zamiell/isaac-save-viewer/issues"
+    "url": "https://github.com/PeruManterola/isaac-save-viewer/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zamiell/isaac-save-viewer.git"
+    "url": "git+https://github.com/PeruManterola/isaac-save-viewer.git"
   },
   "license": "GPL-3.0",
   "author": "Zamiell",
+  "contributors": [
+    "Peru Manterola (https://github.com/PeruManterola)"
+  ],
   "type": "module",
   "scripts": {
     "build": "tsx ./scripts/build.ts",
     "check:contrast": "tsx ./scripts/check-contrast.ts",
     "data:achievements": "tsx ./scripts/scrape-achievements.ts",
+    "data:icons": "tsx ./scripts/generate-icons.ts",
     "data:marks": "tsx ./scripts/generate-marks.ts",
     "data:validate": "tsx ./scripts/validate-data.ts",
     "dev": "tsx ./scripts/build.ts --dev",
@@ -30,6 +34,7 @@
     "kaitai-struct": "0.11.0"
   },
   "devDependencies": {
+    "@tabler/icons": "3.52.0",
     "complete-cli": "1.3.9",
     "complete-lint": "3.2.1",
     "complete-node": "10.0.0",

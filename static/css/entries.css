@@ -130,14 +130,14 @@
 
 .tile-key .tile.is-locked::before,
 .tile-key .tile.is-locked::after {
-  top: -4px;
-  right: -4px;
-  width: 14px;
-  height: 14px;
+  top: -6px;
+  right: -6px;
+  width: 16px;
+  height: 16px;
 }
 
 .tile-key .tile.is-locked::after {
-  mask-size: 9px;
+  mask-size: 11px;
 }
 
 /* ===== category cards ===== */
@@ -294,27 +294,29 @@ button.tile:hover {
   opacity: 0.55;
 }
 
+/* The badge sits inside the top-right corner of the tile, over the icon, so it never spills into
+   the gap or onto the next tile. The glyph is the filled "lock" icon from Tabler Icons. */
 .tile.is-locked::before,
 .tile.is-locked::after {
   content: "";
   position: absolute;
-  top: -5px;
-  right: -5px;
-  width: 20px;
-  height: 20px;
+  top: 3px;
+  right: 3px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
 }
 
 .tile.is-locked::before {
   background: var(--badge-bg);
-  border: 2px solid var(--surface);
+  box-shadow: 0 0 0 2px var(--surface);
 }
 
 .tile.is-locked::after {
   background: var(--badge-fg);
   /* cspell:disable-next-line */
-  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='5' y='11' width='14' height='10' rx='2'/%3E%3Cpath d='M8 11V8a4 4 0 0 1 8 0v3'/%3E%3C/svg%3E")
-    center / 11px no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a5 5 0 0 1 5 5v3a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-10a3 3 0 0 1 -3 -3v-6a3 3 0 0 1 3 -3v-3a5 5 0 0 1 5 -5m0 12a2 2 0 0 0 -1.995 1.85l-.005 .15a2 2 0 1 0 2 -2m0 -10a3 3 0 0 0 -3 3v3h6v-3a3 3 0 0 0 -3 -3'/%3E%3C/svg%3E")
+    center / 16px no-repeat;
 }
 
 .tile.is-sel {
