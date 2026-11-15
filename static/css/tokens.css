@@ -32,7 +32,7 @@
     255,
     0.22
   ); /* ... when that button is selected */
-  --scrim: rgba(43, 33, 27, 0.55); /* behind the "release to load" card */
+  --scrim: rgba(43, 33, 27, 0.39); /* behind the "release to load" card */
   --shadow: 0 1px 2px rgba(70, 45, 20, 0.08), 0 6px 18px rgba(70, 45, 20, 0.06);
   --shadow-pop:
     0 2px 4px rgba(70, 45, 20, 0.12), 0 14px 32px rgba(70, 45, 20, 0.18);
