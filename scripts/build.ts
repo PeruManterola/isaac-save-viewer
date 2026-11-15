@@ -20,6 +20,23 @@ const FONT_SUBSETS = ["latin"] as const;
 
 const dev = process.argv.includes("--dev");
 
+/**
+ * The notice at the top of "main.js". The bundle is what visitors receive, so it says what it is,
+ * who wrote it, its license, and where its source is. The `/*!` comment survives minification.
+ */
+const BANNER = `/*!
+ * Isaac Save Viewer
+ * Copyright (C) 2021-2025 Zamiell and contributors (https://github.com/Zamiell/isaac-save-viewer)
+ * Copyright (C) 2026 Peru Manterola (modified version, forked on 2026-11-14)
+ *
+ * This program is free software under the GNU General Public License, version 3, WITHOUT ANY
+ * WARRANTY. See "LICENSE.txt" next to this file.
+ * Source code: https://github.com/PeruManterola/isaac-save-viewer
+ *
+ * Includes icons from Tabler Icons (https://tabler.io/icons), MIT License,
+ * Copyright (c) 2020-2026 Paweł Kuna. See "lib/tabler-icons/LICENSE.txt".
+ */`;
+
 await (dev
   ? script(import.meta.dirname, async (packageRoot) => {
       await startDevServer(packageRoot);
@@ -49,6 +66,7 @@ function getBuildOptions(packageRoot: string): esbuild.BuildOptions {
     target: "es2021",
     sourcemap: true,
     minify: !dev,
+    banner: { js: BANNER },
     // The Kaitai Struct runtime lazily requires these for features that the save file format does
     // not use (non-UTF-8 strings and zlib compression).
     external: ["iconv-lite", "pako", "zlib"],
@@ -89,6 +107,27 @@ async function startDevServer(packageRoot: string) {
 async function copyAssets(packageRoot: string) {
   await copyStatic(packageRoot);
   await copyFont(packageRoot);
+  await copyLicenses(packageRoot);
+}
+
+/**
+ * The GPL requires that a copy of the license goes with the program, and the MIT License of Tabler
+ * Icons (bundled into "main.js") requires that its notice goes with any copy. The ".txt" extension
+ * makes the server send them as text, so the footer link opens them in the browser.
+ */
+async function copyLicenses(packageRoot: string) {
+  const { distDir, nodeModulesDir, libDir } = getPaths(packageRoot);
+  await fs.copyFile(
+    path.join(packageRoot, "LICENSE"),
+    path.join(distDir, "LICENSE.txt"),
+  );
+
+  const tablerDir = path.join(libDir, "tabler-icons");
+  await fs.mkdir(tablerDir, { recursive: true });
+  await fs.copyFile(
+    path.join(nodeModulesDir, "@tabler", "icons", "LICENSE"),
+    path.join(tablerDir, "LICENSE.txt"),
+  );
 }
 
 async function copyStatic(packageRoot: string) {
