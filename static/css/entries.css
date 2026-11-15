@@ -161,13 +161,14 @@
 }
 
 .cat-toggle {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0 var(--s3);
   width: 100%;
   min-height: 44px;
-  padding: 0;
+  padding: 0 24px 0 0;
   border: 0;
   border-radius: 8px;
   background: none;
@@ -184,8 +185,13 @@
   font-weight: 600;
 }
 
+/* The chevron is pinned to the right edge, out of the flow. If it were a flex item, it would wrap
+   onto a row of its own on a narrow screen and leave empty space under the header. */
 .cat-toggle > .i {
-  margin-left: auto;
+  position: absolute;
+  inset-block: 0;
+  right: 0;
+  margin-block: auto;
   color: var(--ink-2);
   transition: transform var(--t);
 }
@@ -199,8 +205,12 @@
   cursor: default;
 }
 
+.cat-toggle:disabled {
+  padding-right: 0;
+}
+
 .cat-toggle:disabled > .i {
-  visibility: hidden;
+  display: none;
 }
 
 .cat.complete {
@@ -713,6 +723,18 @@ button.tile:hover {
 }
 
 @media (max-width: 420px) {
+  .cat-toggle {
+    column-gap: 6px;
+  }
+
+  .cat-toggle .badge {
+    padding-inline: 6px 8px;
+  }
+
+  .cat-name {
+    font-size: 1rem;
+  }
+
   .want-grid {
     grid-template-columns: 1fr;
   }
