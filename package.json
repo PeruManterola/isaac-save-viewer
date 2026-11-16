@@ -1,6 +1,6 @@
 {
   "name": "isaac-save-viewer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A tool to track completion status for The Binding of Isaac: Repentance+",
   "homepage": "https://github.com/PeruManterola/isaac-save-viewer#readme",
   "bugs": {
