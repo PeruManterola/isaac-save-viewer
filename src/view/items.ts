@@ -21,7 +21,7 @@ import {
   enableDetails,
   syncVisibility,
 } from "./entries.js";
-import { createNoMatches, matchCountText } from "./noMatches.js";
+import { createNoMatches, matchCountText, matchesText } from "./noMatches.js";
 import { closeDetail } from "./popover.js";
 import { percentText, progressText } from "./progress.js";
 import type { ToolbarState } from "./toolbar.js";
@@ -197,7 +197,7 @@ function renderGroup(group: Group, state: ToolbarState) {
   group.element.hidden = hidden;
   group.matchBadge.hidden = !searching;
   if (searching) {
-    group.matchBadge.textContent = `${group.visible} ${group.visible === 1 ? "match" : "matches"}`;
+    group.matchBadge.textContent = matchesText(group.visible);
   }
   if (hidden) {
     return;

@@ -209,6 +209,18 @@ describe("header errors", () => {
     ).toThrow(/save file for The Binding of Isaac: Afterbirth\+\./);
   });
 
+  // Saves from the real game. Repentance has the same header as Repentance+.
+  test.each([
+    ["ab_persistentgamedata1.dat", "Afterbirth"],
+    ["rep_persistentgamedata1.dat", "Repentance"],
+  ])("%s is a %s save", (fileName, gameType) => {
+    expect(() => parseSaveFile(readFixture(fileName))).toThrow(
+      new SaveFileError(
+        `That is a save file for The Binding of Isaac: ${gameType}.\nThis site only supports save files for The Binding of Isaac: Repentance+.`,
+      ),
+    );
+  });
+
   test.each([
     ["an unknown header", makeHeaderBuffer("NOT A SAVE FILE")],
     ["an empty file", new ArrayBuffer(0)],

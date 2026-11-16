@@ -27,9 +27,10 @@ const REBIRTH_PERSISTENT_HEADER = "ISAACNGSAVE06R";
 const AFTERBIRTH_PERSISTENT_HEADER = "ISAACNGSAVE08R";
 const AFTERBIRTH_PLUS_AND_REPENTANCE_PERSISTENT_HEADER = "ISAACNGSAVE09R";
 
-// Afterbirth+ actually has 403 achievements, but the size of the array is 404 because there is no
-// 0th achievement.
+// The size of the achievements array is one more than the number of achievements, because there is
+// no 0th achievement. Afterbirth+ has 403, Repentance 637, and Repentance+ 641.
 const NUM_AFTERBIRTH_PLUS_ACHIEVEMENTS = 404;
+const NUM_REPENTANCE_PLUS_ACHIEVEMENTS = 642;
 
 const SUPPORTED_GAME = "The Binding of Isaac: Repentance+";
 
@@ -54,7 +55,7 @@ export function parseSaveFile(arrayBuffer: ArrayBuffer): IsaacSaveFile {
   const kaitaiStream = new KaitaiStream(arrayBuffer);
   const isaacSaveFile = new IsaacSaveFile(kaitaiStream);
 
-  verifyNotAfterbirthPlus(isaacSaveFile);
+  verifyRepentancePlus(isaacSaveFile);
 
   return isaacSaveFile;
 }
@@ -113,12 +114,16 @@ function removeNullCharacters(string: string): string {
   return string.replaceAll("\0", "");
 }
 
-function verifyNotAfterbirthPlus(isaacSaveFile: IsaacSaveFile) {
-  // Since Afterbirth+ has the same save file header as Repentance, we must use some other save file
-  // property to tell the difference.
+function verifyRepentancePlus(isaacSaveFile: IsaacSaveFile) {
+  // Afterbirth+, Repentance, and Repentance+ have the same save file header, so we tell them apart
+  // by the number of achievements. A later game update may add more, so only fewer is rejected.
   const chunk = getChunk(isaacSaveFile, ChunkType.ACHIEVEMENTS);
-  if (chunk.len === NUM_AFTERBIRTH_PLUS_ACHIEVEMENTS) {
-    throw wrongGameTypeError("Afterbirth+");
+  if (chunk.len < NUM_REPENTANCE_PLUS_ACHIEVEMENTS) {
+    throw wrongGameTypeError(
+      chunk.len === NUM_AFTERBIRTH_PLUS_ACHIEVEMENTS
+        ? "Afterbirth+"
+        : "Repentance",
+    );
   }
 }
 

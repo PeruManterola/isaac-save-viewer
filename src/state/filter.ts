@@ -33,12 +33,3 @@ export function matchesFilter(unlocked: boolean, filter: Filter): boolean {
     }
   }
 }
-
-export function filterEntries<T extends { readonly unlocked: boolean }>(
-  entries: readonly T[],
-  filter: Filter,
-): readonly T[] {
-  return filter === "all"
-    ? entries
-    : entries.filter((entry) => matchesFilter(entry.unlocked, filter));
-}

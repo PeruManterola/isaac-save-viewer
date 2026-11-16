@@ -20,7 +20,7 @@ import type { Preferences } from "../state/preferences.js";
 import { h, lazyImage } from "./dom.js";
 import { icon } from "./icons.js";
 import { percentText } from "./progress.js";
-import { badge, card, progressBar, segmented } from "./ui.js";
+import { badge, button, card, progressBar, segmented } from "./ui.js";
 
 /** The mark icons are 16px pixel art, shown at their own size. The portraits are 32px. */
 const MARK_ICON_SIZE = 16;
@@ -209,17 +209,12 @@ function renderCharacter(summary: CharacterSummary): HTMLElement {
 
 /** Shown instead of an empty grid when "Incomplete only" is chosen and nothing is missing. */
 function renderAllDone(showAll: () => void): HTMLElement {
-  const button = h("button", { type: "button", class: "btn btn-ghost" }, [
-    "Show all characters",
-  ]);
-  button.addEventListener("click", showAll);
-
   return h("div", { class: "marks-all-done" }, [
     icon("trophy"),
     h("p", {}, [
       h("strong", {}, ["Every hard mark is done."]),
       " Nothing is missing.",
     ]),
-    button,
+    button({ label: "Show all characters", onClick: showAll }),
   ]);
 }

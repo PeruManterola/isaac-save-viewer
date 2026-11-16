@@ -1,14 +1,11 @@
-interface ProgressLike {
-  readonly unlocked: number;
-  readonly total: number;
-}
+import type { Progress } from "../save/model.js";
 
-export function progressText(progress: ProgressLike): string {
+export function progressText(progress: Progress): string {
   return `${progress.unlocked} / ${progress.total}`;
 }
 
 /** The share that is done, from 0 to 100. An empty total counts as 0. */
-export function getPercent(progress: ProgressLike): number {
+export function getPercent(progress: Progress): number {
   return progress.total === 0 ? 0 : (progress.unlocked / progress.total) * 100;
 }
 
@@ -16,7 +13,7 @@ export function getPercent(progress: ProgressLike): number {
  * The share that is done with one decimal, e.g. "92.4%". It only says "100%" when everything is
  * done, so that 640 of 641 is not rounded up to look complete.
  */
-export function percentText(progress: ProgressLike): string {
+export function percentText(progress: Progress): string {
   const percent = getPercent(progress);
   if (progress.total > 0 && progress.unlocked >= progress.total) {
     return "100%";
@@ -33,7 +30,7 @@ export function percentText(progress: ProgressLike): string {
  * @param verb What is left to do, e.g. "unlock", "touch", or "do".
  */
 export function remainingText(
-  progress: ProgressLike,
+  progress: Progress,
   verb: string,
 ): string | undefined {
   const remaining = progress.total - progress.unlocked;

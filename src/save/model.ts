@@ -62,7 +62,7 @@ export interface ItemEntry {
   readonly unlocked: boolean;
 }
 
-interface Progress {
+export interface Progress {
   readonly unlocked: number;
   readonly total: number;
 }

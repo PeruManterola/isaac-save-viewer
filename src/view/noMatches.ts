@@ -5,13 +5,18 @@ import { h } from "./dom.js";
 import { icon } from "./icons.js";
 import { button } from "./ui.js";
 
+/** E.g. "12 matches". */
+export function matchesText(count: number): string {
+  return `${count} ${count === 1 ? "match" : "matches"}`;
+}
+
 /** E.g. "12 matches for “epic”". Also read out by the toolbar's live region. */
 export function matchCountText(count: number, query: SearchQuery): string {
   if (count === 0) {
     return `No matches for “${query.text}”`;
   }
 
-  return `${count} ${count === 1 ? "match" : "matches"} for “${query.text}”`;
+  return `${matchesText(count)} for “${query.text}”`;
 }
 
 interface NoMatches {

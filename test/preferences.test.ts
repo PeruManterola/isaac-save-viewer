@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { filterEntries, matchesFilter } from "../src/state/filter.js";
+import { matchesFilter } from "../src/state/filter.js";
 import type { KeyValueStorage } from "../src/state/preferences.js";
 import { KEY_PREFIX, Preferences } from "../src/state/preferences.js";
 
@@ -25,31 +25,6 @@ function throwingStorage(): KeyValueStorage {
   return { getItem: fail, setItem: fail, removeItem: fail };
 }
 
-describe("filterEntries", () => {
-  const entries = [
-    { id: 1, unlocked: true },
-    { id: 2, unlocked: false },
-    { id: 3, unlocked: true },
-  ] as const;
-
-  test("all", () => {
-    expect(filterEntries(entries, "all")).toStrictEqual(entries);
-  });
-
-  test("locked", () => {
-    expect(filterEntries(entries, "locked")).toStrictEqual([
-      { id: 2, unlocked: false },
-    ]);
-  });
-
-  test("unlocked", () => {
-    expect(filterEntries(entries, "unlocked")).toStrictEqual([
-      { id: 1, unlocked: true },
-      { id: 3, unlocked: true },
-    ]);
-  });
-});
-
 describe("matchesFilter", () => {
   test("all, locked, and unlocked", () => {
     expect(matchesFilter(true, "all")).toBe(true);
@@ -62,11 +37,11 @@ describe("matchesFilter", () => {
 });
 
 describe("Preferences", () => {
-  test("defaults to the wall, the locked filter, and expanded", () => {
+  test("defaults to the wall, the locked filter, and no collapsed choice", () => {
     const preferences = new Preferences(memoryStorage());
     expect(preferences.getViewMode("achievements")).toBe("grid");
     expect(preferences.getFilter("achievements")).toBe("locked");
-    expect(preferences.isCollapsed("achievements")).toBe(false);
+    expect(preferences.getCollapsed("achievements")).toBeUndefined();
   });
 
   test("remembers each section separately", () => {
@@ -80,20 +55,6 @@ describe("Preferences", () => {
     expect(reloaded.getFilter("achievements")).toBe("locked");
     expect(reloaded.getViewMode("items")).toBe("grid");
     expect(reloaded.getFilter("items")).toBe("all");
-  });
-
-  test("remembers collapsed sections and groups", () => {
-    const storage = memoryStorage();
-    const preferences = new Preferences(storage);
-    preferences.setCollapsed("marks", true);
-    preferences.setCollapsed("achievements:misc", true);
-    expect(new Preferences(storage).isCollapsed("marks")).toBe(true);
-    expect(new Preferences(storage).isCollapsed("achievements:misc")).toBe(
-      true,
-    );
-
-    preferences.setCollapsed("marks", false);
-    expect(new Preferences(storage).isCollapsed("marks")).toBe(false);
   });
 
   test("tells apart a choice from no choice for a collapsed group", () => {
@@ -116,7 +77,6 @@ describe("Preferences", () => {
     storage.setItem("isv:collapsed:achievements:tainted", "1");
     const preferences = new Preferences(storage);
     expect(preferences.getCollapsed("achievements:tainted")).toBe(true);
-    expect(preferences.isCollapsed("achievements:tainted")).toBe(true);
   });
 
   test("every key starts with the prefix", () => {
@@ -179,7 +139,6 @@ describe("Preferences", () => {
       expect(preferences.getTheme()).toBe("system");
       expect(preferences.getViewMode("items")).toBe("grid");
       expect(preferences.getFilter("items")).toBe("locked");
-      expect(preferences.isCollapsed("items")).toBe(false);
       expect(preferences.getCollapsed("items")).toBeUndefined();
     }
   });

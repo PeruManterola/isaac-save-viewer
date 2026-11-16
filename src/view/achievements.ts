@@ -23,7 +23,7 @@ import {
   syncVisibility,
 } from "./entries.js";
 import { icon } from "./icons.js";
-import { createNoMatches, matchCountText } from "./noMatches.js";
+import { createNoMatches, matchCountText, matchesText } from "./noMatches.js";
 import { closeDetail } from "./popover.js";
 import { progressText } from "./progress.js";
 import type { ToolbarState } from "./toolbar.js";
@@ -247,7 +247,7 @@ function renderCategory(category: CategoryView, state: ToolbarState) {
   category.toggle.disabled = searching || compact;
   category.matchBadge.hidden = !searching;
   if (searching) {
-    category.matchBadge.textContent = `${category.visible} ${category.visible === 1 ? "match" : "matches"}`;
+    category.matchBadge.textContent = matchesText(category.visible);
   }
 
   category.body.hidden = !bodyShown;

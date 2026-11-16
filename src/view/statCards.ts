@@ -1,17 +1,12 @@
 // The three summary cards at the top of a loaded save. Each one jumps to its section.
 
-import type { SaveModel } from "../save/model.js";
+import type { Progress, SaveModel } from "../save/model.js";
 import { getMarksProgress, getProgress } from "../save/model.js";
 import { h } from "./dom.js";
 import { icon } from "./icons.js";
 import { percentText, remainingText } from "./progress.js";
 import { SECTION_IDS } from "./sections.js";
 import { badge, progressBar } from "./ui.js";
-
-interface Progress {
-  readonly unlocked: number;
-  readonly total: number;
-}
 
 export function renderStatCards(saveModel: SaveModel): HTMLElement {
   return h(

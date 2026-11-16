@@ -75,11 +75,6 @@ export class Preferences {
     this.set("marks:show", show);
   }
 
-  /** @param id The ID of a section or group. Everything is expanded by default. */
-  isCollapsed(id: string): boolean {
-    return this.getCollapsed(id) ?? false;
-  }
-
   /**
    * Whether the user collapsed (true) or expanded (false) the section or group, or undefined if
    * they never chose. The caller picks the default then, e.g. complete groups start collapsed.
