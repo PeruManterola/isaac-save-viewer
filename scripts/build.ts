@@ -133,6 +133,22 @@ async function copyLicenses(packageRoot: string) {
 async function copyStatic(packageRoot: string) {
   const { distDir, staticDir } = getPaths(packageRoot);
   await fs.cp(staticDir, distDir, { recursive: true });
+
+  // The Docker image's server caches ".js" and ".css" files for a year (but not "index.html"), so
+  // we add the version to their URLs to make browsers fetch the new files after each release.
+  // Shortcut: manual "edge" builds share the last release's version, so they do not bust caches.
+  const packageJSON = JSON.parse(
+    await fs.readFile(path.join(packageRoot, "package.json"), "utf8"),
+  ) as { version: string };
+  const indexPath = path.join(distDir, "index.html");
+  const html = await fs.readFile(indexPath, "utf8");
+  await fs.writeFile(
+    indexPath,
+    html.replaceAll(
+      /(?<attribute>src|href)="(?<url>[^"]+\.(?:js|css))"/g,
+      `$<attribute>="$<url>?v=${packageJSON.version}"`,
+    ),
+  );
 }
 
 async function copyFont(packageRoot: string) {
