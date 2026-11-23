@@ -165,6 +165,18 @@ describe("fixtures", () => {
   }
 });
 
+// The same save as rep+persistentgamedata1.dat, re-saved after the November 2026 update, which
+// bumped the header to ISAACNGSAVE10R and added a 12th chunk.
+test("a save from after the 10R header update parses the same", () => {
+  expect(
+    createSaveModel(
+      parseSaveFile(readFixture("rep+persistentgamedata1-10R.dat")),
+    ),
+  ).toStrictEqual(
+    createSaveModel(parseSaveFile(readFixture("rep+persistentgamedata1.dat"))),
+  );
+});
+
 describe("isHardMarkDone", () => {
   test.each([
     [0, false],

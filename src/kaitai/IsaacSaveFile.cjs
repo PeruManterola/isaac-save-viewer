@@ -272,21 +272,6 @@
       }
       SaveHeader.prototype._read = function () {
         this.magic = this._io.readBytes(16);
-        if (
-          !(
-            KaitaiStream.byteArrayCompare(
-              this.magic,
-              [73, 83, 65, 65, 67, 78, 71, 83, 65, 86, 69, 48, 57, 82, 32, 32],
-            ) == 0
-          )
-        ) {
-          throw new KaitaiStream.ValidationNotEqualError(
-            [73, 83, 65, 65, 67, 78, 71, 83, 65, 86, 69, 48, 57, 82, 32, 32],
-            this.magic,
-            this._io,
-            "/types/save_header/seq/0",
-          );
-        }
         this.crc = this._io.readS4le();
       };
 

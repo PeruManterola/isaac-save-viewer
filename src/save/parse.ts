@@ -25,7 +25,12 @@ const RUN_HEADERS = new ReadonlySet([
 // e.g. persistentgamedata1.dat
 const REBIRTH_PERSISTENT_HEADER = "ISAACNGSAVE06R";
 const AFTERBIRTH_PERSISTENT_HEADER = "ISAACNGSAVE08R";
-const AFTERBIRTH_PLUS_AND_REPENTANCE_PERSISTENT_HEADER = "ISAACNGSAVE09R";
+// The November 2026 Repentance+ update bumped the header to 10R (it also added a 12th chunk, which
+// we do not read).
+const PERSISTENT_HEADERS = new ReadonlySet([
+  "ISAACNGSAVE09R",
+  "ISAACNGSAVE10R",
+]);
 
 // The size of the achievements array is one more than the number of achievements, because there is
 // no 0th achievement. Afterbirth+ has 403, Repentance 637, and Repentance+ 641.
@@ -97,7 +102,7 @@ function verifyHeader(arrayBuffer: ArrayBuffer) {
     throw wrongGameTypeError("Afterbirth");
   }
 
-  if (header !== AFTERBIRTH_PLUS_AND_REPENTANCE_PERSISTENT_HEADER) {
+  if (!PERSISTENT_HEADERS.has(header)) {
     throw new SaveFileError(
       `That is not a valid save file for ${SUPPORTED_GAME}.`,
     );

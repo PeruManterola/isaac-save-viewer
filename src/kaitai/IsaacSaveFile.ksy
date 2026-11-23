@@ -19,7 +19,8 @@ types:
   save_header:
     seq:
       - id: magic
-        contents: 'ISAACNGSAVE09R  '
+        size: 16
+        doc: Validated in parse.ts, since game updates bump it (09R, 10R)
       - id: crc
         type: s4
   chunk:
